@@ -11,10 +11,11 @@ A aplicação será construída como uma **Single Page Application simples (SPA 
 ### Tecnologias:
 
 * HTML5
-* CSS3 + Framework (Bootstrap ou similar)
+* CSS3 + Framework (Bootstrap v5.3.8)
 * JavaScript (Vanilla)
 * JSON Server (API fake)
 * Web Storage (LocalStorage)
+* API Publíca (Recipe API)
 
 ---
 
