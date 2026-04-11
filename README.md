@@ -11,19 +11,19 @@ Para entender as regras de negócio, o escopo e a arquitetura técnica da aplica
 
 - [📄 Product Requirements Document (PRD)](./docs/prd.md) - Visão geral, atores e histórias de usuário.
 - [🛠️ Especificação Técnica (Tech Spec)](./docs/spec.md) - Diagrama de banco de dados (DER), dicionário de dados e rotas da API (JSON Server).
-- Prototipação de telas, cradas usando Stitch AI [Telas](https://stitch.withgoogle.com/projects/11458277076774824374)
+- Prototipação de telas, cradas usando Stitch AI - [Telas](https://stitch.withgoogle.com/projects/11458277076774824374)
 
 ---
 
 ## 💻 Tecnologias e Dependências
 
 - **Framework CSS:**
-  - Bootstrap 
+  - Bootstrap Uma base de codigos prontos, atualmente o framework mais popular do mundo.
 - **JavaScript:**
   - **JQuery** - Para realizar animações e manipulação do DOM.
   - **JSON Server** - Para simular uma API REST.
 - **API Publica**
-    - Api. 
+    - Recipe API. - Base de dados para receitas e ingredientes. 
     
  
   ---
