@@ -11,6 +11,7 @@ Para entender as regras de negócio, o escopo e a arquitetura técnica da aplica
 
 - [📄 Product Requirements Document (PRD)](./docs/prd.md) - Visão geral, atores e histórias de usuário.
 - [🛠️ Especificação Técnica (Tech Spec)](./docs/spec.md) - Diagrama de banco de dados (DER), dicionário de dados e rotas da API (JSON Server).
+- Prototipação de telas, cradas usando Stitch AI [Telas](https://stitch.withgoogle.com/projects/11458277076774824374)
 
 ---
 
