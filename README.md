@@ -23,7 +23,7 @@ Para entender as regras de negócio, o escopo e a arquitetura técnica da aplica
   - **JQuery** - Para realizar animações e manipulação do DOM.
   - **JSON Server** - Para simular uma API REST.
 - **API Publica**
-    - Recipe API. - Base de dados para receitas e ingredientes. 
+    - [Recipe API](https://api-ninjas.com/api/recipe). - Base de dados para receitas e ingredientes. 
     
  
   ---
