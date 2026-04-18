@@ -20,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/Jotta-A/dish-diary/issues"
   },
-  "homepage": "https://github.com/Jotta-A/dish-diary#readme"
+  "homepage": "https://github.com/Jotta-A/dish-diary#readme",
+  "dependencies": {
+    "jquery": "^4.0.0",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
