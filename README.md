@@ -33,7 +33,7 @@ Para entender as regras de negócio, o escopo e a arquitetura técnica da aplica
 
  RA1 - Utilizar Frameworks CSS para estilização de elementos HTML e criação de layouts responsivos.
 
-- [ ] ID 01 - Prototipa interfaces adaptáveis para no mínimo os tamanhos de tela mobile e desktop, usando ferramentas de design tradicionais (Figma, Quant UX ou Sketch) ou IA (Stitch).
+- [ x ] ID 01 - Prototipa interfaces adaptáveis para no mínimo os tamanhos de tela mobile e desktop, usando ferramentas de design tradicionais (Figma, Quant UX ou Sketch) ou IA (Stitch).
 
 - [ ] ID 02 - Implementa layout responsivo com Framework CSS (Bootstrap, Materialize, Tailwind + DaisyUI) usando Flexbox ou Grid do próprio framework.
 
@@ -65,11 +65,11 @@ RA2 - Realizar tratamento de formulários e aplicar validações customizadas no
 
  RA3 - Aplicar ferramentas para otimização do processo de desenvolvimento web.
 
-- [ ] ID 15 - Configura ambiente com Node.js e NPM para gerenciamento de pacotes e dependências.
+- [x] ID 15 - Configura ambiente com Node.js e NPM para gerenciamento de pacotes e dependências.
 
-- [ ] ID 16 - Utiliza boas práticas de versionamento no Git/GitHub (branch main ou branches específicos, uso de .gitignore).
+- [x] ID 16 - Utiliza boas práticas de versionamento no Git/GitHub (branch main ou branches específicos, uso de .gitignore).
 
-- [ ] ID 17 - Mantém um README.md padronizado, conforme template da disciplina, com checklist preenchido.
+- [x] ID 17 - Mantém um README.md padronizado, conforme template da disciplina, com checklist preenchido.
 
 - [ ] ID 18 - Organiza arquivos do projeto de forma modular, seguindo padrão de exemplo fornecido.
 
