@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&amp;family=Manrope:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap 5.3 CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <style>
+    :root {
+      --primary: #b71029;
+      --primary-container: #ff7576;
+      --on-primary: #ffefee;
+      --secondary: #00675d;
+      --on-secondary: #c0fff3;
+      --surface: #fff4f4;
+      --on-surface: #4c212c;
+      --surface-variant: #ffd1d9;
+      --on-surface-variant: #814c58;
+      --surface-container-low: #ffecee;
+      --surface-container-high: #ffd9df;
+      --outline-variant: #dc9ca9;
+
+      --font-headline: 'Epilogue', sans-serif;
+      --font-body: 'Manrope', sans-serif;
+      --font-label: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    body {
+      background-color: var(--surface);
+      color: var(--on-surface);
+      font-family: var(--font-body);
+    }
+
+    ::selection {
+      background-color: var(--primary-container);
+      color: var(--on-surface);
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    /* Custom Utilities */
+    .font-headline {
+      font-family: var(--font-headline);
+    }
+
+    .font-body {
+      font-family: var(--font-body);
+    }
+
+    .font-label {
+      font-family: var(--font-label);
+    }
+
+    .text-primary-custom {
+      color: var(--primary);
+    }
+
+    .text-on-surface {
+      color: var(--on-surface);
+    }
+
+    .text-on-surface-variant {
+      color: var(--on-surface-variant);
+    }
+
+    .text-secondary-custom {
+      color: var(--secondary);
+    }
+
+    .bg-surface-container-low {
+      background-color: var(--surface-container-low);
+    }
+
+    .glass-pill {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(12px);
+    }
+
+    /* Gradient Buttons */
+    .btn-gradient {
+      background: linear-gradient(to bottom right, var(--primary), var(--primary-container));
+      color: var(--on-primary);
+      border: none;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    .btn-gradient:hover {
+      opacity: 0.9;
+      color: var(--on-primary);
+    }
+
+    .btn-gradient:active {
+      transform: scale(0.95);
+    }
+
+    /* Nav Styling */
+    .top-nav {
+      background-color: rgba(255, 244, 244, 0.9);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav-link-custom {
+      font-family: var(--font-label);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--on-surface);
+      opacity: 0.7;
+      text-decoration: none;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      transition: background-color 0.3s;
+    }
+
+    .nav-link-custom:hover {
+      background-color: var(--surface-container-high);
+      opacity: 1;
+    }
+
+    .nav-link-active {
+      color: var(--primary);
+      font-weight: bold;
+      border-bottom: 2px solid var(--primary);
+      opacity: 1;
+    }
+
+    /* Profile Gradient Ring */
+    .profile-ring {
+      background: linear-gradient(to top right, var(--primary), var(--secondary));
+      padding: 4px;
+      border-radius: 50%;
+    }
+
+    /* Cards */
+    .card-favorite {
+      aspect-ratio: 3/4;
+      overflow: hidden;
+      border-radius: 0.75rem;
+      position: relative;
+      transition: transform 0.5s;
+    }
+
+    .card-favorite:hover {
+      transform: translateY(-0.5rem);
+    }
+
+    .card-favorite img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(76, 33, 44, 0.8), transparent, transparent);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .card-favorite:hover .card-overlay {
+      opacity: 1;
+    }
+
+    .card-content {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      right: 1rem;
+      transform: translateY(1rem);
+      transition: transform 0.3s;
+    }
+
+    .card-favorite:hover .card-content {
+      transform: translateY(0);
+    }
+
+    /* Culinary Log Table */
+    .log-container {
+      background-color: var(--surface-container-low);
+      border-radius: 2rem;
+    }
+
+    .table-custom th {
+      border-bottom: 1px solid rgba(220, 156, 169, 0.2);
+      color: var(--on-surface-variant);
+      padding-bottom: 1.5rem;
+    }
+
+    .table-custom td {
+      border-bottom: 1px solid rgba(220, 156, 169, 0.1);
+      padding: 1.5rem 0;
+      background: transparent;
+    }
+
+    .table-custom tbody tr {
+      transition: background-color 0.3s;
+    }
+
+    .table-custom tbody tr:hover td {
+      background-color: rgba(255, 217, 223, 0.3);
+    }
+
+    .btn-outline-custom {
+      border: 1px solid var(--outline-variant);
+      color: var(--on-surface-variant);
+    }
+
+    .btn-outline-custom:hover {
+      background-color: var(--surface-container-high);
+      color: var(--on-surface-variant);
+    }
+
+    /* Bottom Nav Mobile */
+    .bottom-nav {
+      background-color: rgba(255, 244, 244, 0.8);
+      backdrop-filter: blur(24px);
+      border-top: 1px solid rgba(76, 33, 44, 0.1);
+      box-shadow: 0 -4px 24px rgba(76, 33, 44, 0.06);
+    }
+
+    .mobile-nav-item {
+      color: var(--on-surface);
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .mobile-nav-item:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- TopNavBar -->
+  <nav class="fixed-top top-nav w-100 z-3">
+    <div class="container-fluid max-w-screen-2xl px-4 py-3">
+      <div class="d-flex justify-content-between align-items-center mx-auto" style="max-width: 1536px;">
+        <div class="d-flex align-items-center gap-4">
+          <span class="fs-5 fw-bold font-headline text-on-surface" style="letter-spacing: -0.05em;">The Kinetic
+            Atelier</span>
+          <div class="d-none d-md-flex align-items-center gap-3 ms-4">
+            <a class="nav-link-custom" href="#">Discover</a>
+            <a class="nav-link-custom" href="#">Log</a>
+            <a class="nav-link-custom" href="#">Trending</a>
+            <a class="nav-link-custom nav-link-active" href="#">Profile</a>
+          </div>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <button class="btn btn-link p-2 text-on-surface-variant rounded-circle text-decoration-none">
+            <span class="material-symbols-outlined">notifications</span>
+          </button>
+          <button
+            class="btn btn-gradient rounded-pill d-none d-md-inline-block font-label text-uppercase fw-bold px-4 py-2"
+            style="font-size: 12px; letter-spacing: 0.1em;">
+            Log Meal
+          </button>
+          <div class="rounded-circle overflow-hidden border border-2 border-danger" style="width: 40px; height: 40px;">
+            <img alt="User profile" class="w-100 h-100 object-fit-cover"
+              data-alt="close-up portrait of a refined man with short dark hair and a neat beard, warm studio lighting, professional aesthetic"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ8yWz5FveHCsNhNtCRettRnswHXrauVGglBb5zCNmZ7S0L3AELrHAb7hlwv2dvzhwlBWMl4zPRVGlYHelztiNaV_mIIEj30M-_1Bp42IVIGAwOAi-P7bLsyKXLw1cG6NFC2_24dESxOuqAqNm5bwSywNLfZZl1s68-5tLieH5mFhIIq3fGXOCKcOUBUuzozdj_B5JuW7rTvKZU0Mk-nzoz-kJBcTN1vDTJpZhv1g4nt8YVLkCS9lhg45nJjDYSXZK3Tq7S8ejYvY" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main class="container px-4" style="max-width: 1536px; padding-top: 6rem; padding-bottom: 3rem;">
+    <!-- Profile Header Section -->
+    <header class="row align-items-center align-items-md-start mb-5">
+      <div class="col-12 col-md-auto text-center text-md-start mb-4 mb-md-0 d-flex justify-content-center">
+        <div class="position-relative d-inline-block">
+          <div class="profile-ring" style="width: 160px; height: 160px;">
+            <div class="w-100 h-100 rounded-circle overflow-hidden border border-4 border-light">
+              <img class="w-100 h-100 object-fit-cover"
+                data-alt="sophisticated male food critic in a linen suit, natural sunlight through a window, elegant and warm atmosphere"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnWvQc8ovQ3MYpoBeJH2CYdv_wdwkmaRa-TBJSp-uzlMj13gxFwr55z8yzAOZFJPzvO8GewMGjet5C_gWxoK2Ebe3iwYzZAoWMo-ZKmiul9lw-hIE-iiP2bdql-Tw7tdyM0rSkBPHOGXKk35NuK_FEN2IqG7MZStdbl_VpZM1cvmpy_SFfzWV2cNqF5Tanw6LMMgZsGquOo0XnYbrZYNwJA-qlMPIplDzCRtdlFYQZMiW8iLK5QFOZ4bDm4bfS2wxphSf-JUvCBvk" />
+            </div>
+          </div>
+          <div
+            class="position-absolute bottom-0 end-0 bg-secondary text-white p-2 rounded-circle shadow-sm d-flex align-items-center justify-content-center"
+            style="transform: translate(-10%, -10%);">
+            <span class="material-symbols-outlined"
+              style="font-variation-settings: 'FILL' 1; font-size: 20px;">verified</span>
+          </div>
+        </div>
+      </div>
+      <div class="col text-center text-md-start ps-md-4">
+        <div class="d-flex flex-column flex-md-row align-items-md-center gap-3 mb-3">
+          <h1 class="display-4 fw-bold font-headline text-on-surface mb-0">The Critic</h1>
+          <button
+            class="btn btn-gradient rounded-pill font-label text-uppercase fw-bold px-4 py-2 align-self-center align-self-md-auto"
+            style="font-size: 14px; letter-spacing: 0.1em;">Follow</button>
+        </div>
+        <p class="lead text-on-surface-variant font-body mb-4" style="max-width: 600px; margin: 0 auto 0 0;">
+          Curating the kinetic energy of modern gastronomy. Exploring the intersection of heritage ingredients and
+          radical culinary innovation. Currently hunting for the perfect reduction in Tokyo.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-4 gap-md-5">
+          <div class="d-flex flex-column text-start">
+            <span class="font-headline fs-4 fw-bold text-on-surface">14.2k</span>
+            <span class="font-label text-uppercase text-on-surface-variant"
+              style="font-size: 10px; letter-spacing: 0.1rem;">Followers</span>
+          </div>
+          <div class="d-flex flex-column text-start">
+            <span class="font-headline fs-4 fw-bold text-on-surface">842</span>
+            <span class="font-label text-uppercase text-on-surface-variant"
+              style="font-size: 10px; letter-spacing: 0.1rem;">Following</span>
+          </div>
+          <div class="d-flex flex-column text-start">
+            <span class="font-headline fs-4 fw-bold text-on-surface">128</span>
+            <span class="font-label text-uppercase text-on-surface-variant"
+              style="font-size: 10px; letter-spacing: 0.1rem;">Curations</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Four Favorites Grid -->
+    <section class="mb-5 pb-4">
+      <div class="d-flex justify-content-between align-items-end mb-4">
+        <h2 class="fs-3 fw-bold font-headline text-on-surface mb-0">Four Favorites</h2>
+        <a class="font-label text-uppercase fw-bold text-primary-custom text-decoration-none d-flex align-items-center gap-2"
+          href="#" style="font-size: 12px; letter-spacing: 0.1em;">
+          View Archive <span class="material-symbols-outlined" style="font-size: 16px;">arrow_forward</span>
+        </a>
+      </div>
+      <div class="row g-3 g-md-4">
+        <!-- Card 1 -->
+        <div class="col-6 col-md-3">
+          <div class="card-favorite bg-surface-container-low">
+            <img
+              data-alt="artisan japanese ramen in a ceramic bowl, steaming broth, perfect lighting, macro food photography"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqd27L7ONQ7xESyVARM01jFbc_f6QXZ5SgEzGb4HQEgSElSYrKoaxhS-d7YNsBzJN_tBXYjOJoDsi2mPBQgRUTOeDqieTFhA6vsBp3KgnpuLTNv4LB-EcFTTPxHwbs-G2vdXSKuQWXeWFGlg1FUeqJy2PdgNBnEnsKNilfSH13BmUDKuw1nUkGliA0UkZt5c4ryP51mlGK6xOHPIArU5C0tNjl8nqJ12Ozicc2u5yrLKLnPNG84tayKUPALs-P0N0T2nezkNjrfwY" />
+            <div class="card-overlay"></div>
+            <div class="card-content">
+              <div class="glass-pill px-3 py-1 rounded-pill d-inline-flex align-items-center gap-2 mb-2">
+                <span class="material-symbols-outlined text-primary-custom"
+                  style="font-size: 14px; font-variation-settings: 'FILL' 1;">favorite</span>
+                <span class="font-label text-on-surface text-uppercase fw-bold"
+                  style="font-size: 10px; letter-spacing: 0.05em;">Kyoto Umami</span>
+              </div>
+              <p class="text-white mb-0" style="font-size: 12px;">The defining bowl of 2024.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-6 col-md-3">
+          <div class="card-favorite bg-surface-container-low">
+            <img
+              data-alt="minimalist gourmet dessert with vibrant berries and edible flowers on a matte black plate, moody lighting"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw98HL-LpfNNEHCrcuS-sH8qH0CqKEcuWpM3dwDlf-mTXBxkg25qL-9XNobsl0MpX0QCm36PR7jUlhR7vqlJLKL0qSw0tLpvxiaZ7Y2W9fBw7ETdgyXps_cR5CU_ItwU9QJIA565A-rirhTDylilds3DdTZ_dEBmwdFQxyrJoXDXyWj83X0ZFVMjwS-NMQR1wibftSahe1u2JLPhYTybSTJLyGl7t94Lng3SQa2dGWh0JEWl9FFzqclOIWQ1sqZzZcTnKa2dKmzLU" />
+            <div class="card-overlay"></div>
+            <div class="card-content">
+              <div class="glass-pill px-3 py-1 rounded-pill d-inline-flex align-items-center gap-2 mb-2">
+                <span class="material-symbols-outlined text-primary-custom"
+                  style="font-size: 14px; font-variation-settings: 'FILL' 1;">favorite</span>
+                <span class="font-label text-on-surface text-uppercase fw-bold"
+                  style="font-size: 10px; letter-spacing: 0.05em;">Nordic Bloom</span>
+              </div>
+              <p class="text-white mb-0" style="font-size: 12px;">Deconstructed winter flora.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-6 col-md-3">
+          <div class="card-favorite bg-surface-container-low">
+            <img
+              data-alt="perfectly seared wagyu beef steak with sea salt flakes and rosemary, dramatic lighting, rich textures"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4sxLrKNm17xWsXTYnjkTWyd0iO9aSC0TpA2jClWQU1Fs9coS7-q0p744zV0-PQDQ8w9RJs2NJPQ6BIZKEcV-Nz4uWrMOPDSTi_CsfTU3bhhLmwuVqdl13Bo-NvLlO2lLYAg5fvwGSdKBHbeW0jdIuQ8u1SqWRpozazEDiqvx07kwKoROlRX8k2gVGL3KryitIXJZ4ucQz049ApGiqGVTxvVMF5XP665TJo3CKzrgOZEirA23uk8heMw5GBj7HkwyyH5HDl9P7H7s" />
+            <div class="card-overlay"></div>
+            <div class="card-content">
+              <div class="glass-pill px-3 py-1 rounded-pill d-inline-flex align-items-center gap-2 mb-2">
+                <span class="material-symbols-outlined text-primary-custom"
+                  style="font-size: 14px; font-variation-settings: 'FILL' 1;">favorite</span>
+                <span class="font-label text-on-surface text-uppercase fw-bold"
+                  style="font-size: 10px; letter-spacing: 0.05em;">A5 Searing</span>
+              </div>
+              <p class="text-white mb-0" style="font-size: 12px;">Precision heat and heritage.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-6 col-md-3">
+          <div class="card-favorite bg-surface-container-low">
+            <img
+              data-alt="vibrant green herbal cocktails in etched glassware, botanical atmosphere, bright and fresh lighting"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyS4x8nkzA-9PmdHVG85A1CVZYny0Yl14YdlPprgF1DcRqFLDhmLb0wpL0EKJTBPuVM62WZAztd0uNPgnvQFRtycNwzx_D-nZuuIoCidcq1GfNWvhHQRONxZq1r81RzzEf7LIT_vchTNa41FmmyMoM8m3TzL9dMrlq13-rhxMhDoMdNNoFDMs3zSSME_kFLD-akwN6nhHrU9hAbkWjWpL2d9ARfk96i7R8irlLEQgTQufjWWgBIYUOvyGOQQEIs8T0pgnBWuzggVo" />
+            <div class="card-overlay"></div>
+            <div class="card-content">
+              <div class="glass-pill px-3 py-1 rounded-pill d-inline-flex align-items-center gap-2 mb-2">
+                <span class="material-symbols-outlined text-primary-custom"
+                  style="font-size: 14px; font-variation-settings: 'FILL' 1;">favorite</span>
+                <span class="font-label text-on-surface text-uppercase fw-bold"
+                  style="font-size: 10px; letter-spacing: 0.05em;">Botanical Mix</span>
+              </div>
+              <p class="text-white mb-0" style="font-size: 12px;">The future of non-alc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Culinary Log Table -->
+    <section class="log-container p-4 p-md-5 mb-5">
+      <div class="d-flex justify-content-between align-items-center mb-4 pb-2">
+        <h2 class="fs-3 fw-bold font-headline text-on-surface mb-0">Culinary Log</h2>
+        <div class="d-flex gap-2">
+          <span class="material-symbols-outlined text-on-surface-variant" style="cursor: pointer;">filter_list</span>
+          <span class="material-symbols-outlined text-on-surface-variant" style="cursor: pointer;">search</span>
+        </div>
+      </div>
+      <div class="table-responsive border-0">
+        <table class="table table-borderless table-custom align-middle mb-0">
+          <thead>
+            <tr>
+              <th class="font-label text-uppercase" style="font-size: 10px; letter-spacing: 0.15rem;">Date</th>
+              <th class="font-label text-uppercase" style="font-size: 10px; letter-spacing: 0.15rem;">Destination</th>
+              <th class="font-label text-uppercase" style="font-size: 10px; letter-spacing: 0.15rem;">Dish / Experience
+              </th>
+              <th class="font-label text-uppercase text-end" style="font-size: 10px; letter-spacing: 0.15rem;">Rating
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-label text-on-surface-variant" style="font-size: 12px;">OCT 14, 2023</td>
+              <td>
+                <div class="d-flex align-items-center gap-2">
+                  <span class="material-symbols-outlined text-secondary-custom"
+                    style="font-size: 18px;">location_on</span>
+                  <span class="font-body fw-bold text-on-surface">Kanda, Tokyo</span>
+                </div>
+              </td>
+              <td class="font-body text-on-surface">Midnight Soba Ritual — Traditional charcoal-filtered buckwheat.</td>
+              <td class="text-end">
+                <div class="d-inline-flex text-primary-custom">
+                  <span class="material-symbols-outlined"
+                    style="font-size: 16px; font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined"
+                    style="font-size: 16px; font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined"
+                    style="font-size: 16px; font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined"
+                    style="font-size: 16px; font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined"
+                    style="font-size: 16px; font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="font-label text-on-surface-variant" style="font-size: 12px;">OCT 12, 2023</td>
+              <td>
+                <div class="d-flex align-items-center gap-2">
+                  <span class="material-symbols-outlined text-secondary-custom"
+                    style="font-size: 18px;">location_on</span>
+                  <span class="font-body fw-bold text-on-surface">Ginza, Tokyo</span>
+                </div>
+              </td>
+              <td class="font-body text-on-surface">Omakase Shima — Rare Bluefin tuna series with aged soy.</td>
+              <td class="text-end">
+                <div class="d-inline-flex text-primary-custom">
+                  <span class="material-symbols-outlined"
+                    style="font-size: 16px; font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined"
+                    style="font-size: 16px; font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined"
+                    style="font-size: 16px; font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined"
+                    style="font-size: 16px; font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined"
+                    style="font-size: 16px; font-variation-settings: 'FILL' 0;">star</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="font-label text-on-surface-variant" style="font-size: 12px;">OCT 08, 2023</td>
+              <td>
+                <div class="d-flex align-items-center gap-2">
+                  <span class="material-symbols-outlined text-secondary-custom"
+                    style="font-size: 18px;">location_on</span>
+                  <span class="font-body fw-bold text-on-surface">Copenhagen</span>
+                </div>
+              </td>
+              <td class="font-body text-on-surface">Fermentation Lab Tasting — Reindeer moss and spruce tips.</td>
+              <td class="text-end">
+                <div class="d-inline-flex text-primary-custom">
+                  <span class="material-symbols-outlined"
+                    style="font-size: 16px; font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined"
+                    style="font-size: 16px; font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined"
+                    style="font-size: 16px; font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined"
+                    style="font-size: 16px; font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined"
+                    style="font-size: 16px; font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="font-label text-on-surface-variant" style="font-size: 12px;">OCT 05, 2023</td>
+              <td>
+                <div class="d-flex align-items-center gap-2">
+                  <span class="material-symbols-outlined text-secondary-custom"
+                    style="font-size: 18px;">location_on</span>
+                  <span class="font-body fw-bold text-on-surface">Paris, 1er</span>
+                </div>
+              </td>
+              <td class="font-body text-on-surface">La Boulangerie de Minuit — Ancient grain sourdough &amp; butter.
+              </td>
+              <td class="text-end border-bottom-0">
+                <div class="d-inline-flex text-primary-custom">
+                  <span class="material-symbols-outlined"
+                    style="font-size: 16px; font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined"
+                    style="font-size: 16px; font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined"
+                    style="font-size: 16px; font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined"
+                    style="font-size: 16px; font-variation-settings: 'FILL' 0;">star</span>
+                  <span class="material-symbols-outlined"
+                    style="font-size: 16px; font-variation-settings: 'FILL' 0;">star</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-4 text-center">
+        <button
+          class="btn btn-outline-custom rounded-pill px-4 py-2 font-label text-uppercase fw-bold d-inline-flex align-items-center gap-2"
+          style="font-size: 12px; letter-spacing: 0.1em;">
+          Load More Entries
+        </button>
+      </div>
+    </section>
+  </main>
+  <!-- BottomNavBar (Shared Component) -->
+  <nav class="fixed-bottom bottom-nav d-md-none w-100 rounded-top-4 pb-4 pt-2 px-3">
+    <div class="d-flex justify-content-around align-items-center">
+      <a class="mobile-nav-item d-flex flex-column align-items-center p-2" href="#">
+        <span class="material-symbols-outlined mb-1">explore</span>
+        <span class="font-label text-uppercase fw-bold" style="font-size: 10px; letter-spacing: 0.05em;">Discover</span>
+      </a>
+      <a class="mobile-nav-item d-flex flex-column align-items-center p-2" href="#">
+        <span class="material-symbols-outlined mb-1">add_circle</span>
+        <span class="font-label text-uppercase fw-bold" style="font-size: 10px; letter-spacing: 0.05em;">Log</span>
+      </a>
+      <a class="mobile-nav-item d-flex flex-column align-items-center p-2" href="#">
+        <span class="material-symbols-outlined mb-1">trending_up</span>
+        <span class="font-label text-uppercase fw-bold" style="font-size: 10px; letter-spacing: 0.05em;">Trending</span>
+      </a>
+      <a class="mobile-nav-item d-flex flex-column align-items-center p-2 btn-gradient rounded-4 text-white text-decoration-none"
+        href="#">
+        <span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">person_2</span>
+        <span class="font-label text-uppercase fw-bold" style="font-size: 10px; letter-spacing: 0.05em;">Profile</span>
+      </a>
+    </div>
+  </nav>
+  <!-- Spacer for mobile nav -->
+  <div class="d-md-none" style="height: 100px;"></div>
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

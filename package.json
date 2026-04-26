@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Jotta-A/dish-diary#readme",
   "dependencies": {
+    "bootstrap": "^5.3.8",
     "jquery": "^4.0.0",
     "uuid": "^13.0.0"
   },
