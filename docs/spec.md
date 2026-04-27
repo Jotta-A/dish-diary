@@ -15,7 +15,7 @@ A aplicação será construída como uma **Single Page Application simples (SPA 
 * JavaScript (Vanilla)
 * JSON Server (API fake)
 * Web Storage (LocalStorage)
-* API Publíca (Recipe API)
+* API Publíca ([Recipe API](https://api-ninjas.com/api/recipe))
 
 ---
 
