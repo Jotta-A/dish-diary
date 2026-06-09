@@ -1,0 +1,119 @@
+// =============================================================================
+// _base.scss — CSS Custom Properties, Reset & Global Styles
+// =============================================================================
+@use 'variables' as *;
+
+// --- CSS Custom Properties (design tokens for runtime) ---
+:root {
+  // Primary
+  --primary:                   #{$primary};
+  --primary-dim:               #{$primary-dim};
+  --primary-fixed:             #{$primary-fixed};
+  --primary-fixed-dim:         #{$primary-fixed-dim};
+  --on-primary:                #{$on-primary};
+  --on-primary-fixed:          #{$on-primary-fixed};
+  --on-primary-fixed-variant:  #{$on-primary-fixed-variant};
+  --primary-container:         #{$primary-container};
+  --on-primary-container:      #{$on-primary-container};
+  --inverse-primary:           #{$inverse-primary};
+
+  // Secondary
+  --secondary:                 #{$secondary};
+  --secondary-dim:             #{$secondary-dim};
+  --secondary-fixed:           #{$secondary-fixed};
+  --secondary-fixed-dim:       #{$secondary-fixed-dim};
+  --on-secondary:              #{$on-secondary};
+  --on-secondary-fixed:        #{$on-secondary-fixed};
+  --on-secondary-fixed-variant:#{$on-secondary-fixed-variant};
+  --secondary-container:       #{$secondary-container};
+  --on-secondary-container:    #{$on-secondary-container};
+
+  // Tertiary
+  --tertiary:                  #{$tertiary};
+  --tertiary-dim:              #{$tertiary-dim};
+  --tertiary-fixed:            #{$tertiary-fixed};
+  --tertiary-fixed-dim:        #{$tertiary-fixed-dim};
+  --on-tertiary:               #{$on-tertiary};
+  --on-tertiary-fixed:         #{$on-tertiary-fixed};
+  --on-tertiary-fixed-variant: #{$on-tertiary-fixed-variant};
+  --tertiary-container:        #{$tertiary-container};
+  --on-tertiary-container:     #{$on-tertiary-container};
+
+  // Surface & Background
+  --surface:                   #{$surface};
+  --surface-dim:               #{$surface-dim};
+  --surface-bright:            #{$surface-bright};
+  --surface-container-lowest:  #{$surface-container-lowest};
+  --surface-container-low:     #{$surface-container-low};
+  --surface-container:         #{$surface-container};
+  --surface-container-high:    #{$surface-container-high};
+  --surface-container-highest: #{$surface-container-highest};
+  --surface-variant:           #{$surface-variant};
+  --inverse-surface:           #{$inverse-surface};
+  --inverse-on-surface:        #{$inverse-on-surface};
+  --surface-tint:              #{$surface-tint};
+
+  // On-Surface
+  --on-surface:                #{$on-surface};
+  --on-surface-variant:        #{$on-surface-variant};
+  --on-background:             #{$on-background};
+  --background:                #{$background};
+
+  // Outline
+  --outline:                   #{$outline};
+  --outline-variant:           #{$outline-variant};
+
+  // Error
+  --error:                     #{$error};
+  --error-dim:                 #{$error-dim};
+  --error-container:           #{$error-container};
+  --on-error:                  #{$on-error};
+  --on-error-container:        #{$on-error-container};
+
+  // Bootstrap overrides
+  --bs-body-bg:                #{$surface};
+  --bs-body-color:             #{$on-surface};
+  --bs-primary:                #{$primary};
+  --bs-primary-rgb:            183, 16, 41;
+
+  // Log Meal specific
+  --lm-primary:                #{$lm-primary};
+  --lm-surface:                #{$lm-surface};
+  --lm-text-main:              #{$lm-text-main};
+  --lm-muted:                  #{$lm-muted};
+  --lm-border-color:           #{$lm-border-color};
+  --lm-header-footer-bg:       #{$lm-header-footer-bg};
+}
+
+// --- Global Base ---
+body {
+  font-family: $font-body;
+  background-color: var(--surface);
+  color: var(--on-surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--primary-container);
+  color: var(--on-surface);
+}
+
+// --- Material Symbols ---
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+
+  &[data-weight="fill"] {
+    font-variation-settings: 'FILL' 1;
+  }
+}
+
+// --- Typography helpers ---
+.font-headline { font-family: $font-headline; }
+.font-body     { font-family: $font-body; }
+.font-label    { font-family: $font-label; }
+.font-display  { font-family: $font-display; }
+.font-ui       { font-family: $font-ui; }
+
+.tracking-tighter  { letter-spacing: -0.05em; }
+.tracking-widest   { letter-spacing:  0.1em; }

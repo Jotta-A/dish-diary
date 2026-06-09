@@ -1,0 +1,83 @@
+// =============================================================================
+// _variables.scss — Design Tokens & Brand Palette
+// =============================================================================
+
+// --- Primary Brand Colors ---
+$primary:                 #b71029;
+$primary-dim:             #a30021;
+$primary-fixed:           #ff7576;
+$primary-fixed-dim:       #ff595f;
+$on-primary:              #ffefee;
+$on-primary-fixed:        #000000;
+$on-primary-fixed-variant:#60000f;
+$primary-container:       #ff7576;
+$on-primary-container:    #4e000a;
+$inverse-primary:         #ff525a;
+
+// --- Secondary Brand Colors ---
+$secondary:               #00675d;
+$secondary-dim:           #005a51;
+$secondary-fixed:         #8cf5e4;
+$secondary-fixed-dim:     #7ee6d6;
+$on-secondary:            #c0fff3;
+$on-secondary-fixed:      #004840;
+$on-secondary-fixed-variant: #00675d;
+$secondary-container:     #8cf5e4;
+$on-secondary-container:  #005c53;
+
+// --- Tertiary Colors ---
+$tertiary:                #7144aa;
+$tertiary-dim:            #65379d;
+$tertiary-fixed:          #c99dff;
+$tertiary-fixed-dim:      #bd8df9;
+$on-tertiary:             #faefff;
+$on-tertiary-fixed:       #25004b;
+$on-tertiary-fixed-variant:#4d1c85;
+$tertiary-container:      #c99dff;
+$on-tertiary-container:   #440f7c;
+
+// --- Surface & Background ---
+$surface:                 #fff4f4;
+$surface-dim:             #ffc6d0;
+$surface-bright:          #fff4f4;
+$surface-container-lowest:#ffffff;
+$surface-container-low:   #ffecee;
+$surface-container:       #ffe1e5;
+$surface-container-high:  #ffd9df;
+$surface-container-highest:#ffd1d9;
+$surface-variant:         #ffd1d9;
+$inverse-surface:         #24020c;
+$inverse-on-surface:      #ca8c99;
+$surface-tint:            #b71029;
+
+// --- On-Surface Text ---
+$on-surface:              #4c212c;
+$on-surface-variant:      #814c58;
+$on-background:           #4c212c;
+$background:              #fff4f4;
+
+// --- Outline ---
+$outline:                 #a06773;
+$outline-variant:         #dc9ca9;
+
+// --- Error ---
+$error:                   #b02500;
+$error-dim:               #b92902;
+$error-container:         #f95630;
+$on-error:                #ffefec;
+$on-error-container:      #520c00;
+
+// --- Typography Stacks ---
+$font-headline:           'Epilogue', sans-serif;
+$font-body:               'Manrope', sans-serif;
+$font-label:              'Plus Jakarta Sans', sans-serif;
+
+// --- Log Meal page specific ---
+$lm-primary:              #d41142;
+$lm-surface:              #F0EBE1;
+$lm-text-main:            #1A1A1A;
+$lm-muted:                #8C8C8C;
+$lm-border-color:         #E5DFD3;
+$lm-header-footer-bg:     #F9F6F0;
+$font-display:            'Newsreader', serif;
+$font-ui:                 'Instrument Sans', sans-serif;

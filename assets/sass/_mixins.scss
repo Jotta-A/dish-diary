@@ -1,0 +1,46 @@
+// =============================================================================
+// _mixins.scss — Reusable SASS Mixins & Functions
+// =============================================================================
+@use 'variables' as *;
+
+// --- Gradient helpers ---
+@mixin gradient-primary($dir: to top right) {
+  background: linear-gradient($dir, $primary, $primary-fixed);
+}
+
+@mixin gradient-overlay($dir: to top) {
+  background: linear-gradient($dir, rgba($on-surface, 0.8), transparent, transparent);
+}
+
+// --- Glassmorphism ---
+@mixin glass($bg: rgba(255, 255, 255, 0.7), $blur: 0.75rem) {
+  background: $bg;
+  backdrop-filter: blur($blur);
+}
+
+// --- Smooth transitions ---
+@mixin transition($props: all, $dur: 0.3s, $ease: ease) {
+  transition: $props $dur $ease;
+}
+
+// --- Scrollbar hide ---
+@mixin hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar { display: none; }
+}
+
+// --- Custom scrollbar ---
+@mixin custom-scrollbar($size: 0.5rem, $thumb: $outline-variant) {
+  &::-webkit-scrollbar { width: $size; }
+  &::-webkit-scrollbar-track { background: transparent; }
+  &::-webkit-scrollbar-thumb {
+    background-color: $thumb;
+    border-radius: calc($size / 2);
+  }
+}
+
+// --- Responsive font-size ---
+@mixin fluid-text($min, $max) {
+  font-size: clamp($min, 2vw + 0.5rem, $max);
+}

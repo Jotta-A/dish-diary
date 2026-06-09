@@ -6,216 +6,17 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>The Kinetic Atelier | Join the Curator</title>
+    <link rel="preconnect" href="https://lh3.googleusercontent.com" crossorigin="">
     <!-- Bootstrap 5.3 CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&amp;family=Manrope:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap"
         rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
-    <style>
-        :root {
-            --bs-body-bg: #fff4f4;
-            --bs-body-color: #4c212c;
-            --secondary-container: #8cf5e4;
-            --on-primary-fixed-variant: #60000f;
-            --secondary-fixed-dim: #7ee6d6;
-            --on-error-container: #520c00;
-            --error-dim: #b92902;
-            --on-tertiary-container: #440f7c;
-            --on-secondary-fixed-variant: #00675d;
-            --on-tertiary: #faefff;
-            --on-surface-variant: #814c58;
-            --error: #b02500;
-            --inverse-surface: #24020c;
-            --surface-tint: #b71029;
-            --primary-fixed-dim: #ff595f;
-            --secondary-fixed: #8cf5e4;
-            --on-secondary-container: #005c53;
-            --on-primary-container: #4e000a;
-            --inverse-primary: #ff525a;
-            --surface-bright: #fff4f4;
-            --inverse-on-surface: #ca8c99;
-            --on-background: #4c212c;
-            --surface-dim: #ffc6d0;
-            --on-error: #ffefec;
-            --tertiary-fixed: #c99dff;
-            --on-primary-fixed: #000000;
-            --tertiary-container: #c99dff;
-            --surface-container-high: #ffd9df;
-            --tertiary-dim: #65379d;
-            --outline: #a06773;
-            --primary-fixed: #ff7576;
-            --on-primary: #ffefee;
-            --on-tertiary-fixed: #25004b;
-            --background: #fff4f4;
-            --tertiary: #7144aa;
-            --on-secondary-fixed: #004840;
-            --on-tertiary-fixed-variant: #4d1c85;
-            --primary-dim: #a30021;
-            --secondary: #00675d;
-            --surface: #fff4f4;
-            --surface-container: #ffe1e5;
-            --surface-container-highest: #ffd1d9;
-            --tertiary-fixed-dim: #bd8df9;
-            --error-container: #f95630;
-            --surface-container-lowest: #ffffff;
-            --secondary-dim: #005a51;
-            --on-secondary: #c0fff3;
-            --outline-variant: #dc9ca9;
-            --surface-container-low: #ffecee;
-            --primary-container: #ff7576;
-            --on-surface: #4c212c;
-            --surface-variant: #ffd1d9;
-            --primary: #b71029;
-        }
 
-        body {
-            font-family: 'Manrope', sans-serif;
-            background-color: var(--bs-body-bg);
-            color: var(--bs-body-color);
-            overflow-x: hidden;
-        }
-
-        .text-display {
-            font-family: 'Epilogue', sans-serif;
-        }
-
-        .text-label {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-
-        .gradient-primary {
-            background: linear-gradient(135deg, #b71029 0%, #ff7576 100%);
-        }
-
-        .glass-pill {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(20px);
-        }
-
-        .bg-on-background {
-            background-color: var(--on-background);
-        }
-
-        .text-surface-container-lowest {
-            color: var(--surface-container-lowest);
-        }
-
-        .text-primary-container {
-            color: var(--primary-container);
-        }
-
-        .text-primary {
-            color: var(--primary);
-        }
-
-        .bg-primary {
-            background-color: var(--primary);
-        }
-
-        .bg-surface {
-            background-color: var(--surface);
-        }
-
-        .text-on-background {
-            color: var(--on-background);
-        }
-
-        .text-on-surface-variant {
-            color: var(--on-surface-variant);
-        }
-
-        .bg-surface-container-lowest {
-            background-color: var(--surface-container-lowest);
-        }
-
-        .border-outline-variant {
-            border-color: rgba(220, 156, 169, 0.2);
-        }
-
-        .text-on-surface {
-            color: var(--on-surface);
-        }
-
-        .bg-surface-container-high {
-            background-color: var(--surface-container-high);
-        }
-
-        .bg-surface-container-low {
-            background-color: var(--surface-container-low);
-        }
-
-        .text-on-primary {
-            color: var(--on-primary);
-        }
-
-        .scale-110 {
-            transform: scale(1.1);
-        }
-
-        .tracking-tighter {
-            letter-spacing: -0.05em;
-        }
-
-        .tracking-widest {
-            letter-spacing: 0.1em;
-        }
-
-        .hover-bg-surface-container-low:hover {
-            background-color: var(--surface-container-low);
-        }
-
-        .form-control-custom {
-            background-color: var(--surface-container-low);
-            border: 0;
-            border-bottom: 2px solid transparent;
-            border-radius: 0.75rem;
-            color: var(--on-surface);
-            transition: all 0.3s;
-        }
-
-        .form-control-custom:focus {
-            background-color: var(--surface-container-low);
-            border-bottom-color: var(--primary);
-            box-shadow: none;
-            outline: 0;
-        }
-
-        .form-control-custom::placeholder {
-            color: rgba(129, 76, 88, 0.4);
-        }
-
-        .btn-social {
-            border: 1px solid rgba(220, 156, 169, 0.2);
-            border-radius: 0.75rem;
-            transition: background-color 0.3s;
-        }
-
-        .btn-submit {
-            border-radius: 50rem;
-            box-shadow: 0 4px 24px rgba(183, 16, 41, 0.2);
-            transition: all 0.3s;
-        }
-
-        .btn-submit:hover {
-            transform: scale(1.02);
-            color: white;
-        }
-
-        .btn-submit:active {
-            transform: scale(0.98);
-        }
-
-        .overlay-gradient {
-            background: linear-gradient(to top, rgba(76, 33, 44, 0.8), transparent, transparent);
-        }
-    </style>
 </head>
 
 <body class="d-flex align-items-center justify-content-center p-0 min-vh-100">
@@ -223,13 +24,13 @@
         <!-- Left Side: Visual Narrative -->
         <section class="d-none d-md-flex col-md-7 position-relative overflow-hidden bg-on-background">
             <img alt="Gourmet Plating" class="position-absolute w-100 h-100 object-fit-cover opacity-75 scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI1KqFdJmICSAmcTlsodpfHnA2Xs1bJiZvQSV2XekbOLkvaOaPJ1JygS6VS_m6AVRK_UUXdTiMKi3lcAK58n02tk-8FeRtzY7Gd3H5EaFcYfZQo2hlITPsLW2VlAlMphdywgmVwv-XbTvbQeZ6sy8_Wntc59XTIgVjQZ8HlL5B6WAbzJtK_GzhNmX0CuGBw8Yd0hsEu_Gbg4dKGaL1YxAvcU6N9Ho1Gruok_xZrNsYVQa4NLS3OPFJCybHvOIrrJdtDJbuZ99Kra4"
+                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuDI1KqFdJmICSAmcTlsodpfHnA2Xs1bJiZvQSV2XekbOLkvaOaPJ1JygS6VS_m6AVRK_UUXdTiMKi3lcAK58n02tk-8FeRtzY7Gd3H5EaFcYfZQo2hlITPsLW2VlAlMphdywgmVwv-XbTvbQeZ6sy8_Wntc59XTIgVjQZ8HlL5B6WAbzJtK_GzhNmX0CuGBw8Yd0hsEu_Gbg4dKGaL1YxAvcU6N9Ho1Gruok_xZrNsYVQa4NLS3OPFJCybHvOIrrJdtDJbuZ99Kra4=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuDI1KqFdJmICSAmcTlsodpfHnA2Xs1bJiZvQSV2XekbOLkvaOaPJ1JygS6VS_m6AVRK_UUXdTiMKi3lcAK58n02tk-8FeRtzY7Gd3H5EaFcYfZQo2hlITPsLW2VlAlMphdywgmVwv-XbTvbQeZ6sy8_Wntc59XTIgVjQZ8HlL5B6WAbzJtK_GzhNmX0CuGBw8Yd0hsEu_Gbg4dKGaL1YxAvcU6N9Ho1Gruok_xZrNsYVQa4NLS3OPFJCybHvOIrrJdtDJbuZ99Kra4=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuDI1KqFdJmICSAmcTlsodpfHnA2Xs1bJiZvQSV2XekbOLkvaOaPJ1JygS6VS_m6AVRK_UUXdTiMKi3lcAK58n02tk-8FeRtzY7Gd3H5EaFcYfZQo2hlITPsLW2VlAlMphdywgmVwv-XbTvbQeZ6sy8_Wntc59XTIgVjQZ8HlL5B6WAbzJtK_GzhNmX0CuGBw8Yd0hsEu_Gbg4dKGaL1YxAvcU6N9Ho1Gruok_xZrNsYVQa4NLS3OPFJCybHvOIrrJdtDJbuZ99Kra4=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI1KqFdJmICSAmcTlsodpfHnA2Xs1bJiZvQSV2XekbOLkvaOaPJ1JygS6VS_m6AVRK_UUXdTiMKi3lcAK58n02tk-8FeRtzY7Gd3H5EaFcYfZQo2hlITPsLW2VlAlMphdywgmVwv-XbTvbQeZ6sy8_Wntc59XTIgVjQZ8HlL5B6WAbzJtK_GzhNmX0CuGBw8Yd0hsEu_Gbg4dKGaL1YxAvcU6N9Ho1Gruok_xZrNsYVQa4NLS3OPFJCybHvOIrrJdtDJbuZ99Kra4"
                 style="transition: transform 1s;" />
             <div class="position-relative z-1 w-100 h-100 p-5 d-flex flex-column justify-content-between">
                 <div>
-                    <span class="text-display fs-3 fw-bolder tracking-tighter text-surface-container-lowest">
+                    <a href="home.html" class="text-display fs-3 fw-bolder tracking-tighter text-surface-container-lowest text-decoration-none">
                         The Kinetic Atelier
-                    </span>
+                    </a>
                 </div>
                 <div class="max-w-md" style="max-width: 28rem;">
                     <div class="glass-pill rounded-4 p-4 border border-light border-opacity-10">
@@ -242,9 +43,9 @@
                     </div>
                 </div>
                 <div class="d-flex gap-3">
-                    <div class="bg-primary rounded-pill" style="height: 4px; width: 48px;"></div>
-                    <div class="bg-white bg-opacity-25 rounded-pill" style="height: 4px; width: 32px;"></div>
-                    <div class="bg-white bg-opacity-25 rounded-pill" style="height: 4px; width: 32px;"></div>
+                    <div class="bg-primary rounded-pill" style="height: 0.25rem; width: 3rem;"></div>
+                    <div class="bg-white bg-opacity-25 rounded-pill" style="height: 0.25rem; width: 2rem;"></div>
+                    <div class="bg-white bg-opacity-25 rounded-pill" style="height: 0.25rem; width: 2rem;"></div>
                 </div>
             </div>
             <!-- Tonal Layering Overlay -->
@@ -255,9 +56,11 @@
             <div class="w-100" style="max-width: 28rem;">
                 <!-- Brand Header (Mobile Only) -->
                 <div class="d-md-none mb-5 text-center">
-                    <h2 class="text-display fs-3 fw-bolder tracking-tighter text-on-background">
-                        The Kinetic Atelier
-                    </h2>
+                    <a href="home.html" class="text-decoration-none">
+                        <h2 class="text-display fs-3 fw-bolder tracking-tighter text-on-background">
+                            The Kinetic Atelier
+                        </h2>
+                    </a>
                 </div>
                 <div class="mb-4 pb-2">
                     <h2 class="text-display fs-3 fw-bold text-on-background mb-2">Welcome Back</h2>
@@ -269,8 +72,8 @@
                         <button
                             class="btn btn-social bg-surface-container-lowest hover-bg-surface-container-low w-100 d-flex align-items-center justify-content-center gap-2 py-2">
                             <img alt="Google" class="w-auto"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZsuQlXXdV-iRqeeGKoRNl1MSzxV37djEAyGQHmxDMxPrLjdofI9TlIxRGj4BDrUDOr6L_gDvIwP8Ie-YbUpxeM0_axtEyqYXvQbWsPQUncdyy9sb-D4PtSjjzAqueMVtebyFfLDsId58MIJYgXn7f_bhTGJNo4LRf-HBD36kuNT75e76lmepypBecEdo8NdaZ0UjZDsz2NYRaRuhshp_FQwGj5IIVrguOgwMX9V3DWrHcF-8BhByJ-AM-KJJlTjVk49n5usYXpKU"
-                                style="height: 20px;" />
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuCZsuQlXXdV-iRqeeGKoRNl1MSzxV37djEAyGQHmxDMxPrLjdofI9TlIxRGj4BDrUDOr6L_gDvIwP8Ie-YbUpxeM0_axtEyqYXvQbWsPQUncdyy9sb-D4PtSjjzAqueMVtebyFfLDsId58MIJYgXn7f_bhTGJNo4LRf-HBD36kuNT75e76lmepypBecEdo8NdaZ0UjZDsz2NYRaRuhshp_FQwGj5IIVrguOgwMX9V3DWrHcF-8BhByJ-AM-KJJlTjVk49n5usYXpKU=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuCZsuQlXXdV-iRqeeGKoRNl1MSzxV37djEAyGQHmxDMxPrLjdofI9TlIxRGj4BDrUDOr6L_gDvIwP8Ie-YbUpxeM0_axtEyqYXvQbWsPQUncdyy9sb-D4PtSjjzAqueMVtebyFfLDsId58MIJYgXn7f_bhTGJNo4LRf-HBD36kuNT75e76lmepypBecEdo8NdaZ0UjZDsz2NYRaRuhshp_FQwGj5IIVrguOgwMX9V3DWrHcF-8BhByJ-AM-KJJlTjVk49n5usYXpKU=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuCZsuQlXXdV-iRqeeGKoRNl1MSzxV37djEAyGQHmxDMxPrLjdofI9TlIxRGj4BDrUDOr6L_gDvIwP8Ie-YbUpxeM0_axtEyqYXvQbWsPQUncdyy9sb-D4PtSjjzAqueMVtebyFfLDsId58MIJYgXn7f_bhTGJNo4LRf-HBD36kuNT75e76lmepypBecEdo8NdaZ0UjZDsz2NYRaRuhshp_FQwGj5IIVrguOgwMX9V3DWrHcF-8BhByJ-AM-KJJlTjVk49n5usYXpKU=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZsuQlXXdV-iRqeeGKoRNl1MSzxV37djEAyGQHmxDMxPrLjdofI9TlIxRGj4BDrUDOr6L_gDvIwP8Ie-YbUpxeM0_axtEyqYXvQbWsPQUncdyy9sb-D4PtSjjzAqueMVtebyFfLDsId58MIJYgXn7f_bhTGJNo4LRf-HBD36kuNT75e76lmepypBecEdo8NdaZ0UjZDsz2NYRaRuhshp_FQwGj5IIVrguOgwMX9V3DWrHcF-8BhByJ-AM-KJJlTjVk49n5usYXpKU"
+                                style="height: 1.25rem;" />
                             <span class="text-label small fw-bold text-on-surface">Google</span>
                         </button>
                     </div>
@@ -283,17 +86,17 @@
                     </div>
                 </div>
                 <div class="position-relative d-flex align-items-center justify-content-center mb-4">
-                    <div class="w-100 bg-surface-container-high" style="height: 1px;"></div>
+                    <div class="w-100 bg-surface-container-high" style="height: 0.0625rem;"></div>
                     <span
                         class="position-absolute bg-surface px-3 text-label text-uppercase text-on-surface-variant tracking-widest"
                         style="font-size: 0.75rem;">Or continue with</span>
                 </div>
                 <!-- Auth Form -->
-                <form>
+                <form id="login-form" action="home.html">
                     <div class="mb-4">
                         <label
                             class="form-label text-label fw-bolder text-uppercase tracking-widest text-on-surface-variant px-1 mb-1"
-                            for="email" style="font-size: 10px;">Email Address</label>
+                            for="email" style="font-size: 0.625rem;">Email Address</label>
                         <input class="form-control form-control-custom py-3 px-3" id="email"
                             placeholder="curator@atelier.com" type="email" />
                     </div>
@@ -301,9 +104,9 @@
                         <div class="d-flex justify-content-between align-items-center px-1 mb-1">
                             <label
                                 class="form-label mb-0 text-label fw-bolder text-uppercase tracking-widest text-on-surface-variant"
-                                for="password" style="font-size: 10px;">Password</label>
+                                for="password" style="font-size: 0.625rem;">Password</label>
                             <a class="text-label fw-bolder text-uppercase tracking-widest text-primary text-decoration-none"
-                                href="#" style="font-size: 10px;">Forgot?</a>
+                                href="#" style="font-size: 0.625rem;">Forgot?</a>
                         </div>
                         <div class="position-relative">
                             <input class="form-control form-control-custom py-3 px-3" id="password"
@@ -322,28 +125,26 @@
                         <label class="form-check-label small fw-medium text-on-surface-variant" for="remember">Remember
                             my preference</label>
                     </div>
-                    <button
-                        class="btn btn-submit gradient-primary text-on-primary w-100 py-3 text-label fw-bold tracking-widest text-uppercase small"
-                        type="submit">
+                    <a href="home.html" class="btn btn-submit gradient-primary text-on-primary w-100 py-3 text-label fw-bold tracking-widest text-uppercase small text-decoration-none d-block text-center">
                         Sign In
-                    </button>
+                    </a>
                 </form>
                 <div class="mt-5 text-center">
                     <p class="text-on-surface-variant fw-medium">
                         Don't have an account?
                         <a class="text-primary fw-bold text-decoration-none" href="#"
-                            style="text-decoration: underline !important; text-underline-offset: 4px; text-decoration-thickness: 2px !important;">Create
+                            style="text-decoration: underline !important; text-underline-offset: 0.25rem; text-decoration-thickness: 0.125rem !important;">Create
                             yours now</a>
                     </p>
                 </div>
                 <!-- Minimalist Footer for Form -->
                 <div class="mt-5 pt-4 d-flex align-items-center justify-content-center gap-4 opacity-50">
                     <a class="text-label fw-bold tracking-widest text-uppercase text-decoration-none text-body" href="#"
-                        style="font-size: 10px;">Privacy</a>
+                        style="font-size: 0.625rem;">Privacy</a>
                     <a class="text-label fw-bold tracking-widest text-uppercase text-decoration-none text-body" href="#"
-                        style="font-size: 10px;">Terms</a>
+                        style="font-size: 0.625rem;">Terms</a>
                     <a class="text-label fw-bold tracking-widest text-uppercase text-decoration-none text-body" href="#"
-                        style="font-size: 10px;">Support</a>
+                        style="font-size: 0.625rem;">Support</a>
                 </div>
             </div>
         </section>

@@ -1,0 +1,11 @@
+// =============================================================================
+// main.scss — Entry Point
+// Imports all partials in dependency order.
+// Compiled to: assets/styles/main.css
+// =============================================================================
+
+@use 'variables';
+@use 'mixins';
+@use 'base';
+@use 'utilities';
+@use 'components';

@@ -6,180 +6,10 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>The Editorial Gourmand - Log Meal</title>
+    <link rel="preconnect" href="https://lh3.googleusercontent.com" crossorigin="">
     <!-- Bootstrap 5.3 CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Instrument+Sans:ital,wght@0,400..700;1,400..700&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <style>
-        :root {
-            --primary: #d41142;
-            --background-light: #f8f6f6;
-            --background-dark: #221015;
-            --surface: #F0EBE1;
-            --text-main: #1A1A1A;
-            --muted: #8C8C8C;
-            --border-color: #E5DFD3;
-            --header-footer-bg: #F9F6F0;
-        }
-
-        body {
-            font-family: 'Newsreader', serif;
-            background-color: #1A1A1A;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        .bg-backdrop {
-            background-color: rgba(0, 0, 0, 0.6);
-            backdrop-filter: blur(4px);
-        }
-
-        .font-ui {
-            font-family: 'Instrument Sans', sans-serif;
-        }
-
-        .font-display {
-            font-family: 'Newsreader', serif;
-        }
-
-        .text-primary-custom {
-            color: var(--primary);
-        }
-
-        .text-main {
-            color: var(--text-main);
-        }
-
-        .text-muted-custom {
-            color: var(--muted);
-        }
-
-        .bg-surface {
-            background-color: var(--surface);
-        }
-
-        .bg-header-footer {
-            background-color: var(--header-footer-bg);
-        }
-
-        .bg-primary-custom {
-            background-color: var(--primary);
-            color: white;
-        }
-
-        .bg-primary-custom:hover {
-            background-color: rgba(212, 17, 66, 0.9);
-            color: white;
-        }
-
-        .border-custom {
-            border-color: var(--border-color) !important;
-        }
-
-        .modal-container {
-            max-width: 800px;
-            max-height: 921px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-        }
-
-        /* Custom Input Styles */
-        .input-dish {
-            background: transparent;
-            border: none;
-            border-bottom: 2px solid var(--border-color);
-            border-radius: 0;
-            padding: 0.75rem 0;
-            font-size: calc(1.3rem + .6vw);
-            /* ~3xl */
-            transition: border-color 0.15s ease-in-out;
-        }
-
-        @media (min-width: 1200px) {
-            .input-dish {
-                font-size: 1.875rem;
-            }
-        }
-
-        .input-dish:focus {
-            outline: none;
-            border-bottom-color: var(--primary);
-            box-shadow: none;
-        }
-
-        .input-dish::placeholder {
-            color: rgba(140, 140, 140, 0.5);
-        }
-
-        .dropzone {
-            height: 16rem;
-            border: 2px dashed rgba(140, 140, 140, 0.3);
-            background-color: var(--header-footer-bg);
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .dropzone:hover {
-            background-color: white;
-            border-color: rgba(212, 17, 66, 0.5);
-        }
-
-        .dropzone:hover .material-symbols-outlined {
-            color: var(--primary);
-        }
-
-        .input-custom {
-            background-color: var(--header-footer-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 0.125rem;
-            color: var(--text-main);
-        }
-
-        .input-custom:focus {
-            outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 0 1px var(--primary);
-        }
-
-        .btn-cancel {
-            color: var(--muted);
-            transition: color 0.2s ease;
-        }
-
-        .btn-cancel:hover {
-            color: var(--text-main);
-        }
-
-        .star-btn {
-            background: none;
-            border: none;
-            padding: 0;
-            color: var(--muted);
-            transition: color 0.2s ease;
-        }
-
-        .star-btn:hover {
-            color: var(--primary);
-        }
-
-        textarea::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        textarea::-webkit-scrollbar-track {
-            background: transparent;
-        }
-
-        textarea::-webkit-scrollbar-thumb {
-            background-color: var(--border-color);
-            border-radius: 4px;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 
 <body class="min-vh-100 d-flex align-items-center justify-content-center p-3 p-sm-4 bg-backdrop">
@@ -189,8 +19,8 @@
         <header
             class="d-flex align-items-center justify-content-between px-4 py-4 border-bottom border-custom bg-header-footer">
             <h1 class="text-main fs-3 fw-bold m-0" style="letter-spacing: -0.025em;">Log a Meal</h1>
-            <button aria-label="Close modal" class="btn btn-link p-0 text-muted-custom text-decoration-none">
-                <span class="material-symbols-outlined" style="font-size: 28px;">close</span>
+            <button aria-label="Close modal" onclick="history.back()" class="btn btn-link p-0 text-muted-custom text-decoration-none">
+                <span class="material-symbols-outlined" style="font-size: 1.75rem;">close</span>
             </button>
         </header>
         <!-- Scrollable Content Area -->
@@ -218,37 +48,46 @@
             <div>
                 <label class="d-block font-ui fs-6 fw-semibold text-uppercase text-main mb-3"
                     style="letter-spacing: 0.05em;">Your Rating</label>
-                <div class="d-flex align-items-center gap-2">
-                    <button class="star-btn">
-                        <span class="material-symbols-outlined"
-                            style="font-variation-settings: 'FILL' 1; font-size: 32px;">star</span>
-                    </button>
-                    <button class="star-btn">
-                        <span class="material-symbols-outlined"
-                            style="font-variation-settings: 'FILL' 1; font-size: 32px;">star</span>
-                    </button>
-                    <button class="star-btn">
-                        <span class="material-symbols-outlined"
-                            style="font-variation-settings: 'FILL' 1; font-size: 32px;">star</span>
-                    </button>
-                    <button class="star-btn">
-                        <span class="material-symbols-outlined" style="font-size: 32px;">star</span>
-                    </button>
-                    <button class="star-btn">
-                        <span class="material-symbols-outlined" style="font-size: 32px;">star</span>
-                    </button>
-                    <span class="ms-3 font-ui text-muted-custom" style="font-size: 0.875rem;">3 / 5</span>
+                <input type="hidden" id="rating-value" name="rating" value="0" />
+                <div class="d-flex align-items-center gap-1" id="star-rating-widget" role="group" aria-label="Star rating">
+                    <!-- 5 stars, each split into left-half and right-half hitboxes -->
+                    <div class="star-unit position-relative" data-index="1">
+                        <span class="material-symbols-outlined star-icon" data-index="1" style="font-size: 2.5rem; font-variation-settings: 'FILL' 0; color: var(--outline); transition: color 0.15s, font-variation-settings 0.15s;">star</span>
+                        <button class="star-half-btn left-half" data-value="0.5" aria-label="0.5 stars" title="0.5"></button>
+                        <button class="star-half-btn right-half" data-value="1" aria-label="1 star" title="1"></button>
+                    </div>
+                    <div class="star-unit position-relative" data-index="2">
+                        <span class="material-symbols-outlined star-icon" data-index="2" style="font-size: 2.5rem; font-variation-settings: 'FILL' 0; color: var(--outline); transition: color 0.15s, font-variation-settings 0.15s;">star</span>
+                        <button class="star-half-btn left-half" data-value="1.5" aria-label="1.5 stars" title="1.5"></button>
+                        <button class="star-half-btn right-half" data-value="2" aria-label="2 stars" title="2"></button>
+                    </div>
+                    <div class="star-unit position-relative" data-index="3">
+                        <span class="material-symbols-outlined star-icon" data-index="3" style="font-size: 2.5rem; font-variation-settings: 'FILL' 0; color: var(--outline); transition: color 0.15s, font-variation-settings 0.15s;">star</span>
+                        <button class="star-half-btn left-half" data-value="2.5" aria-label="2.5 stars" title="2.5"></button>
+                        <button class="star-half-btn right-half" data-value="3" aria-label="3 stars" title="3"></button>
+                    </div>
+                    <div class="star-unit position-relative" data-index="4">
+                        <span class="material-symbols-outlined star-icon" data-index="4" style="font-size: 2.5rem; font-variation-settings: 'FILL' 0; color: var(--outline); transition: color 0.15s, font-variation-settings 0.15s;">star</span>
+                        <button class="star-half-btn left-half" data-value="3.5" aria-label="3.5 stars" title="3.5"></button>
+                        <button class="star-half-btn right-half" data-value="4" aria-label="4 stars" title="4"></button>
+                    </div>
+                    <div class="star-unit position-relative" data-index="5">
+                        <span class="material-symbols-outlined star-icon" data-index="5" style="font-size: 2.5rem; font-variation-settings: 'FILL' 0; color: var(--outline); transition: color 0.15s, font-variation-settings 0.15s;">star</span>
+                        <button class="star-half-btn left-half" data-value="4.5" aria-label="4.5 stars" title="4.5"></button>
+                        <button class="star-half-btn right-half" data-value="5" aria-label="5 stars" title="5"></button>
+                    </div>
+                    <span id="rating-label" class="ms-3 font-ui fw-bold" style="font-size: 1rem; color: var(--primary); min-width: 4rem;">— / 5</span>
                 </div>
             </div>
             <!-- Date Selector -->
-            <div style="max-width: 320px;">
+            <div style="max-width: 20rem;">
                 <label class="d-block font-ui fs-6 fw-semibold text-uppercase text-main mb-2"
                     style="letter-spacing: 0.05em;">Date</label>
                 <div class="position-relative">
                     <input class="w-100 input-custom py-2 ps-3 pe-5 fs-5 font-display text-main" type="text"
                         value="Today" />
                     <span class="material-symbols-outlined position-absolute text-muted-custom"
-                        style="right: 12px; top: 50%; transform: translateY(-50%);">calendar_today</span>
+                        style="right: 0.75rem; top: 50%; transform: translateY(-50%);">calendar_today</span>
                 </div>
             </div>
             <!-- Editorial Review Textarea -->
@@ -263,14 +102,61 @@
         <!-- Footer / Actions -->
         <footer
             class="d-flex align-items-center justify-content-end gap-3 px-4 py-3 border-top border-custom bg-header-footer">
-            <button class="btn btn-link btn-cancel font-ui fw-bold text-uppercase text-decoration-none px-3 py-2"
+            <button onclick="history.back()" class="btn btn-link btn-cancel font-ui fw-bold text-uppercase text-decoration-none px-3 py-2"
                 style="font-size: 0.875rem; letter-spacing: 0.1em;">Cancel</button>
-            <button class="btn bg-primary-custom border-0 font-ui fw-bold text-uppercase px-4 py-2 rounded shadow-sm"
-                style="font-size: 0.875rem; letter-spacing: 0.1em;">Publish</button>
+            <a href="home.html" class="btn bg-primary-custom border-0 font-ui fw-bold text-uppercase px-4 py-2 rounded shadow-sm text-decoration-none"
+                style="font-size: 0.875rem; letter-spacing: 0.1em;">Publish</a>
         </footer>
     </div>
     <!-- Bootstrap 5.3 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    (function () {
+        const widget = document.getElementById('star-rating-widget');
+        const hiddenInput = document.getElementById('rating-value');
+        const label = document.getElementById('rating-label');
+        const icons = widget.querySelectorAll('.star-icon');
+        let selectedValue = 0;
+
+        function renderStars(value) {
+            icons.forEach((icon, i) => {
+                const starPos = i + 1; // 1-based
+                if (value >= starPos) {
+                    // full star
+                    icon.textContent = 'star';
+                    icon.style.fontVariationSettings = "'FILL' 1";
+                    icon.style.color = 'var(--primary)';
+                } else if (value >= starPos - 0.5) {
+                    // half star
+                    icon.textContent = 'star_half';
+                    icon.style.fontVariationSettings = "'FILL' 1";
+                    icon.style.color = 'var(--primary)';
+                } else {
+                    // empty star
+                    icon.textContent = 'star';
+                    icon.style.fontVariationSettings = "'FILL' 0";
+                    icon.style.color = 'var(--outline)';
+                }
+            });
+        }
+
+        widget.querySelectorAll('.star-half-btn').forEach(btn => {
+            btn.addEventListener('mouseenter', () => {
+                renderStars(parseFloat(btn.dataset.value));
+            });
+            btn.addEventListener('click', () => {
+                selectedValue = parseFloat(btn.dataset.value);
+                hiddenInput.value = selectedValue;
+                label.textContent = selectedValue + ' / 5';
+                renderStars(selectedValue);
+            });
+        });
+
+        widget.addEventListener('mouseleave', () => {
+            renderStars(selectedValue);
+        });
+    })();
+    </script>
 </body>
 
 </html>
