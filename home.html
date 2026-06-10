@@ -34,8 +34,8 @@
                     <input class="search-input" placeholder="Search the kitchen..." type="text" />
                 </div>
                 <button onclick="window.location='log-meal.html'" class="btn btn-gradient-primary rounded-pill font-label fw-bold text-uppercase px-4 py-2 d-flex align-items-center gap-1"
-                    style="font-size: 0.75rem; letter-spacing: 0.05em;">
-                    <span class="material-symbols-outlined" style="font-size: 1rem; font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size: 1rem; font-variation-settings: 'FILL' 1;">star_half</span>
+                    style="font-size: clamp(0.6rem, 1.875vw, 0.9rem); letter-spacing: 0.05em;">
+                    <span class="material-symbols-outlined" style="font-size: clamp(0.8rem, 2.5vw, 1.2rem); font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size: clamp(0.8rem, 2.5vw, 1.2rem); font-variation-settings: 'FILL' 1;">star_half</span>
                     Log Meal
                 </button>
                 <div class="d-flex align-items-center gap-3">
@@ -55,9 +55,9 @@
     </nav>
     <main class="container-xxl px-4 py-5 mt-5 mb-5 pb-5">
         <!-- Header & Category Carousel -->
-        <header class="mb-5 pt-4">
-            <h1 class="font-headline display-4 fw-bold mb-4" style="letter-spacing: -0.02em;">The Digest</h1>
-            <div class="d-flex gap-3 overflow-auto hide-scrollbar pb-2">
+        <header class="mb-5 pt-4 text-center">
+            <h1 class="font-headline fw-bold mb-4" style="font-size: clamp(2.5rem, 5vw, 4rem); letter-spacing: -0.02em;">The Digest</h1>
+            <div class="d-flex gap-3 overflow-auto hide-scrollbar pb-2 justify-content-center" id="category-carousel">
                 <!-- Brunch -->
                 <button class="category-btn flex-shrink-0">
                     <div class="category-img-container active">
@@ -66,7 +66,7 @@
                             srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuCa2yRVXB_aV_Z7rCh0pkMrocXnA2c_4FG6IN9efgNhXhS_eB0ku1AoPX3YsXs_SkDP8UpzqeAKC1UiU6RCewvIz_FRWY8Ve8P28DefSHdta4QLO8nMcUsleQhvit4ueRB3XeOn1x1pg7jFQGxpZLOYEw2js_v8bzEUweVtizvE85b6wJ2osmla2bbLPVz2UekjFo_TulFkUKcIjg5dFNrMnKl9-lQISXwkBVPsjQpPs7p3b1_QNCBpWxL9vXRwtf7sYHk19GL31C8=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuCa2yRVXB_aV_Z7rCh0pkMrocXnA2c_4FG6IN9efgNhXhS_eB0ku1AoPX3YsXs_SkDP8UpzqeAKC1UiU6RCewvIz_FRWY8Ve8P28DefSHdta4QLO8nMcUsleQhvit4ueRB3XeOn1x1pg7jFQGxpZLOYEw2js_v8bzEUweVtizvE85b6wJ2osmla2bbLPVz2UekjFo_TulFkUKcIjg5dFNrMnKl9-lQISXwkBVPsjQpPs7p3b1_QNCBpWxL9vXRwtf7sYHk19GL31C8=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuCa2yRVXB_aV_Z7rCh0pkMrocXnA2c_4FG6IN9efgNhXhS_eB0ku1AoPX3YsXs_SkDP8UpzqeAKC1UiU6RCewvIz_FRWY8Ve8P28DefSHdta4QLO8nMcUsleQhvit4ueRB3XeOn1x1pg7jFQGxpZLOYEw2js_v8bzEUweVtizvE85b6wJ2osmla2bbLPVz2UekjFo_TulFkUKcIjg5dFNrMnKl9-lQISXwkBVPsjQpPs7p3b1_QNCBpWxL9vXRwtf7sYHk19GL31C8=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa2yRVXB_aV_Z7rCh0pkMrocXnA2c_4FG6IN9efgNhXhS_eB0ku1AoPX3YsXs_SkDP8UpzqeAKC1UiU6RCewvIz_FRWY8Ve8P28DefSHdta4QLO8nMcUsleQhvit4ueRB3XeOn1x1pg7jFQGxpZLOYEw2js_v8bzEUweVtizvE85b6wJ2osmla2bbLPVz2UekjFo_TulFkUKcIjg5dFNrMnKl9-lQISXwkBVPsjQpPs7p3b1_QNCBpWxL9vXRwtf7sYHk19GL31C8" />
                     </div>
                     <span class="font-label fw-bold text-uppercase text-on-surface-variant"
-                        style="font-size: 0.625rem; letter-spacing: 0.1em;">Brunch</span>
+                        style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.1em;">Brunch</span>
                 </button>
                 <!-- Fine Dining -->
                 <button class="category-btn flex-shrink-0">
@@ -76,7 +76,7 @@
                             srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuAuL_xQFhQFFfG2FThKwWI3p_wY00d6wCwmy00UBoSxALNMD51Aj8LVa8VJ6XLjIwRDBJpsDv00ynRP0mZRW13EOvGN1c3dGcdFNwJ9v7ua3QMSNoQmFkk26sEsug3WMQM7KkOxGyeAucO6urqzqv0BStF0ia59L8QZWy4cDBzBWx2xRIdx2c7dCNwpe3hNLwh-HnJYw3cwIxFlKK-K-bZs9J1dcIvl4U6mCOG9XnYZWqFA4lU4OHSQJe1RZqqevs5f8gevqvCvKGg=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuAuL_xQFhQFFfG2FThKwWI3p_wY00d6wCwmy00UBoSxALNMD51Aj8LVa8VJ6XLjIwRDBJpsDv00ynRP0mZRW13EOvGN1c3dGcdFNwJ9v7ua3QMSNoQmFkk26sEsug3WMQM7KkOxGyeAucO6urqzqv0BStF0ia59L8QZWy4cDBzBWx2xRIdx2c7dCNwpe3hNLwh-HnJYw3cwIxFlKK-K-bZs9J1dcIvl4U6mCOG9XnYZWqFA4lU4OHSQJe1RZqqevs5f8gevqvCvKGg=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuAuL_xQFhQFFfG2FThKwWI3p_wY00d6wCwmy00UBoSxALNMD51Aj8LVa8VJ6XLjIwRDBJpsDv00ynRP0mZRW13EOvGN1c3dGcdFNwJ9v7ua3QMSNoQmFkk26sEsug3WMQM7KkOxGyeAucO6urqzqv0BStF0ia59L8QZWy4cDBzBWx2xRIdx2c7dCNwpe3hNLwh-HnJYw3cwIxFlKK-K-bZs9J1dcIvl4U6mCOG9XnYZWqFA4lU4OHSQJe1RZqqevs5f8gevqvCvKGg=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuL_xQFhQFFfG2FThKwWI3p_wY00d6wCwmy00UBoSxALNMD51Aj8LVa8VJ6XLjIwRDBJpsDv00ynRP0mZRW13EOvGN1c3dGcdFNwJ9v7ua3QMSNoQmFkk26sEsug3WMQM7KkOxGyeAucO6urqzqv0BStF0ia59L8QZWy4cDBzBWx2xRIdx2c7dCNwpe3hNLwh-HnJYw3cwIxFlKK-K-bZs9J1dcIvl4U6mCOG9XnYZWqFA4lU4OHSQJe1RZqqevs5f8gevqvCvKGg" />
                     </div>
                     <span class="font-label fw-bold text-uppercase text-on-surface-variant"
-                        style="font-size: 0.625rem; letter-spacing: 0.1em;">Fine Dining</span>
+                        style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.1em;">Fine Dining</span>
                 </button>
                 <!-- Street Food -->
                 <button class="category-btn flex-shrink-0">
@@ -86,7 +86,7 @@
                             srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuDEhBKDPpurmd4OVe1FiAQPYt_Gl_nhQawpRyJCsbWVxwRtoXb5ZdjqGGgXnOdqdRoUI9ZB8C_LfoRdKSdoELas5DIDLXO3dL_5D6te8CfP89Kw33K_6TtjVxXaZEnem0pW13jRBa9dypPDCflOmk9si4wVXSxlagEhUWgtfKnGRFNmBa1B4tBKJ7ba5OXx8V-pNWxgVN50uxOi5BHtyyVTYclWo2uhsR3OQZe-54irmUZC8BOScCYAKQWiSW6WpNzQnfBOLq7X0So=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuDEhBKDPpurmd4OVe1FiAQPYt_Gl_nhQawpRyJCsbWVxwRtoXb5ZdjqGGgXnOdqdRoUI9ZB8C_LfoRdKSdoELas5DIDLXO3dL_5D6te8CfP89Kw33K_6TtjVxXaZEnem0pW13jRBa9dypPDCflOmk9si4wVXSxlagEhUWgtfKnGRFNmBa1B4tBKJ7ba5OXx8V-pNWxgVN50uxOi5BHtyyVTYclWo2uhsR3OQZe-54irmUZC8BOScCYAKQWiSW6WpNzQnfBOLq7X0So=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuDEhBKDPpurmd4OVe1FiAQPYt_Gl_nhQawpRyJCsbWVxwRtoXb5ZdjqGGgXnOdqdRoUI9ZB8C_LfoRdKSdoELas5DIDLXO3dL_5D6te8CfP89Kw33K_6TtjVxXaZEnem0pW13jRBa9dypPDCflOmk9si4wVXSxlagEhUWgtfKnGRFNmBa1B4tBKJ7ba5OXx8V-pNWxgVN50uxOi5BHtyyVTYclWo2uhsR3OQZe-54irmUZC8BOScCYAKQWiSW6WpNzQnfBOLq7X0So=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEhBKDPpurmd4OVe1FiAQPYt_Gl_nhQawpRyJCsbWVxwRtoXb5ZdjqGGgXnOdqdRoUI9ZB8C_LfoRdKSdoELas5DIDLXO3dL_5D6te8CfP89Kw33K_6TtjVxXaZEnem0pW13jRBa9dypPDCflOmk9si4wVXSxlagEhUWgtfKnGRFNmBa1B4tBKJ7ba5OXx8V-pNWxgVN50uxOi5BHtyyVTYclWo2uhsR3OQZe-54irmUZC8BOScCYAKQWiSW6WpNzQnfBOLq7X0So" />
                     </div>
                     <span class="font-label fw-bold text-uppercase text-on-surface-variant"
-                        style="font-size: 0.625rem; letter-spacing: 0.1em;">Street Food</span>
+                        style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.1em;">Street Food</span>
                 </button>
                 <!-- Desserts -->
                 <button class="category-btn flex-shrink-0">
@@ -96,7 +96,7 @@
                             srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuCcGG7hgpBM1l-r1w-UBUzOsGn80V8dCDIV-_AZ7WZBpetqQp8BgxaayxWbhl6vNaYbThw5keD29CQafhdjxYW6GCLLhP6SZLEhqX9IZ1J8ffIoQvvo0W_v5V_PHFBt61ylcqGjXfXAISceUr9Xnj8QSvej_5mgcdCtfSi_UQj5VcUV9vbNLMbSKsltzL-RnEGZtLil5APGcjSHaJt9gdUQoE49vjX-f3gJti7BNYAV7TAxtJTtEXpVPJSEest0KyD_HMkOAyB891s=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuCcGG7hgpBM1l-r1w-UBUzOsGn80V8dCDIV-_AZ7WZBpetqQp8BgxaayxWbhl6vNaYbThw5keD29CQafhdjxYW6GCLLhP6SZLEhqX9IZ1J8ffIoQvvo0W_v5V_PHFBt61ylcqGjXfXAISceUr9Xnj8QSvej_5mgcdCtfSi_UQj5VcUV9vbNLMbSKsltzL-RnEGZtLil5APGcjSHaJt9gdUQoE49vjX-f3gJti7BNYAV7TAxtJTtEXpVPJSEest0KyD_HMkOAyB891s=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuCcGG7hgpBM1l-r1w-UBUzOsGn80V8dCDIV-_AZ7WZBpetqQp8BgxaayxWbhl6vNaYbThw5keD29CQafhdjxYW6GCLLhP6SZLEhqX9IZ1J8ffIoQvvo0W_v5V_PHFBt61ylcqGjXfXAISceUr9Xnj8QSvej_5mgcdCtfSi_UQj5VcUV9vbNLMbSKsltzL-RnEGZtLil5APGcjSHaJt9gdUQoE49vjX-f3gJti7BNYAV7TAxtJTtEXpVPJSEest0KyD_HMkOAyB891s=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcGG7hgpBM1l-r1w-UBUzOsGn80V8dCDIV-_AZ7WZBpetqQp8BgxaayxWbhl6vNaYbThw5keD29CQafhdjxYW6GCLLhP6SZLEhqX9IZ1J8ffIoQvvo0W_v5V_PHFBt61ylcqGjXfXAISceUr9Xnj8QSvej_5mgcdCtfSi_UQj5VcUV9vbNLMbSKsltzL-RnEGZtLil5APGcjSHaJt9gdUQoE49vjX-f3gJti7BNYAV7TAxtJTtEXpVPJSEest0KyD_HMkOAyB891s" />
                     </div>
                     <span class="font-label fw-bold text-uppercase text-on-surface-variant"
-                        style="font-size: 0.625rem; letter-spacing: 0.1em;">Desserts</span>
+                        style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.1em;">Desserts</span>
                 </button>
                 <!-- Cocktails -->
                 <button class="category-btn flex-shrink-0">
@@ -106,7 +106,48 @@
                             srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuA514_DGB2eKHRzWPiQxAOsym6AuIwdM0PeRFKznKn-gM01Bx-3Bphqns6uvanohK24e5MD-JfICfSpxmJntvWSBpKVQxi97upi6CaMxU0dNY_Wn5FsSk1edZu35MHAoV_ixzlEL4kKATYy3rYbsSLU2pELuc1edybqiPTId0beFsnsx_ZBWeHs55cZC79kERUU8GzYubV65q_CcwM3moJ5qnVSSUbLj6AjxP7aiIPhRY7PrppfbESl06OSRqnygwdDcpOdpwOfn0c=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuA514_DGB2eKHRzWPiQxAOsym6AuIwdM0PeRFKznKn-gM01Bx-3Bphqns6uvanohK24e5MD-JfICfSpxmJntvWSBpKVQxi97upi6CaMxU0dNY_Wn5FsSk1edZu35MHAoV_ixzlEL4kKATYy3rYbsSLU2pELuc1edybqiPTId0beFsnsx_ZBWeHs55cZC79kERUU8GzYubV65q_CcwM3moJ5qnVSSUbLj6AjxP7aiIPhRY7PrppfbESl06OSRqnygwdDcpOdpwOfn0c=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuA514_DGB2eKHRzWPiQxAOsym6AuIwdM0PeRFKznKn-gM01Bx-3Bphqns6uvanohK24e5MD-JfICfSpxmJntvWSBpKVQxi97upi6CaMxU0dNY_Wn5FsSk1edZu35MHAoV_ixzlEL4kKATYy3rYbsSLU2pELuc1edybqiPTId0beFsnsx_ZBWeHs55cZC79kERUU8GzYubV65q_CcwM3moJ5qnVSSUbLj6AjxP7aiIPhRY7PrppfbESl06OSRqnygwdDcpOdpwOfn0c=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA514_DGB2eKHRzWPiQxAOsym6AuIwdM0PeRFKznKn-gM01Bx-3Bphqns6uvanohK24e5MD-JfICfSpxmJntvWSBpKVQxi97upi6CaMxU0dNY_Wn5FsSk1edZu35MHAoV_ixzlEL4kKATYy3rYbsSLU2pELuc1edybqiPTId0beFsnsx_ZBWeHs55cZC79kERUU8GzYubV65q_CcwM3moJ5qnVSSUbLj6AjxP7aiIPhRY7PrppfbESl06OSRqnygwdDcpOdpwOfn0c" />
                     </div>
                     <span class="font-label fw-bold text-uppercase text-on-surface-variant"
-                        style="font-size: 0.625rem; letter-spacing: 0.1em;">Cocktails</span>
+                        style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.1em;">Cocktails</span>
+                </button>
+                </button>
+                <!-- Vegan -->
+                <button class="category-btn flex-shrink-0">
+                    <div class="category-img-container">
+                        <img class="w-100 h-100 rounded-circle object-fit-cover"
+                            data-alt="colorful vegan salad bowl"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBErjnZLVV-kJ7L4v9eEaa477v2lqU_KKh71uEnqEdxxTE0WH_D7TN7umL8jrXNJhksP8Zmeq-O9PM9ugv5VRSiy4zHpgJ-6WaoVH39CxJimmfDMXjzPrsUuOJ3pMgKDLFRXU-XZ5LSM-SZcjQdDSduAYz9fJYOFJSZXOELOv6xeEmEcGuq-miXmM5ABpoAkAzLA039NEn9IhiOApOZnJnMY0vSAQIBThWK4CS_iOETBs7j6VriSeUJHqnjOd8fLOlCVVzo9ihiph0" />
+                    </div>
+                    <span class="font-label fw-bold text-uppercase text-on-surface-variant"
+                        style="font-size: clamp(0.5rem, 1.5vw, 0.625rem); letter-spacing: 0.1em;">Vegan</span>
+                </button>
+                <!-- Pasta -->
+                <button class="category-btn flex-shrink-0">
+                    <div class="category-img-container">
+                        <img class="w-100 h-100 rounded-circle object-fit-cover"
+                            data-alt="fresh handmade pasta"
+                            src="assets/images/pasta_cover.png" />
+                    </div>
+                    <span class="font-label fw-bold text-uppercase text-on-surface-variant"
+                        style="font-size: clamp(0.5rem, 1.5vw, 0.625rem); letter-spacing: 0.1em;">Pasta</span>
+                </button>
+                <!-- Steakhouse -->
+                <button class="category-btn flex-shrink-0">
+                    <div class="category-img-container">
+                        <img class="w-100 h-100 rounded-circle object-fit-cover"
+                            data-alt="juicy grilled steak"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8Y64owEY6UHmbU2Y0aWhNTiM-29PTvwuAE7eBCc65XpCFhLYlFmXs_WzdYfrhu2Cf4OIj_0pKyxXvSEMVoHZmXJACjBD8KS9A1jM-Pv1pPmU1sFUUVEM-HtZOUacOMhub2qtfeNaTI4p2Xv1WCzTD1ujcNrPiIf04-d3lAsLdcUOAU8svPieasDN5R8BvVCQgzYB235TTiB5CUql9TaKUPBUxbtoe0rsbpUMa8XOFnpO7fFRsxalnk25n6jVILBzoMzEo142MiQY" />
+                    </div>
+                    <span class="font-label fw-bold text-uppercase text-on-surface-variant"
+                        style="font-size: clamp(0.5rem, 1.5vw, 0.625rem); letter-spacing: 0.1em;">Steakhouse</span>
+                </button>
+                <!-- Sushi -->
+                <button class="category-btn flex-shrink-0">
+                    <div class="category-img-container">
+                        <img class="w-100 h-100 rounded-circle object-fit-cover"
+                            data-alt="fresh sushi platter"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuABST8I4MAqlgCHqU7w6XBXI3qZ443BRZWn9ys-UoTGh6X6avCfOpIsaZh9n4NBTxUYvhTkuTDvxAOBTyyOVNPYLwTaRpCGP0WGtPCGd9CmnGhn-upl0Kx6a3xpod5xslBjilymXV0yWTUe5PsFKvlqTH6f0Sw9rDHsioc37PfsrtX9bjnRAzXSQcYEhjjR9us-ZMwGKSS71QAZGqwFaQ5dmfd8E8qdk7xiFRrHPUnKZkrWfTYLSQpYOWuqL3C4bauNBMtdMAbpKxM" />
+                    </div>
+                    <span class="font-label fw-bold text-uppercase text-on-surface-variant"
+                        style="font-size: clamp(0.5rem, 1.5vw, 0.625rem); letter-spacing: 0.1em;">Sushi</span>
                 </button>
             </div>
         </header>
@@ -117,7 +158,7 @@
                 <div class="d-flex align-items-center justify-content-between mb-4">
                     <h2 class="font-headline fs-3 m-0">Trending This Week</h2>
                     <a class="font-label fw-bold text-primary text-uppercase text-decoration-none d-flex align-items-center gap-1"
-                        href="#" style="font-size: 0.75rem; letter-spacing: 0.1em;">
+                        href="#" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem); letter-spacing: 0.1em;">
                         View All <span class="material-symbols-outlined fs-6">arrow_forward</span>
                     </a>
                 </div>
@@ -145,13 +186,13 @@
                                     <span class="material-symbols-outlined fs-6" data-weight="fill">star</span>
                                     <span class="material-symbols-outlined fs-6" data-weight="fill">star</span>
                                     <span class="material-symbols-outlined fs-6">star</span>
-                                    <span class="text-on-surface-variant ms-1 fw-medium" style="font-size: 0.75rem;">4.8
+                                    <span class="text-on-surface-variant ms-1 fw-medium" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">4.8
                                         (210)</span>
                                 </div>
                                 <h3 class="font-headline fs-5 mb-2 card-title text-decoration-none text-dark">Wild
                                     Herb-Infused Pan Seared Salmon</h3>
                                 <p class="text-on-surface-variant font-body mb-4"
-                                    style="font-size: 0.875rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                    style="font-size: clamp(0.7rem, 2.1875vw, 1.05rem); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
                                     A delicate balance of rosemary and thyme crust with a maple glaze, served over
                                     seasonal asparagus.</p>
                                 <div class="mt-auto d-flex align-items-center justify-content-between">
@@ -162,10 +203,10 @@
                                                 data-alt="portrait of a woman food writer in a warm sunlit kitchen"
                                                 srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuBRO1jT-e-ufi9vRfkDE3WhTF-tSM5-aGqPNqSyFo0v2xfoEk3scK5l0Ft44TbpRqNkZ-yPrUeTb9Df24E1j5el7OGbJbR9AIUna3qq8djwJjh94sIqZPJlDWRJ7oM_Ved73Un-Oh8m00QfXnXMXv1pBT-jqIjQ705NXJcA150fxZd8uHz1IrWRJDyPYj_E2Fbkl1rfJU2PiAcOJ3FGz-P9dR_ZJZvHwUaTqWKocmIw7-l84-6hsOp6S8TR5pHws2TpuHMme0QMqng=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuBRO1jT-e-ufi9vRfkDE3WhTF-tSM5-aGqPNqSyFo0v2xfoEk3scK5l0Ft44TbpRqNkZ-yPrUeTb9Df24E1j5el7OGbJbR9AIUna3qq8djwJjh94sIqZPJlDWRJ7oM_Ved73Un-Oh8m00QfXnXMXv1pBT-jqIjQ705NXJcA150fxZd8uHz1IrWRJDyPYj_E2Fbkl1rfJU2PiAcOJ3FGz-P9dR_ZJZvHwUaTqWKocmIw7-l84-6hsOp6S8TR5pHws2TpuHMme0QMqng=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuBRO1jT-e-ufi9vRfkDE3WhTF-tSM5-aGqPNqSyFo0v2xfoEk3scK5l0Ft44TbpRqNkZ-yPrUeTb9Df24E1j5el7OGbJbR9AIUna3qq8djwJjh94sIqZPJlDWRJ7oM_Ved73Un-Oh8m00QfXnXMXv1pBT-jqIjQ705NXJcA150fxZd8uHz1IrWRJDyPYj_E2Fbkl1rfJU2PiAcOJ3FGz-P9dR_ZJZvHwUaTqWKocmIw7-l84-6hsOp6S8TR5pHws2TpuHMme0QMqng=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRO1jT-e-ufi9vRfkDE3WhTF-tSM5-aGqPNqSyFo0v2xfoEk3scK5l0Ft44TbpRqNkZ-yPrUeTb9Df24E1j5el7OGbJbR9AIUna3qq8djwJjh94sIqZPJlDWRJ7oM_Ved73Un-Oh8m00QfXnXMXv1pBT-jqIjQ705NXJcA150fxZd8uHz1IrWRJDyPYj_E2Fbkl1rfJU2PiAcOJ3FGz-P9dR_ZJZvHwUaTqWKocmIw7-l84-6hsOp6S8TR5pHws2TpuHMme0QMqng" />
                                         </div>
-                                        <span class="font-label fw-semibold" style="font-size: 0.75rem;">Elena Russo</span>
+                                        <span class="font-label fw-semibold" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">Elena Russo</span>
                                     </div>
                                     <span class="font-label fw-bold text-on-surface-variant text-uppercase"
-                                        style="font-size: 0.75rem; letter-spacing: 0.1em;">35 Min</span>
+                                        style="font-size: clamp(0.6rem, 1.875vw, 0.9rem); letter-spacing: 0.1em;">35 Min</span>
                                 </div>
                             </div>
                         </div>
@@ -194,13 +235,13 @@
                                     <span class="material-symbols-outlined fs-6" data-weight="fill">star</span>
                                     <span class="material-symbols-outlined fs-6" data-weight="fill">star</span>
                                     <span class="material-symbols-outlined fs-6" data-weight="fill">star</span>
-                                    <span class="text-on-surface-variant ms-1 fw-medium" style="font-size: 0.75rem;">5.0
+                                    <span class="text-on-surface-variant ms-1 fw-medium" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">5.0
                                         (84)</span>
                                 </div>
                                 <h3 class="font-headline fs-5 mb-2 card-title text-decoration-none text-dark">Heirloom
                                     Berry Soufflé Pancakes</h3>
                                 <p class="text-on-surface-variant font-body mb-4"
-                                    style="font-size: 0.875rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                    style="font-size: clamp(0.7rem, 2.1875vw, 1.05rem); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
                                     Cloud-like textures paired with a vibrant compote of seasonal berries and wild
                                     honey.</p>
                                 <div class="mt-auto d-flex align-items-center justify-content-between">
@@ -211,11 +252,11 @@
                                                 data-alt="portrait of a male chef in professional attire"
                                                 srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuCMsMvQgX_Lj0CBdUM3AxN0QCFpi759ygeL15G4-DBsEDZ4hco-Gab30b7cCBrnVCVPKfKfoorwum5K-db4dg1SMVJkgvYqdfsf9jIvzqJ8iBgJ5jU8FUXbCUFyf0oTF83GHoAe-zVIfpIJq4P9gOksW8nxTxifvMRNCe9cRQEIe9ypFM8oqGVyTEMQMjiQUiCoIfZmBuWsnQE7v9TtV_mx9xE1qT4uvNPjgZnuh6FP3RWLn7MZSc7xTjDNvY0BzqM5LszpDpbxZ8M=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuCMsMvQgX_Lj0CBdUM3AxN0QCFpi759ygeL15G4-DBsEDZ4hco-Gab30b7cCBrnVCVPKfKfoorwum5K-db4dg1SMVJkgvYqdfsf9jIvzqJ8iBgJ5jU8FUXbCUFyf0oTF83GHoAe-zVIfpIJq4P9gOksW8nxTxifvMRNCe9cRQEIe9ypFM8oqGVyTEMQMjiQUiCoIfZmBuWsnQE7v9TtV_mx9xE1qT4uvNPjgZnuh6FP3RWLn7MZSc7xTjDNvY0BzqM5LszpDpbxZ8M=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuCMsMvQgX_Lj0CBdUM3AxN0QCFpi759ygeL15G4-DBsEDZ4hco-Gab30b7cCBrnVCVPKfKfoorwum5K-db4dg1SMVJkgvYqdfsf9jIvzqJ8iBgJ5jU8FUXbCUFyf0oTF83GHoAe-zVIfpIJq4P9gOksW8nxTxifvMRNCe9cRQEIe9ypFM8oqGVyTEMQMjiQUiCoIfZmBuWsnQE7v9TtV_mx9xE1qT4uvNPjgZnuh6FP3RWLn7MZSc7xTjDNvY0BzqM5LszpDpbxZ8M=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMsMvQgX_Lj0CBdUM3AxN0QCFpi759ygeL15G4-DBsEDZ4hco-Gab30b7cCBrnVCVPKfKfoorwum5K-db4dg1SMVJkgvYqdfsf9jIvzqJ8iBgJ5jU8FUXbCUFyf0oTF83GHoAe-zVIfpIJq4P9gOksW8nxTxifvMRNCe9cRQEIe9ypFM8oqGVyTEMQMjiQUiCoIfZmBuWsnQE7v9TtV_mx9xE1qT4uvNPjgZnuh6FP3RWLn7MZSc7xTjDNvY0BzqM5LszpDpbxZ8M" />
                                         </div>
-                                        <span class="font-label fw-semibold" style="font-size: 0.75rem;">Marc
+                                        <span class="font-label fw-semibold" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">Marc
                                             Vallery</span>
                                     </div>
                                     <span class="font-label fw-bold text-on-surface-variant text-uppercase"
-                                        style="font-size: 0.75rem; letter-spacing: 0.1em;">20 Min</span>
+                                        style="font-size: clamp(0.6rem, 1.875vw, 0.9rem); letter-spacing: 0.1em;">20 Min</span>
                                 </div>
                             </div>
                         </div>
@@ -228,16 +269,16 @@
                         <button class="small-card w-100 h-100">
                             <img class="active" data-alt="fresh garden salad with vibrant vegetables and vinaigrette"
                                 srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuBErjnZLVV-kJ7L4v9eEaa477v2lqU_KKh71uEnqEdxxTE0WH_D7TN7umL8jrXNJhksP8Zmeq-O9PM9ugv5VRSiy4zHpgJ-6WaoVH39CxJimmfDMXjzPrsUuOJ3pMgKDLFRXU-XZ5LSM-SZcjQdDSduAYz9fJYOFJSZXOELOv6xeEmEcGuq-miXmM5ABpoAkAzLA039NEn9IhiOApOZnJnMY0vSAQIBThWK4CS_iOETBs7j6VriSeUJHqnjOd8fLOlCVVzo9ihiph0=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuBErjnZLVV-kJ7L4v9eEaa477v2lqU_KKh71uEnqEdxxTE0WH_D7TN7umL8jrXNJhksP8Zmeq-O9PM9ugv5VRSiy4zHpgJ-6WaoVH39CxJimmfDMXjzPrsUuOJ3pMgKDLFRXU-XZ5LSM-SZcjQdDSduAYz9fJYOFJSZXOELOv6xeEmEcGuq-miXmM5ABpoAkAzLA039NEn9IhiOApOZnJnMY0vSAQIBThWK4CS_iOETBs7j6VriSeUJHqnjOd8fLOlCVVzo9ihiph0=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuBErjnZLVV-kJ7L4v9eEaa477v2lqU_KKh71uEnqEdxxTE0WH_D7TN7umL8jrXNJhksP8Zmeq-O9PM9ugv5VRSiy4zHpgJ-6WaoVH39CxJimmfDMXjzPrsUuOJ3pMgKDLFRXU-XZ5LSM-SZcjQdDSduAYz9fJYOFJSZXOELOv6xeEmEcGuq-miXmM5ABpoAkAzLA039NEn9IhiOApOZnJnMY0vSAQIBThWK4CS_iOETBs7j6VriSeUJHqnjOd8fLOlCVVzo9ihiph0=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBErjnZLVV-kJ7L4v9eEaa477v2lqU_KKh71uEnqEdxxTE0WH_D7TN7umL8jrXNJhksP8Zmeq-O9PM9ugv5VRSiy4zHpgJ-6WaoVH39CxJimmfDMXjzPrsUuOJ3pMgKDLFRXU-XZ5LSM-SZcjQdDSduAYz9fJYOFJSZXOELOv6xeEmEcGuq-miXmM5ABpoAkAzLA039NEn9IhiOApOZnJnMY0vSAQIBThWK4CS_iOETBs7j6VriSeUJHqnjOd8fLOlCVVzo9ihiph0" />
-                            <h4 class="font-headline m-0 mb-1" style="font-size: 0.75rem;">Summer Bowls</h4>
-                            <span class="font-label fw-bold text-primary" style="font-size: 0.625rem;">12 Recipes</span>
+                            <h4 class="font-headline m-0 mb-1" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">Summer Bowls</h4>
+                            <span class="font-label fw-bold text-primary" style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">12 Recipes</span>
                         </button>
                     </div>
                     <div class="col-6 col-sm-3">
                         <button class="small-card w-100 h-100">
                             <img data-alt="skewers of grilled meat with peppers and onions over open flame"
                                 srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuB8Y64owEY6UHmbU2Y0aWhNTiM-29PTvwuAE7eBCc65XpCFhLYlFmXs_WzdYfrhu2Cf4OIj_0pKyxXvSEMVoHZmXJACjBD8KS9A1jM-Pv1pPmU1sFUUVEM-HtZOUacOMhub2qtfeNaTI4p2Xv1WCzTD1ujcNrPiIf04-d3lAsLdcUOAU8svPieasDN5R8BvVCQgzYB235TTiB5CUql9TaKUPBUxbtoe0rsbpUMa8XOFnpO7fFRsxalnk25n6jVILBzoMzEo142MiQY=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuB8Y64owEY6UHmbU2Y0aWhNTiM-29PTvwuAE7eBCc65XpCFhLYlFmXs_WzdYfrhu2Cf4OIj_0pKyxXvSEMVoHZmXJACjBD8KS9A1jM-Pv1pPmU1sFUUVEM-HtZOUacOMhub2qtfeNaTI4p2Xv1WCzTD1ujcNrPiIf04-d3lAsLdcUOAU8svPieasDN5R8BvVCQgzYB235TTiB5CUql9TaKUPBUxbtoe0rsbpUMa8XOFnpO7fFRsxalnk25n6jVILBzoMzEo142MiQY=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuB8Y64owEY6UHmbU2Y0aWhNTiM-29PTvwuAE7eBCc65XpCFhLYlFmXs_WzdYfrhu2Cf4OIj_0pKyxXvSEMVoHZmXJACjBD8KS9A1jM-Pv1pPmU1sFUUVEM-HtZOUacOMhub2qtfeNaTI4p2Xv1WCzTD1ujcNrPiIf04-d3lAsLdcUOAU8svPieasDN5R8BvVCQgzYB235TTiB5CUql9TaKUPBUxbtoe0rsbpUMa8XOFnpO7fFRsxalnk25n6jVILBzoMzEo142MiQY=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8Y64owEY6UHmbU2Y0aWhNTiM-29PTvwuAE7eBCc65XpCFhLYlFmXs_WzdYfrhu2Cf4OIj_0pKyxXvSEMVoHZmXJACjBD8KS9A1jM-Pv1pPmU1sFUUVEM-HtZOUacOMhub2qtfeNaTI4p2Xv1WCzTD1ujcNrPiIf04-d3lAsLdcUOAU8svPieasDN5R8BvVCQgzYB235TTiB5CUql9TaKUPBUxbtoe0rsbpUMa8XOFnpO7fFRsxalnk25n6jVILBzoMzEo142MiQY" />
-                            <h4 class="font-headline m-0 mb-1" style="font-size: 0.75rem;">Night Market</h4>
-                            <span class="font-label fw-bold text-on-surface-variant" style="font-size: 0.625rem;">18
+                            <h4 class="font-headline m-0 mb-1" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">Night Market</h4>
+                            <span class="font-label fw-bold text-on-surface-variant" style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">18
                                 Recipes</span>
                         </button>
                     </div>
@@ -245,8 +286,8 @@
                         <button class="small-card w-100 h-100">
                             <img data-alt="artisanal pepperoni pizza with melting cheese and fresh basil"
                                 srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuDszeM0hvpGfxdJO9A9c6_0VgsnzZrg_jxWlgDJPQKvT54PcIoVSw2wSQXOHPe84qSYLHVSBtSGNdKxdC0rHmW-8LIUH-8VbzAAPoCcH6razoxM6jPcpTKn1DE_hBkknuWsSunySG-B5IOhjYVhRTEbqNGfADSSP29EsR69xXdAoXNwfqc0WH0y1QZzkT4Gk5vMvIhRiMucdALUdLv8nb2h3bi51Z40TcWiaFs0oYf6HwMvwTK1t8FdUVXS4FSEPPUh5WVIJUQUIEg=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuDszeM0hvpGfxdJO9A9c6_0VgsnzZrg_jxWlgDJPQKvT54PcIoVSw2wSQXOHPe84qSYLHVSBtSGNdKxdC0rHmW-8LIUH-8VbzAAPoCcH6razoxM6jPcpTKn1DE_hBkknuWsSunySG-B5IOhjYVhRTEbqNGfADSSP29EsR69xXdAoXNwfqc0WH0y1QZzkT4Gk5vMvIhRiMucdALUdLv8nb2h3bi51Z40TcWiaFs0oYf6HwMvwTK1t8FdUVXS4FSEPPUh5WVIJUQUIEg=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuDszeM0hvpGfxdJO9A9c6_0VgsnzZrg_jxWlgDJPQKvT54PcIoVSw2wSQXOHPe84qSYLHVSBtSGNdKxdC0rHmW-8LIUH-8VbzAAPoCcH6razoxM6jPcpTKn1DE_hBkknuWsSunySG-B5IOhjYVhRTEbqNGfADSSP29EsR69xXdAoXNwfqc0WH0y1QZzkT4Gk5vMvIhRiMucdALUdLv8nb2h3bi51Z40TcWiaFs0oYf6HwMvwTK1t8FdUVXS4FSEPPUh5WVIJUQUIEg=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDszeM0hvpGfxdJO9A9c6_0VgsnzZrg_jxWlgDJPQKvT54PcIoVSw2wSQXOHPe84qSYLHVSBtSGNdKxdC0rHmW-8LIUH-8VbzAAPoCcH6razoxM6jPcpTKn1DE_hBkknuWsSunySG-B5IOhjYVhRTEbqNGfADSSP29EsR69xXdAoXNwfqc0WH0y1QZzkT4Gk5vMvIhRiMucdALUdLv8nb2h3bi51Z40TcWiaFs0oYf6HwMvwTK1t8FdUVXS4FSEPPUh5WVIJUQUIEg" />
-                            <h4 class="font-headline m-0 mb-1" style="font-size: 0.75rem;">Artisan Pizza</h4>
-                            <span class="font-label fw-bold text-on-surface-variant" style="font-size: 0.625rem;">24
+                            <h4 class="font-headline m-0 mb-1" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">Artisan Pizza</h4>
+                            <span class="font-label fw-bold text-on-surface-variant" style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">24
                                 Recipes</span>
                         </button>
                     </div>
@@ -254,8 +295,8 @@
                         <button class="small-card w-100 h-100">
                             <img data-alt="collection of colorful tropical cocktails with umbrellas"
                                 srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuDu5A0GsW1woBf-xpLrfJOfUbCvvVtzwUmJ9q-PEoLqLjv2shcTPjbSmDEm6x_w9z5qxwOb-r7opn3pRBv_u0GAaD13outEBULdgSrKNM3NP7Gf02OD4HUzPHGILaPnvaCedpy_ij0ADTkp5XYPaaC1RWxWTCnzn-wyCkKFqtxi9gPwIb1XvokWULyEKuoMYS4cJZRQS_Q2GrOx2NpVaiH7IHrV9q7HKMo_53rYtsaUkJ4u2m2N9V0HUQOYNW_VpaIJXgsmcg2HX2I=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuDu5A0GsW1woBf-xpLrfJOfUbCvvVtzwUmJ9q-PEoLqLjv2shcTPjbSmDEm6x_w9z5qxwOb-r7opn3pRBv_u0GAaD13outEBULdgSrKNM3NP7Gf02OD4HUzPHGILaPnvaCedpy_ij0ADTkp5XYPaaC1RWxWTCnzn-wyCkKFqtxi9gPwIb1XvokWULyEKuoMYS4cJZRQS_Q2GrOx2NpVaiH7IHrV9q7HKMo_53rYtsaUkJ4u2m2N9V0HUQOYNW_VpaIJXgsmcg2HX2I=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuDu5A0GsW1woBf-xpLrfJOfUbCvvVtzwUmJ9q-PEoLqLjv2shcTPjbSmDEm6x_w9z5qxwOb-r7opn3pRBv_u0GAaD13outEBULdgSrKNM3NP7Gf02OD4HUzPHGILaPnvaCedpy_ij0ADTkp5XYPaaC1RWxWTCnzn-wyCkKFqtxi9gPwIb1XvokWULyEKuoMYS4cJZRQS_Q2GrOx2NpVaiH7IHrV9q7HKMo_53rYtsaUkJ4u2m2N9V0HUQOYNW_VpaIJXgsmcg2HX2I=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu5A0GsW1woBf-xpLrfJOfUbCvvVtzwUmJ9q-PEoLqLjv2shcTPjbSmDEm6x_w9z5qxwOb-r7opn3pRBv_u0GAaD13outEBULdgSrKNM3NP7Gf02OD4HUzPHGILaPnvaCedpy_ij0ADTkp5XYPaaC1RWxWTCnzn-wyCkKFqtxi9gPwIb1XvokWULyEKuoMYS4cJZRQS_Q2GrOx2NpVaiH7IHrV9q7HKMo_53rYtsaUkJ4u2m2N9V0HUQOYNW_VpaIJXgsmcg2HX2I" />
-                            <h4 class="font-headline m-0 mb-1" style="font-size: 0.75rem;">Mixology</h4>
-                            <span class="font-label fw-bold text-on-surface-variant" style="font-size: 0.625rem;">9
+                            <h4 class="font-headline m-0 mb-1" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">Mixology</h4>
+                            <span class="font-label fw-bold text-on-surface-variant" style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">9
                                 Recipes</span>
                         </button>
                     </div>
@@ -268,27 +309,27 @@
                     <div class="d-flex align-items-center justify-content-between mb-3">
                         <h3 class="font-headline fs-5 m-0">Activity</h3>
                         <span class="font-label fw-bolder text-on-surface-variant text-uppercase"
-                            style="font-size: 0.625rem; letter-spacing: 0.1em;">Friends Feed</span>
+                            style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.1em;">Friends Feed</span>
                     </div>
                     <div>
                         <div class="activity-item">
                             <div class="rounded-circle bg-primary-container text-on-primary d-flex align-items-center justify-content-center fw-bold flex-shrink-0"
                                 style="width: 2.5rem; height: 2.5rem;">JD</div>
                             <div>
-                                <p class="font-body m-0" style="font-size: 0.75rem;"><span class="fw-bold">Julian D.</span>
+                                <p class="font-body m-0" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);"><span class="fw-bold">Julian D.</span>
                                     shared a new review for <span class="fw-bold text-primary">The Red Cellar</span></p>
                                 <div class="d-flex gap-1 mt-1 text-primary">
                                     <span class="material-symbols-outlined" data-weight="fill"
-                                        style="font-size: 0.75rem;">star</span>
+                                        style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">star</span>
                                     <span class="material-symbols-outlined" data-weight="fill"
-                                        style="font-size: 0.75rem;">star</span>
+                                        style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">star</span>
                                     <span class="material-symbols-outlined" data-weight="fill"
-                                        style="font-size: 0.75rem;">star</span>
+                                        style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">star</span>
                                     <span class="material-symbols-outlined" data-weight="fill"
-                                        style="font-size: 0.75rem;">star</span>
-                                    <span class="material-symbols-outlined" style="font-size: 0.75rem;">star</span>
+                                        style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">star</span>
+                                    <span class="material-symbols-outlined" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">star</span>
                                 </div>
-                                <span class="text-on-surface-variant d-block mt-1" style="font-size: 0.625rem;">2 hours
+                                <span class="text-on-surface-variant d-block mt-1" style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">2 hours
                                     ago</span>
                             </div>
                         </div>
@@ -298,10 +339,10 @@
                                 srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuA4_UxtPHhmyG8DtV0uKF7oFZbb7qzjYDsF0B1ZFXncbRKZx8N0HHgTFXuD5tRWxO2_R6eoBg8ByqF6rg83BjnLsEKxhMvHwuPKBKG76cLE70UrZpnkSkG9aKoWs_tNv2efE_jzXan9iSzTF1avVJM_41ukjz-LazI1NBFEHRA6b1sauhuPv2G8OzgzCDDBJyxMn9xvKOWUQ6TBMl-tTXZK76v2o7RIttkT8S54eKB07RJWBM-MTBwslKFWgiGkTc9lSEOOp_WqokA=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuA4_UxtPHhmyG8DtV0uKF7oFZbb7qzjYDsF0B1ZFXncbRKZx8N0HHgTFXuD5tRWxO2_R6eoBg8ByqF6rg83BjnLsEKxhMvHwuPKBKG76cLE70UrZpnkSkG9aKoWs_tNv2efE_jzXan9iSzTF1avVJM_41ukjz-LazI1NBFEHRA6b1sauhuPv2G8OzgzCDDBJyxMn9xvKOWUQ6TBMl-tTXZK76v2o7RIttkT8S54eKB07RJWBM-MTBwslKFWgiGkTc9lSEOOp_WqokA=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuA4_UxtPHhmyG8DtV0uKF7oFZbb7qzjYDsF0B1ZFXncbRKZx8N0HHgTFXuD5tRWxO2_R6eoBg8ByqF6rg83BjnLsEKxhMvHwuPKBKG76cLE70UrZpnkSkG9aKoWs_tNv2efE_jzXan9iSzTF1avVJM_41ukjz-LazI1NBFEHRA6b1sauhuPv2G8OzgzCDDBJyxMn9xvKOWUQ6TBMl-tTXZK76v2o7RIttkT8S54eKB07RJWBM-MTBwslKFWgiGkTc9lSEOOp_WqokA=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4_UxtPHhmyG8DtV0uKF7oFZbb7qzjYDsF0B1ZFXncbRKZx8N0HHgTFXuD5tRWxO2_R6eoBg8ByqF6rg83BjnLsEKxhMvHwuPKBKG76cLE70UrZpnkSkG9aKoWs_tNv2efE_jzXan9iSzTF1avVJM_41ukjz-LazI1NBFEHRA6b1sauhuPv2G8OzgzCDDBJyxMn9xvKOWUQ6TBMl-tTXZK76v2o7RIttkT8S54eKB07RJWBM-MTBwslKFWgiGkTc9lSEOOp_WqokA"
                                 style="width: 2.5rem; height: 2.5rem;" />
                             <div>
-                                <p class="font-body m-0" style="font-size: 0.75rem;"><span class="fw-bold">Sara M.</span>
+                                <p class="font-body m-0" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);"><span class="fw-bold">Sara M.</span>
                                     saved <span class="fw-bold text-primary">Truffle Carbonara</span> to her Brunch List
                                 </p>
-                                <span class="text-on-surface-variant d-block mt-1" style="font-size: 0.625rem;">4 hours
+                                <span class="text-on-surface-variant d-block mt-1" style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">4 hours
                                     ago</span>
                             </div>
                         </div>
@@ -309,10 +350,10 @@
                             <div class="rounded-circle bg-secondary-container text-on-secondary-container d-flex align-items-center justify-content-center fw-bold flex-shrink-0"
                                 style="width: 2.5rem; height: 2.5rem;">BK</div>
                             <div>
-                                <p class="font-body m-0" style="font-size: 0.75rem;"><span class="fw-bold">Ben K.</span> is
+                                <p class="font-body m-0" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);"><span class="fw-bold">Ben K.</span> is
                                     currently dining at <span class="fw-bold text-primary">Mizu Sushi</span></p>
                                 <span class="text-primary fw-bold text-uppercase d-flex align-items-center gap-1 mt-1"
-                                    style="font-size: 0.625rem; letter-spacing: -0.05em;">Live • Tokyo</span>
+                                    style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: -0.05em;">Live • Tokyo</span>
                             </div>
                         </div>
                     </div>
@@ -326,7 +367,7 @@
                                 srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuB_EXecnoZ2jBgemYuphOP_5h0DXcsgfORjerdSPTeNxqur2WQ1yel_xAN8uR6sUo9infPquuxfZsfYpxOT22o5JHKZq4BbIFXHNjeJfwgXh77U7qUExQC9YqnYJCBbpn6KLT7Hz9S1UyXV1uw6tQ4qWJxp8SghAjRpnT1IECt36xO3HzUDn-KgO-V-2gbIjaOPAiEJYZweDJwG6vZzpmCMlkTegUUDKcVDh4eRLC2hRWF6Prc_rQfokzyI65xTlUqFurLpRGtRDJI=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuB_EXecnoZ2jBgemYuphOP_5h0DXcsgfORjerdSPTeNxqur2WQ1yel_xAN8uR6sUo9infPquuxfZsfYpxOT22o5JHKZq4BbIFXHNjeJfwgXh77U7qUExQC9YqnYJCBbpn6KLT7Hz9S1UyXV1uw6tQ4qWJxp8SghAjRpnT1IECt36xO3HzUDn-KgO-V-2gbIjaOPAiEJYZweDJwG6vZzpmCMlkTegUUDKcVDh4eRLC2hRWF6Prc_rQfokzyI65xTlUqFurLpRGtRDJI=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuB_EXecnoZ2jBgemYuphOP_5h0DXcsgfORjerdSPTeNxqur2WQ1yel_xAN8uR6sUo9infPquuxfZsfYpxOT22o5JHKZq4BbIFXHNjeJfwgXh77U7qUExQC9YqnYJCBbpn6KLT7Hz9S1UyXV1uw6tQ4qWJxp8SghAjRpnT1IECt36xO3HzUDn-KgO-V-2gbIjaOPAiEJYZweDJwG6vZzpmCMlkTegUUDKcVDh4eRLC2hRWF6Prc_rQfokzyI65xTlUqFurLpRGtRDJI=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_EXecnoZ2jBgemYuphOP_5h0DXcsgfORjerdSPTeNxqur2WQ1yel_xAN8uR6sUo9infPquuxfZsfYpxOT22o5JHKZq4BbIFXHNjeJfwgXh77U7qUExQC9YqnYJCBbpn6KLT7Hz9S1UyXV1uw6tQ4qWJxp8SghAjRpnT1IECt36xO3HzUDn-KgO-V-2gbIjaOPAiEJYZweDJwG6vZzpmCMlkTegUUDKcVDh4eRLC2hRWF6Prc_rQfokzyI65xTlUqFurLpRGtRDJI" />
                             <div class="list-card-overlay">
                                 <h4 class="text-white font-headline fs-6 m-0">Best Secret Speakeasies</h4>
-                                <p class="text-white-50 font-label text-uppercase m-0 mt-1" style="font-size: 0.625rem;">
+                                <p class="text-white-50 font-label text-uppercase m-0 mt-1" style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">
                                     Hidden Gems • New York</p>
                             </div>
                         </div>
@@ -334,8 +375,8 @@
                             <img data-alt="plates of gourmet food at a fine dining table overlooking a city at night"
                                 srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuABST8I4MAqlgCHqU7w6XBXI3qZ443BRZWn9ys-UoTGh6X6avCfOpIsaZh9n4NBTxUYvhTkuTDvxAOBTyyOVNPYLwTaRpCGP0WGtPCGd9CmnGhn-upl0Kx6a3xpod5xslBjilymXV0yWTUe5PsFKvlqTH6f0Sw9rDHsioc37PfsrtX9bjnRAzXSQcYEhjjR9us-ZMwGKSS71QAZGqwFaQ5dmfd8E8qdk7xiFRrHPUnKZkrWfTYLSQpYOWuqL3C4bauNBMtdMAbpKxM=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuABST8I4MAqlgCHqU7w6XBXI3qZ443BRZWn9ys-UoTGh6X6avCfOpIsaZh9n4NBTxUYvhTkuTDvxAOBTyyOVNPYLwTaRpCGP0WGtPCGd9CmnGhn-upl0Kx6a3xpod5xslBjilymXV0yWTUe5PsFKvlqTH6f0Sw9rDHsioc37PfsrtX9bjnRAzXSQcYEhjjR9us-ZMwGKSS71QAZGqwFaQ5dmfd8E8qdk7xiFRrHPUnKZkrWfTYLSQpYOWuqL3C4bauNBMtdMAbpKxM=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuABST8I4MAqlgCHqU7w6XBXI3qZ443BRZWn9ys-UoTGh6X6avCfOpIsaZh9n4NBTxUYvhTkuTDvxAOBTyyOVNPYLwTaRpCGP0WGtPCGd9CmnGhn-upl0Kx6a3xpod5xslBjilymXV0yWTUe5PsFKvlqTH6f0Sw9rDHsioc37PfsrtX9bjnRAzXSQcYEhjjR9us-ZMwGKSS71QAZGqwFaQ5dmfd8E8qdk7xiFRrHPUnKZkrWfTYLSQpYOWuqL3C4bauNBMtdMAbpKxM=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABST8I4MAqlgCHqU7w6XBXI3qZ443BRZWn9ys-UoTGh6X6avCfOpIsaZh9n4NBTxUYvhTkuTDvxAOBTyyOVNPYLwTaRpCGP0WGtPCGd9CmnGhn-upl0Kx6a3xpod5xslBjilymXV0yWTUe5PsFKvlqTH6f0Sw9rDHsioc37PfsrtX9bjnRAzXSQcYEhjjR9us-ZMwGKSS71QAZGqwFaQ5dmfd8E8qdk7xiFRrHPUnKZkrWfTYLSQpYOWuqL3C4bauNBMtdMAbpKxM" />
                             <div class="list-card-overlay">
-                                <h4 class="text-white font-headline fs-6 m-0">Michelin <span class="material-symbols-outlined" style="font-size: 1rem; font-variation-settings: 'FILL' 1; color: var(--primary); vertical-align: middle;">star</span><span class="material-symbols-outlined" style="font-size: 1rem; font-variation-settings: 'FILL' 1; color: var(--primary); vertical-align: middle;">star</span> Under $100</h4>
-                                <p class="text-white-50 font-label text-uppercase m-0 mt-1" style="font-size: 0.625rem;">
+                                <h4 class="text-white font-headline fs-6 m-0">Michelin <span class="material-symbols-outlined" style="font-size: clamp(0.8rem, 2.5vw, 1.2rem); font-variation-settings: 'FILL' 1; color: var(--primary); vertical-align: middle;">star</span><span class="material-symbols-outlined" style="font-size: clamp(0.8rem, 2.5vw, 1.2rem); font-variation-settings: 'FILL' 1; color: var(--primary); vertical-align: middle;">star</span> Under $100</h4>
+                                <p class="text-white-50 font-label text-uppercase m-0 mt-1" style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">
                                     Value Fine Dining • Global</p>
                             </div>
                         </div>
@@ -344,7 +385,7 @@
                                 srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuBdUOCl8siNiCXkXuYNacU416vZQg357AKFHF5XHO3hsMDC8g1de7ytjZdjsNSi6al-CamVgc55p7c46O5dCGI2SHhUsLL1KfUcdm4GqjGhxUaEfhREaI7XzS0IXZq-II4IMc69Sm3_PdWiac-lP7P_eDbCBF_hXhuOlUjJ7Jan8shgU9Zrki0iGNc6aBszGyKwZ00dl5JGWlvmO5MC2KywkQrnn9UuNE_W_8c4S0tcmQzNH3iVB36jwskDwvj5_lwY1n0yYJOSSiI=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuBdUOCl8siNiCXkXuYNacU416vZQg357AKFHF5XHO3hsMDC8g1de7ytjZdjsNSi6al-CamVgc55p7c46O5dCGI2SHhUsLL1KfUcdm4GqjGhxUaEfhREaI7XzS0IXZq-II4IMc69Sm3_PdWiac-lP7P_eDbCBF_hXhuOlUjJ7Jan8shgU9Zrki0iGNc6aBszGyKwZ00dl5JGWlvmO5MC2KywkQrnn9UuNE_W_8c4S0tcmQzNH3iVB36jwskDwvj5_lwY1n0yYJOSSiI=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuBdUOCl8siNiCXkXuYNacU416vZQg357AKFHF5XHO3hsMDC8g1de7ytjZdjsNSi6al-CamVgc55p7c46O5dCGI2SHhUsLL1KfUcdm4GqjGhxUaEfhREaI7XzS0IXZq-II4IMc69Sm3_PdWiac-lP7P_eDbCBF_hXhuOlUjJ7Jan8shgU9Zrki0iGNc6aBszGyKwZ00dl5JGWlvmO5MC2KywkQrnn9UuNE_W_8c4S0tcmQzNH3iVB36jwskDwvj5_lwY1n0yYJOSSiI=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdUOCl8siNiCXkXuYNacU416vZQg357AKFHF5XHO3hsMDC8g1de7ytjZdjsNSi6al-CamVgc55p7c46O5dCGI2SHhUsLL1KfUcdm4GqjGhxUaEfhREaI7XzS0IXZq-II4IMc69Sm3_PdWiac-lP7P_eDbCBF_hXhuOlUjJ7Jan8shgU9Zrki0iGNc6aBszGyKwZ00dl5JGWlvmO5MC2KywkQrnn9UuNE_W_8c4S0tcmQzNH3iVB36jwskDwvj5_lwY1n0yYJOSSiI" />
                             <div class="list-card-overlay">
                                 <h4 class="text-white font-headline fs-6 m-0">The Great Pastry Crawl</h4>
-                                <p class="text-white-50 font-label text-uppercase m-0 mt-1" style="font-size: 0.625rem;">
+                                <p class="text-white-50 font-label text-uppercase m-0 mt-1" style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">
                                     Patisserie • Paris</p>
                             </div>
                         </div>
@@ -353,12 +394,12 @@
                 <!-- Newsletter / Call to Action -->
                 <section class="newsletter-card">
                     <h3 class="font-headline fs-5 mb-2">Taste the Future</h3>
-                    <p class="font-body text-white-50 mb-4 lh-base" style="font-size: 0.875rem;">Join our private circle of
+                    <p class="font-body text-white-50 mb-4 lh-base" style="font-size: clamp(0.7rem, 2.1875vw, 1.05rem);">Join our private circle of
                         gourmands for weekly editorial deep-dives and exclusive reservations.</p>
                     <div class="d-flex gap-2">
                         <input class="form-control newsletter-input" placeholder="Your email" type="email" />
                         <button class="btn bg-white text-primary font-bold text-uppercase px-3 py-2 fw-bold"
-                            style="font-size: 0.75rem;">Join</button>
+                            style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">Join</button>
                     </div>
                 </section>
             </aside>
@@ -411,21 +452,21 @@
         <a href="home.html" class="mobile-nav-btn active text-decoration-none" style="color: inherit;">
             <span class="material-symbols-outlined mb-1" data-weight="fill">explore</span>
             <span class="font-label fw-bold text-uppercase"
-                style="font-size: 0.625rem; letter-spacing: 0.05rem;">Discover</span>
+                style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.05rem;">Discover</span>
         </a>
         <a href="log-meal.html" class="mobile-nav-btn text-decoration-none" style="color: inherit;">
             <span class="material-symbols-outlined mb-1">add_circle</span>
-            <span class="font-label fw-bold text-uppercase" style="font-size: 0.625rem; letter-spacing: 0.05rem;">Log</span>
+            <span class="font-label fw-bold text-uppercase" style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.05rem;">Log</span>
         </a>
         <a href="home.html" class="mobile-nav-btn text-decoration-none" style="color: inherit;">
             <span class="material-symbols-outlined mb-1">trending_up</span>
             <span class="font-label fw-bold text-uppercase"
-                style="font-size: 0.625rem; letter-spacing: 0.05rem;">Trending</span>
+                style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.05rem;">Trending</span>
         </a>
         <a href="profile.html" class="mobile-nav-btn text-decoration-none" style="color: inherit;">
             <span class="material-symbols-outlined mb-1">person_2</span>
             <span class="font-label fw-bold text-uppercase"
-                style="font-size: 0.625rem; letter-spacing: 0.05rem;">Profile</span>
+                style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.05rem;">Profile</span>
         </a>
     </nav>
     <!-- Floating Action Button (FAB) -->
@@ -434,6 +475,25 @@
     </a>
     <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmxc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const carousel = document.getElementById('category-carousel');
+            if (carousel) {
+                const buttons = carousel.querySelectorAll('.category-btn');
+                buttons.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        // Remove active class from all
+                        buttons.forEach(b => b.querySelector('.category-img-container').classList.remove('active'));
+                        // Add active class to clicked
+                        btn.querySelector('.category-img-container').classList.add('active');
+                        
+                        // Center the clicked button in the scroll view
+                        btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
