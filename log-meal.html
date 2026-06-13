@@ -10,6 +10,7 @@
     <!-- Bootstrap 5.3 CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body class="min-vh-100 d-flex align-items-center justify-content-center p-3 p-sm-4 bg-backdrop">
@@ -20,7 +21,7 @@
             class="d-flex align-items-center justify-content-between px-4 py-4 border-bottom border-custom bg-header-footer">
             <h1 class="text-main fs-3 fw-bold m-0" style="letter-spacing: -0.025em;">Log a Meal</h1>
             <button aria-label="Close modal" onclick="history.back()" class="btn btn-link p-0 text-muted-custom text-decoration-none">
-                <span class="material-symbols-outlined" style="font-size: 1.75rem;">close</span>
+                <i class="bi bi-x-lg" style="font-size: 1.75rem;"></i>
             </button>
         </header>
         <!-- Scrollable Content Area -->
@@ -37,8 +38,8 @@
                 <label class="d-block font-ui fs-6 fw-semibold text-uppercase text-main mb-2"
                     style="letter-spacing: 0.05em;">The Visuals</label>
                 <div class="w-100 rounded d-flex flex-column align-items-center justify-content-center dropzone">
-                    <span class="material-symbols-outlined fs-1 text-muted-custom mb-3"
-                        style="transition: color 0.3s;">add_a_photo</span>
+                    <i class="bi bi-camera fs-1 text-muted-custom mb-3"
+                        style="transition: color 0.3s;"></i>
                     <p class="font-ui text-main fw-medium m-0" style="font-size: 0.875rem;">Drag &amp; drop a
                         high-resolution photo</p>
                     <p class="font-ui text-muted-custom mt-1 mb-0" style="font-size: 0.75rem;">or click to browse</p>
@@ -52,27 +53,27 @@
                 <div class="d-flex align-items-center gap-1" id="star-rating-widget" role="group" aria-label="Star rating">
                     <!-- 5 stars, each split into left-half and right-half hitboxes -->
                     <div class="star-unit position-relative" data-index="1">
-                        <span class="material-symbols-outlined star-icon" data-index="1" style="font-size: 2.5rem; font-variation-settings: 'FILL' 0; color: var(--outline); transition: color 0.15s, font-variation-settings 0.15s;">star</span>
+                        <i class="bi bi-star star-icon" data-index="1" style="font-size: 2.5rem; color: var(--outline); transition: color 0.15s;"></i>
                         <button class="star-half-btn left-half" data-value="0.5" aria-label="0.5 stars" title="0.5"></button>
                         <button class="star-half-btn right-half" data-value="1" aria-label="1 star" title="1"></button>
                     </div>
                     <div class="star-unit position-relative" data-index="2">
-                        <span class="material-symbols-outlined star-icon" data-index="2" style="font-size: 2.5rem; font-variation-settings: 'FILL' 0; color: var(--outline); transition: color 0.15s, font-variation-settings 0.15s;">star</span>
+                        <i class="bi bi-star star-icon" data-index="2" style="font-size: 2.5rem; color: var(--outline); transition: color 0.15s;"></i>
                         <button class="star-half-btn left-half" data-value="1.5" aria-label="1.5 stars" title="1.5"></button>
                         <button class="star-half-btn right-half" data-value="2" aria-label="2 stars" title="2"></button>
                     </div>
                     <div class="star-unit position-relative" data-index="3">
-                        <span class="material-symbols-outlined star-icon" data-index="3" style="font-size: 2.5rem; font-variation-settings: 'FILL' 0; color: var(--outline); transition: color 0.15s, font-variation-settings 0.15s;">star</span>
+                        <i class="bi bi-star star-icon" data-index="3" style="font-size: 2.5rem; color: var(--outline); transition: color 0.15s;"></i>
                         <button class="star-half-btn left-half" data-value="2.5" aria-label="2.5 stars" title="2.5"></button>
                         <button class="star-half-btn right-half" data-value="3" aria-label="3 stars" title="3"></button>
                     </div>
                     <div class="star-unit position-relative" data-index="4">
-                        <span class="material-symbols-outlined star-icon" data-index="4" style="font-size: 2.5rem; font-variation-settings: 'FILL' 0; color: var(--outline); transition: color 0.15s, font-variation-settings 0.15s;">star</span>
+                        <i class="bi bi-star star-icon" data-index="4" style="font-size: 2.5rem; color: var(--outline); transition: color 0.15s;"></i>
                         <button class="star-half-btn left-half" data-value="3.5" aria-label="3.5 stars" title="3.5"></button>
                         <button class="star-half-btn right-half" data-value="4" aria-label="4 stars" title="4"></button>
                     </div>
                     <div class="star-unit position-relative" data-index="5">
-                        <span class="material-symbols-outlined star-icon" data-index="5" style="font-size: 2.5rem; font-variation-settings: 'FILL' 0; color: var(--outline); transition: color 0.15s, font-variation-settings 0.15s;">star</span>
+                        <i class="bi bi-star star-icon" data-index="5" style="font-size: 2.5rem; color: var(--outline); transition: color 0.15s;"></i>
                         <button class="star-half-btn left-half" data-value="4.5" aria-label="4.5 stars" title="4.5"></button>
                         <button class="star-half-btn right-half" data-value="5" aria-label="5 stars" title="5"></button>
                     </div>
@@ -86,8 +87,8 @@
                 <div class="position-relative">
                     <input class="w-100 input-custom py-2 ps-3 pe-5 fs-5 font-display text-main" type="text"
                         value="Today" />
-                    <span class="material-symbols-outlined position-absolute text-muted-custom"
-                        style="right: 0.75rem; top: 50%; transform: translateY(-50%);">calendar_today</span>
+                    <i class="bi bi-calendar position-absolute text-muted-custom"
+                        style="right: 0.75rem; top: 50%; transform: translateY(-50%);"></i>
                 </div>
             </div>
             <!-- Editorial Review Textarea -->
@@ -123,18 +124,15 @@
                 const starPos = i + 1; // 1-based
                 if (value >= starPos) {
                     // full star
-                    icon.textContent = 'star';
-                    icon.style.fontVariationSettings = "'FILL' 1";
+                    icon.className = 'bi bi-star-fill star-icon';
                     icon.style.color = 'var(--primary)';
                 } else if (value >= starPos - 0.5) {
                     // half star
-                    icon.textContent = 'star_half';
-                    icon.style.fontVariationSettings = "'FILL' 1";
+                    icon.className = 'bi bi-star-half star-icon';
                     icon.style.color = 'var(--primary)';
                 } else {
                     // empty star
-                    icon.textContent = 'star';
-                    icon.style.fontVariationSettings = "'FILL' 0";
+                    icon.className = 'bi bi-star star-icon';
                     icon.style.color = 'var(--outline)';
                 }
             });

@@ -12,9 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Manrope:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
         rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
 </head>
 
@@ -30,24 +28,33 @@
             </div>
             <div class="d-flex align-items-center gap-3">
                 <div class="d-none d-sm-flex search-container align-items-center">
-                    <span class="material-symbols-outlined text-on-surface-variant fs-6 me-2">search</span>
+                    <i class="bi bi-search text-on-surface-variant fs-6 me-2"></i>
                     <input class="search-input" placeholder="Search the kitchen..." type="text" />
                 </div>
-                <button onclick="window.location='log-meal.html'" class="btn btn-gradient-primary rounded-pill font-label fw-bold text-uppercase px-4 py-2 d-flex align-items-center gap-1"
+                <button onclick="window.location='log-meal.html'"
+                    class="btn btn-gradient-primary rounded-pill font-label fw-bold text-uppercase px-4 py-2 d-flex align-items-center gap-1"
                     style="font-size: clamp(0.6rem, 1.875vw, 0.9rem); letter-spacing: 0.05em;">
-                    <span class="material-symbols-outlined" style="font-size: clamp(0.8rem, 2.5vw, 1.2rem); font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size: clamp(0.8rem, 2.5vw, 1.2rem); font-variation-settings: 'FILL' 1;">star_half</span>
+                    <i class="bi bi-star-fill" style="font-size: clamp(0.8rem, 2.5vw, 1.2rem);"></i><i
+                        class="bi bi-star-half" style="font-size: clamp(0.8rem, 2.5vw, 1.2rem);"></i>
                     Log Meal
                 </button>
                 <div class="d-flex align-items-center gap-3">
                     <button
                         class="btn btn-link p-0 text-on-surface-variant text-decoration-none d-flex align-items-center">
-                        <span class="material-symbols-outlined">notifications</span>
+                        <i class="bi bi-bell"></i>
                     </button>
                     <a href="profile.html" class="rounded-circle overflow-hidden border border-2"
                         style="width: 2.5rem; height: 2.5rem; border-color: #ff7576 !important; display: block;">
-                        <img alt="User profile" class="w-100 h-100 object-fit-cover"
-                            data-alt="professional headshot of a smiling man with a beard in warm lifestyle lighting with soft background blur"
-                            srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuAcff5rDUyOmkw_ZWWUwlkLOyzKSp-XWmG3zthxzWndHh0HXjI2_IbtrrytydKmrptomHk0wDNw-EtbkmrzeTekbOkI8kPnvb0jPIJ0LTegkcZY1_O1MHSHK3-2YEMBW8ASrAjBH4IvECuuUnnbONoaFuodzpIYFAxLpmHMmzdTErGDwvztRYxGA_TeyayhXUUiKN4xxUpAQ9nAYlkiB4oIOd3HXyS2kwtw_AJw8dhPBI6uzO5kOO8PDHFu18G189wX-xk6EMPgGT0=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuAcff5rDUyOmkw_ZWWUwlkLOyzKSp-XWmG3zthxzWndHh0HXjI2_IbtrrytydKmrptomHk0wDNw-EtbkmrzeTekbOkI8kPnvb0jPIJ0LTegkcZY1_O1MHSHK3-2YEMBW8ASrAjBH4IvECuuUnnbONoaFuodzpIYFAxLpmHMmzdTErGDwvztRYxGA_TeyayhXUUiKN4xxUpAQ9nAYlkiB4oIOd3HXyS2kwtw_AJw8dhPBI6uzO5kOO8PDHFu18G189wX-xk6EMPgGT0=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuAcff5rDUyOmkw_ZWWUwlkLOyzKSp-XWmG3zthxzWndHh0HXjI2_IbtrrytydKmrptomHk0wDNw-EtbkmrzeTekbOkI8kPnvb0jPIJ0LTegkcZY1_O1MHSHK3-2YEMBW8ASrAjBH4IvECuuUnnbONoaFuodzpIYFAxLpmHMmzdTErGDwvztRYxGA_TeyayhXUUiKN4xxUpAQ9nAYlkiB4oIOd3HXyS2kwtw_AJw8dhPBI6uzO5kOO8PDHFu18G189wX-xk6EMPgGT0=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcff5rDUyOmkw_ZWWUwlkLOyzKSp-XWmG3zthxzWndHh0HXjI2_IbtrrytydKmrptomHk0wDNw-EtbkmrzeTekbOkI8kPnvb0jPIJ0LTegkcZY1_O1MHSHK3-2YEMBW8ASrAjBH4IvECuuUnnbONoaFuodzpIYFAxLpmHMmzdTErGDwvztRYxGA_TeyayhXUUiKN4xxUpAQ9nAYlkiB4oIOd3HXyS2kwtw_AJw8dhPBI6uzO5kOO8PDHFu18G189wX-xk6EMPgGT0" />
+                        <picture>
+                            <source type="image/webp"
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuAcff5rDUyOmkw_ZWWUwlkLOyzKSp-XWmG3zthxzWndHh0HXjI2_IbtrrytydKmrptomHk0wDNw-EtbkmrzeTekbOkI8kPnvb0jPIJ0LTegkcZY1_O1MHSHK3-2YEMBW8ASrAjBH4IvECuuUnnbONoaFuodzpIYFAxLpmHMmzdTErGDwvztRYxGA_TeyayhXUUiKN4xxUpAQ9nAYlkiB4oIOd3HXyS2kwtw_AJw8dhPBI6uzO5kOO8PDHFu18G189wX-xk6EMPgGT0=w80-rw 80w, https://lh3.googleusercontent.com/aida-public/AB6AXuAcff5rDUyOmkw_ZWWUwlkLOyzKSp-XWmG3zthxzWndHh0HXjI2_IbtrrytydKmrptomHk0wDNw-EtbkmrzeTekbOkI8kPnvb0jPIJ0LTegkcZY1_O1MHSHK3-2YEMBW8ASrAjBH4IvECuuUnnbONoaFuodzpIYFAxLpmHMmzdTErGDwvztRYxGA_TeyayhXUUiKN4xxUpAQ9nAYlkiB4oIOd3HXyS2kwtw_AJw8dhPBI6uzO5kOO8PDHFu18G189wX-xk6EMPgGT0=w160-rw 160w"
+                                sizes="40px" />
+                            <img alt="User profile" class="w-100 h-100 object-fit-cover"
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuAcff5rDUyOmkw_ZWWUwlkLOyzKSp-XWmG3zthxzWndHh0HXjI2_IbtrrytydKmrptomHk0wDNw-EtbkmrzeTekbOkI8kPnvb0jPIJ0LTegkcZY1_O1MHSHK3-2YEMBW8ASrAjBH4IvECuuUnnbONoaFuodzpIYFAxLpmHMmzdTErGDwvztRYxGA_TeyayhXUUiKN4xxUpAQ9nAYlkiB4oIOd3HXyS2kwtw_AJw8dhPBI6uzO5kOO8PDHFu18G189wX-xk6EMPgGT0=w80 80w, https://lh3.googleusercontent.com/aida-public/AB6AXuAcff5rDUyOmkw_ZWWUwlkLOyzKSp-XWmG3zthxzWndHh0HXjI2_IbtrrytydKmrptomHk0wDNw-EtbkmrzeTekbOkI8kPnvb0jPIJ0LTegkcZY1_O1MHSHK3-2YEMBW8ASrAjBH4IvECuuUnnbONoaFuodzpIYFAxLpmHMmzdTErGDwvztRYxGA_TeyayhXUUiKN4xxUpAQ9nAYlkiB4oIOd3HXyS2kwtw_AJw8dhPBI6uzO5kOO8PDHFu18G189wX-xk6EMPgGT0=w160 160w"
+                                sizes="40px"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcff5rDUyOmkw_ZWWUwlkLOyzKSp-XWmG3zthxzWndHh0HXjI2_IbtrrytydKmrptomHk0wDNw-EtbkmrzeTekbOkI8kPnvb0jPIJ0LTegkcZY1_O1MHSHK3-2YEMBW8ASrAjBH4IvECuuUnnbONoaFuodzpIYFAxLpmHMmzdTErGDwvztRYxGA_TeyayhXUUiKN4xxUpAQ9nAYlkiB4oIOd3HXyS2kwtw_AJw8dhPBI6uzO5kOO8PDHFu18G189wX-xk6EMPgGT0=w80"
+                                loading="eager" fetchpriority="high" />
+                        </picture>
                     </a>
                 </div>
             </div>
@@ -56,14 +63,23 @@
     <main class="container-xxl px-4 py-5 mt-5 mb-5 pb-5">
         <!-- Header & Category Carousel -->
         <header class="mb-5 pt-4 text-center">
-            <h1 class="font-headline fw-bold mb-4" style="font-size: clamp(2.5rem, 5vw, 4rem); letter-spacing: -0.02em;">The Digest</h1>
+            <h1 class="font-headline fw-bold mb-4"
+                style="font-size: clamp(2.5rem, 5vw, 4rem); letter-spacing: -0.02em;">The Digest</h1>
             <div class="d-flex gap-3 overflow-auto hide-scrollbar pb-2 justify-content-center" id="category-carousel">
                 <!-- Brunch -->
                 <button class="category-btn flex-shrink-0">
                     <div class="category-img-container active">
-                        <img class="w-100 h-100 rounded-circle object-fit-cover"
-                            data-alt="close-up of fluffy avocado toast with poached eggs and microgreens on a marble plate"
-                            srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuCa2yRVXB_aV_Z7rCh0pkMrocXnA2c_4FG6IN9efgNhXhS_eB0ku1AoPX3YsXs_SkDP8UpzqeAKC1UiU6RCewvIz_FRWY8Ve8P28DefSHdta4QLO8nMcUsleQhvit4ueRB3XeOn1x1pg7jFQGxpZLOYEw2js_v8bzEUweVtizvE85b6wJ2osmla2bbLPVz2UekjFo_TulFkUKcIjg5dFNrMnKl9-lQISXwkBVPsjQpPs7p3b1_QNCBpWxL9vXRwtf7sYHk19GL31C8=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuCa2yRVXB_aV_Z7rCh0pkMrocXnA2c_4FG6IN9efgNhXhS_eB0ku1AoPX3YsXs_SkDP8UpzqeAKC1UiU6RCewvIz_FRWY8Ve8P28DefSHdta4QLO8nMcUsleQhvit4ueRB3XeOn1x1pg7jFQGxpZLOYEw2js_v8bzEUweVtizvE85b6wJ2osmla2bbLPVz2UekjFo_TulFkUKcIjg5dFNrMnKl9-lQISXwkBVPsjQpPs7p3b1_QNCBpWxL9vXRwtf7sYHk19GL31C8=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuCa2yRVXB_aV_Z7rCh0pkMrocXnA2c_4FG6IN9efgNhXhS_eB0ku1AoPX3YsXs_SkDP8UpzqeAKC1UiU6RCewvIz_FRWY8Ve8P28DefSHdta4QLO8nMcUsleQhvit4ueRB3XeOn1x1pg7jFQGxpZLOYEw2js_v8bzEUweVtizvE85b6wJ2osmla2bbLPVz2UekjFo_TulFkUKcIjg5dFNrMnKl9-lQISXwkBVPsjQpPs7p3b1_QNCBpWxL9vXRwtf7sYHk19GL31C8=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa2yRVXB_aV_Z7rCh0pkMrocXnA2c_4FG6IN9efgNhXhS_eB0ku1AoPX3YsXs_SkDP8UpzqeAKC1UiU6RCewvIz_FRWY8Ve8P28DefSHdta4QLO8nMcUsleQhvit4ueRB3XeOn1x1pg7jFQGxpZLOYEw2js_v8bzEUweVtizvE85b6wJ2osmla2bbLPVz2UekjFo_TulFkUKcIjg5dFNrMnKl9-lQISXwkBVPsjQpPs7p3b1_QNCBpWxL9vXRwtf7sYHk19GL31C8" />
+                        <picture>
+                            <source type="image/webp"
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuCa2yRVXB_aV_Z7rCh0pkMrocXnA2c_4FG6IN9efgNhXhS_eB0ku1AoPX3YsXs_SkDP8UpzqeAKC1UiU6RCewvIz_FRWY8Ve8P28DefSHdta4QLO8nMcUsleQhvit4ueRB3XeOn1x1pg7jFQGxpZLOYEw2js_v8bzEUweVtizvE85b6wJ2osmla2bbLPVz2UekjFo_TulFkUKcIjg5dFNrMnKl9-lQISXwkBVPsjQpPs7p3b1_QNCBpWxL9vXRwtf7sYHk19GL31C8=w128-rw 128w, https://lh3.googleusercontent.com/aida-public/AB6AXuCa2yRVXB_aV_Z7rCh0pkMrocXnA2c_4FG6IN9efgNhXhS_eB0ku1AoPX3YsXs_SkDP8UpzqeAKC1UiU6RCewvIz_FRWY8Ve8P28DefSHdta4QLO8nMcUsleQhvit4ueRB3XeOn1x1pg7jFQGxpZLOYEw2js_v8bzEUweVtizvE85b6wJ2osmla2bbLPVz2UekjFo_TulFkUKcIjg5dFNrMnKl9-lQISXwkBVPsjQpPs7p3b1_QNCBpWxL9vXRwtf7sYHk19GL31C8=w256-rw 256w"
+                                sizes="64px" />
+                            <img class="w-100 h-100 rounded-circle object-fit-cover"
+                                alt="Brunch category"
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuCa2yRVXB_aV_Z7rCh0pkMrocXnA2c_4FG6IN9efgNhXhS_eB0ku1AoPX3YsXs_SkDP8UpzqeAKC1UiU6RCewvIz_FRWY8Ve8P28DefSHdta4QLO8nMcUsleQhvit4ueRB3XeOn1x1pg7jFQGxpZLOYEw2js_v8bzEUweVtizvE85b6wJ2osmla2bbLPVz2UekjFo_TulFkUKcIjg5dFNrMnKl9-lQISXwkBVPsjQpPs7p3b1_QNCBpWxL9vXRwtf7sYHk19GL31C8=w128 128w, https://lh3.googleusercontent.com/aida-public/AB6AXuCa2yRVXB_aV_Z7rCh0pkMrocXnA2c_4FG6IN9efgNhXhS_eB0ku1AoPX3YsXs_SkDP8UpzqeAKC1UiU6RCewvIz_FRWY8Ve8P28DefSHdta4QLO8nMcUsleQhvit4ueRB3XeOn1x1pg7jFQGxpZLOYEw2js_v8bzEUweVtizvE85b6wJ2osmla2bbLPVz2UekjFo_TulFkUKcIjg5dFNrMnKl9-lQISXwkBVPsjQpPs7p3b1_QNCBpWxL9vXRwtf7sYHk19GL31C8=w256 256w"
+                                sizes="64px"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa2yRVXB_aV_Z7rCh0pkMrocXnA2c_4FG6IN9efgNhXhS_eB0ku1AoPX3YsXs_SkDP8UpzqeAKC1UiU6RCewvIz_FRWY8Ve8P28DefSHdta4QLO8nMcUsleQhvit4ueRB3XeOn1x1pg7jFQGxpZLOYEw2js_v8bzEUweVtizvE85b6wJ2osmla2bbLPVz2UekjFo_TulFkUKcIjg5dFNrMnKl9-lQISXwkBVPsjQpPs7p3b1_QNCBpWxL9vXRwtf7sYHk19GL31C8=w128"
+                                loading="lazy" decoding="async" />
+                        </picture>
                     </div>
                     <span class="font-label fw-bold text-uppercase text-on-surface-variant"
                         style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.1em;">Brunch</span>
@@ -71,9 +87,17 @@
                 <!-- Fine Dining -->
                 <button class="category-btn flex-shrink-0">
                     <div class="category-img-container">
-                        <img class="w-100 h-100 rounded-circle object-fit-cover"
-                            data-alt="exquisite plate of molecular gastronomy at a Michelin star restaurant with dramatic lighting"
-                            srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuAuL_xQFhQFFfG2FThKwWI3p_wY00d6wCwmy00UBoSxALNMD51Aj8LVa8VJ6XLjIwRDBJpsDv00ynRP0mZRW13EOvGN1c3dGcdFNwJ9v7ua3QMSNoQmFkk26sEsug3WMQM7KkOxGyeAucO6urqzqv0BStF0ia59L8QZWy4cDBzBWx2xRIdx2c7dCNwpe3hNLwh-HnJYw3cwIxFlKK-K-bZs9J1dcIvl4U6mCOG9XnYZWqFA4lU4OHSQJe1RZqqevs5f8gevqvCvKGg=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuAuL_xQFhQFFfG2FThKwWI3p_wY00d6wCwmy00UBoSxALNMD51Aj8LVa8VJ6XLjIwRDBJpsDv00ynRP0mZRW13EOvGN1c3dGcdFNwJ9v7ua3QMSNoQmFkk26sEsug3WMQM7KkOxGyeAucO6urqzqv0BStF0ia59L8QZWy4cDBzBWx2xRIdx2c7dCNwpe3hNLwh-HnJYw3cwIxFlKK-K-bZs9J1dcIvl4U6mCOG9XnYZWqFA4lU4OHSQJe1RZqqevs5f8gevqvCvKGg=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuAuL_xQFhQFFfG2FThKwWI3p_wY00d6wCwmy00UBoSxALNMD51Aj8LVa8VJ6XLjIwRDBJpsDv00ynRP0mZRW13EOvGN1c3dGcdFNwJ9v7ua3QMSNoQmFkk26sEsug3WMQM7KkOxGyeAucO6urqzqv0BStF0ia59L8QZWy4cDBzBWx2xRIdx2c7dCNwpe3hNLwh-HnJYw3cwIxFlKK-K-bZs9J1dcIvl4U6mCOG9XnYZWqFA4lU4OHSQJe1RZqqevs5f8gevqvCvKGg=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuL_xQFhQFFfG2FThKwWI3p_wY00d6wCwmy00UBoSxALNMD51Aj8LVa8VJ6XLjIwRDBJpsDv00ynRP0mZRW13EOvGN1c3dGcdFNwJ9v7ua3QMSNoQmFkk26sEsug3WMQM7KkOxGyeAucO6urqzqv0BStF0ia59L8QZWy4cDBzBWx2xRIdx2c7dCNwpe3hNLwh-HnJYw3cwIxFlKK-K-bZs9J1dcIvl4U6mCOG9XnYZWqFA4lU4OHSQJe1RZqqevs5f8gevqvCvKGg" />
+                        <picture>
+                            <source type="image/webp"
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuAuL_xQFhQFFfG2FThKwWI3p_wY00d6wCwmy00UBoSxALNMD51Aj8LVa8VJ6XLjIwRDBJpsDv00ynRP0mZRW13EOvGN1c3dGcdFNwJ9v7ua3QMSNoQmFkk26sEsug3WMQM7KkOxGyeAucO6urqzqv0BStF0ia59L8QZWy4cDBzBWx2xRIdx2c7dCNwpe3hNLwh-HnJYw3cwIxFlKK-K-bZs9J1dcIvl4U6mCOG9XnYZWqFA4lU4OHSQJe1RZqqevs5f8gevqvCvKGg=w128-rw 128w, https://lh3.googleusercontent.com/aida-public/AB6AXuAuL_xQFhQFFfG2FThKwWI3p_wY00d6wCwmy00UBoSxALNMD51Aj8LVa8VJ6XLjIwRDBJpsDv00ynRP0mZRW13EOvGN1c3dGcdFNwJ9v7ua3QMSNoQmFkk26sEsug3WMQM7KkOxGyeAucO6urqzqv0BStF0ia59L8QZWy4cDBzBWx2xRIdx2c7dCNwpe3hNLwh-HnJYw3cwIxFlKK-K-bZs9J1dcIvl4U6mCOG9XnYZWqFA4lU4OHSQJe1RZqqevs5f8gevqvCvKGg=w256-rw 256w"
+                                sizes="64px" />
+                            <img class="w-100 h-100 rounded-circle object-fit-cover"
+                                alt="Fine Dining category"
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuAuL_xQFhQFFfG2FThKwWI3p_wY00d6wCwmy00UBoSxALNMD51Aj8LVa8VJ6XLjIwRDBJpsDv00ynRP0mZRW13EOvGN1c3dGcdFNwJ9v7ua3QMSNoQmFkk26sEsug3WMQM7KkOxGyeAucO6urqzqv0BStF0ia59L8QZWy4cDBzBWx2xRIdx2c7dCNwpe3hNLwh-HnJYw3cwIxFlKK-K-bZs9J1dcIvl4U6mCOG9XnYZWqFA4lU4OHSQJe1RZqqevs5f8gevqvCvKGg=w128 128w, https://lh3.googleusercontent.com/aida-public/AB6AXuAuL_xQFhQFFfG2FThKwWI3p_wY00d6wCwmy00UBoSxALNMD51Aj8LVa8VJ6XLjIwRDBJpsDv00ynRP0mZRW13EOvGN1c3dGcdFNwJ9v7ua3QMSNoQmFkk26sEsug3WMQM7KkOxGyeAucO6urqzqv0BStF0ia59L8QZWy4cDBzBWx2xRIdx2c7dCNwpe3hNLwh-HnJYw3cwIxFlKK-K-bZs9J1dcIvl4U6mCOG9XnYZWqFA4lU4OHSQJe1RZqqevs5f8gevqvCvKGg=w256 256w"
+                                sizes="64px"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuL_xQFhQFFfG2FThKwWI3p_wY00d6wCwmy00UBoSxALNMD51Aj8LVa8VJ6XLjIwRDBJpsDv00ynRP0mZRW13EOvGN1c3dGcdFNwJ9v7ua3QMSNoQmFkk26sEsug3WMQM7KkOxGyeAucO6urqzqv0BStF0ia59L8QZWy4cDBzBWx2xRIdx2c7dCNwpe3hNLwh-HnJYw3cwIxFlKK-K-bZs9J1dcIvl4U6mCOG9XnYZWqFA4lU4OHSQJe1RZqqevs5f8gevqvCvKGg=w128"
+                                loading="lazy" decoding="async" />
+                        </picture>
                     </div>
                     <span class="font-label fw-bold text-uppercase text-on-surface-variant"
                         style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.1em;">Fine Dining</span>
@@ -81,9 +105,17 @@
                 <!-- Street Food -->
                 <button class="category-btn flex-shrink-0">
                     <div class="category-img-container">
-                        <img class="w-100 h-100 rounded-circle object-fit-cover"
-                            data-alt="vibrant street food market in Asia with steam rising from noodle bowls"
-                            srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuDEhBKDPpurmd4OVe1FiAQPYt_Gl_nhQawpRyJCsbWVxwRtoXb5ZdjqGGgXnOdqdRoUI9ZB8C_LfoRdKSdoELas5DIDLXO3dL_5D6te8CfP89Kw33K_6TtjVxXaZEnem0pW13jRBa9dypPDCflOmk9si4wVXSxlagEhUWgtfKnGRFNmBa1B4tBKJ7ba5OXx8V-pNWxgVN50uxOi5BHtyyVTYclWo2uhsR3OQZe-54irmUZC8BOScCYAKQWiSW6WpNzQnfBOLq7X0So=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuDEhBKDPpurmd4OVe1FiAQPYt_Gl_nhQawpRyJCsbWVxwRtoXb5ZdjqGGgXnOdqdRoUI9ZB8C_LfoRdKSdoELas5DIDLXO3dL_5D6te8CfP89Kw33K_6TtjVxXaZEnem0pW13jRBa9dypPDCflOmk9si4wVXSxlagEhUWgtfKnGRFNmBa1B4tBKJ7ba5OXx8V-pNWxgVN50uxOi5BHtyyVTYclWo2uhsR3OQZe-54irmUZC8BOScCYAKQWiSW6WpNzQnfBOLq7X0So=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuDEhBKDPpurmd4OVe1FiAQPYt_Gl_nhQawpRyJCsbWVxwRtoXb5ZdjqGGgXnOdqdRoUI9ZB8C_LfoRdKSdoELas5DIDLXO3dL_5D6te8CfP89Kw33K_6TtjVxXaZEnem0pW13jRBa9dypPDCflOmk9si4wVXSxlagEhUWgtfKnGRFNmBa1B4tBKJ7ba5OXx8V-pNWxgVN50uxOi5BHtyyVTYclWo2uhsR3OQZe-54irmUZC8BOScCYAKQWiSW6WpNzQnfBOLq7X0So=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEhBKDPpurmd4OVe1FiAQPYt_Gl_nhQawpRyJCsbWVxwRtoXb5ZdjqGGgXnOdqdRoUI9ZB8C_LfoRdKSdoELas5DIDLXO3dL_5D6te8CfP89Kw33K_6TtjVxXaZEnem0pW13jRBa9dypPDCflOmk9si4wVXSxlagEhUWgtfKnGRFNmBa1B4tBKJ7ba5OXx8V-pNWxgVN50uxOi5BHtyyVTYclWo2uhsR3OQZe-54irmUZC8BOScCYAKQWiSW6WpNzQnfBOLq7X0So" />
+                        <picture>
+                            <source type="image/webp"
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuDEhBKDPpurmd4OVe1FiAQPYt_Gl_nhQawpRyJCsbWVxwRtoXb5ZdjqGGgXnOdqdRoUI9ZB8C_LfoRdKSdoELas5DIDLXO3dL_5D6te8CfP89Kw33K_6TtjVxXaZEnem0pW13jRBa9dypPDCflOmk9si4wVXSxlagEhUWgtfKnGRFNmBa1B4tBKJ7ba5OXx8V-pNWxgVN50uxOi5BHtyyVTYclWo2uhsR3OQZe-54irmUZC8BOScCYAKQWiSW6WpNzQnfBOLq7X0So=w128-rw 128w, https://lh3.googleusercontent.com/aida-public/AB6AXuDEhBKDPpurmd4OVe1FiAQPYt_Gl_nhQawpRyJCsbWVxwRtoXb5ZdjqGGgXnOdqdRoUI9ZB8C_LfoRdKSdoELas5DIDLXO3dL_5D6te8CfP89Kw33K_6TtjVxXaZEnem0pW13jRBa9dypPDCflOmk9si4wVXSxlagEhUWgtfKnGRFNmBa1B4tBKJ7ba5OXx8V-pNWxgVN50uxOi5BHtyyVTYclWo2uhsR3OQZe-54irmUZC8BOScCYAKQWiSW6WpNzQnfBOLq7X0So=w256-rw 256w"
+                                sizes="64px" />
+                            <img class="w-100 h-100 rounded-circle object-fit-cover"
+                                alt="Street Food category"
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuDEhBKDPpurmd4OVe1FiAQPYt_Gl_nhQawpRyJCsbWVxwRtoXb5ZdjqGGgXnOdqdRoUI9ZB8C_LfoRdKSdoELas5DIDLXO3dL_5D6te8CfP89Kw33K_6TtjVxXaZEnem0pW13jRBa9dypPDCflOmk9si4wVXSxlagEhUWgtfKnGRFNmBa1B4tBKJ7ba5OXx8V-pNWxgVN50uxOi5BHtyyVTYclWo2uhsR3OQZe-54irmUZC8BOScCYAKQWiSW6WpNzQnfBOLq7X0So=w128 128w, https://lh3.googleusercontent.com/aida-public/AB6AXuDEhBKDPpurmd4OVe1FiAQPYt_Gl_nhQawpRyJCsbWVxwRtoXb5ZdjqGGgXnOdqdRoUI9ZB8C_LfoRdKSdoELas5DIDLXO3dL_5D6te8CfP89Kw33K_6TtjVxXaZEnem0pW13jRBa9dypPDCflOmk9si4wVXSxlagEhUWgtfKnGRFNmBa1B4tBKJ7ba5OXx8V-pNWxgVN50uxOi5BHtyyVTYclWo2uhsR3OQZe-54irmUZC8BOScCYAKQWiSW6WpNzQnfBOLq7X0So=w256 256w"
+                                sizes="64px"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEhBKDPpurmd4OVe1FiAQPYt_Gl_nhQawpRyJCsbWVxwRtoXb5ZdjqGGgXnOdqdRoUI9ZB8C_LfoRdKSdoELas5DIDLXO3dL_5D6te8CfP89Kw33K_6TtjVxXaZEnem0pW13jRBa9dypPDCflOmk9si4wVXSxlagEhUWgtfKnGRFNmBa1B4tBKJ7ba5OXx8V-pNWxgVN50uxOi5BHtyyVTYclWo2uhsR3OQZe-54irmUZC8BOScCYAKQWiSW6WpNzQnfBOLq7X0So=w128"
+                                loading="lazy" decoding="async" />
+                        </picture>
                     </div>
                     <span class="font-label fw-bold text-uppercase text-on-surface-variant"
                         style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.1em;">Street Food</span>
@@ -91,9 +123,17 @@
                 <!-- Desserts -->
                 <button class="category-btn flex-shrink-0">
                     <div class="category-img-container">
-                        <img class="w-100 h-100 rounded-circle object-fit-cover"
-                            data-alt="close-up of a decadent chocolate molten lava cake with raspberry sauce"
-                            srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuCcGG7hgpBM1l-r1w-UBUzOsGn80V8dCDIV-_AZ7WZBpetqQp8BgxaayxWbhl6vNaYbThw5keD29CQafhdjxYW6GCLLhP6SZLEhqX9IZ1J8ffIoQvvo0W_v5V_PHFBt61ylcqGjXfXAISceUr9Xnj8QSvej_5mgcdCtfSi_UQj5VcUV9vbNLMbSKsltzL-RnEGZtLil5APGcjSHaJt9gdUQoE49vjX-f3gJti7BNYAV7TAxtJTtEXpVPJSEest0KyD_HMkOAyB891s=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuCcGG7hgpBM1l-r1w-UBUzOsGn80V8dCDIV-_AZ7WZBpetqQp8BgxaayxWbhl6vNaYbThw5keD29CQafhdjxYW6GCLLhP6SZLEhqX9IZ1J8ffIoQvvo0W_v5V_PHFBt61ylcqGjXfXAISceUr9Xnj8QSvej_5mgcdCtfSi_UQj5VcUV9vbNLMbSKsltzL-RnEGZtLil5APGcjSHaJt9gdUQoE49vjX-f3gJti7BNYAV7TAxtJTtEXpVPJSEest0KyD_HMkOAyB891s=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuCcGG7hgpBM1l-r1w-UBUzOsGn80V8dCDIV-_AZ7WZBpetqQp8BgxaayxWbhl6vNaYbThw5keD29CQafhdjxYW6GCLLhP6SZLEhqX9IZ1J8ffIoQvvo0W_v5V_PHFBt61ylcqGjXfXAISceUr9Xnj8QSvej_5mgcdCtfSi_UQj5VcUV9vbNLMbSKsltzL-RnEGZtLil5APGcjSHaJt9gdUQoE49vjX-f3gJti7BNYAV7TAxtJTtEXpVPJSEest0KyD_HMkOAyB891s=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcGG7hgpBM1l-r1w-UBUzOsGn80V8dCDIV-_AZ7WZBpetqQp8BgxaayxWbhl6vNaYbThw5keD29CQafhdjxYW6GCLLhP6SZLEhqX9IZ1J8ffIoQvvo0W_v5V_PHFBt61ylcqGjXfXAISceUr9Xnj8QSvej_5mgcdCtfSi_UQj5VcUV9vbNLMbSKsltzL-RnEGZtLil5APGcjSHaJt9gdUQoE49vjX-f3gJti7BNYAV7TAxtJTtEXpVPJSEest0KyD_HMkOAyB891s" />
+                        <picture>
+                            <source type="image/webp"
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuCcGG7hgpBM1l-r1w-UBUzOsGn80V8dCDIV-_AZ7WZBpetqQp8BgxaayxWbhl6vNaYbThw5keD29CQafhdjxYW6GCLLhP6SZLEhqX9IZ1J8ffIoQvvo0W_v5V_PHFBt61ylcqGjXfXAISceUr9Xnj8QSvej_5mgcdCtfSi_UQj5VcUV9vbNLMbSKsltzL-RnEGZtLil5APGcjSHaJt9gdUQoE49vjX-f3gJti7BNYAV7TAxtJTtEXpVPJSEest0KyD_HMkOAyB891s=w128-rw 128w, https://lh3.googleusercontent.com/aida-public/AB6AXuCcGG7hgpBM1l-r1w-UBUzOsGn80V8dCDIV-_AZ7WZBpetqQp8BgxaayxWbhl6vNaYbThw5keD29CQafhdjxYW6GCLLhP6SZLEhqX9IZ1J8ffIoQvvo0W_v5V_PHFBt61ylcqGjXfXAISceUr9Xnj8QSvej_5mgcdCtfSi_UQj5VcUV9vbNLMbSKsltzL-RnEGZtLil5APGcjSHaJt9gdUQoE49vjX-f3gJti7BNYAV7TAxtJTtEXpVPJSEest0KyD_HMkOAyB891s=w256-rw 256w"
+                                sizes="64px" />
+                            <img class="w-100 h-100 rounded-circle object-fit-cover"
+                                alt="Desserts category"
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuCcGG7hgpBM1l-r1w-UBUzOsGn80V8dCDIV-_AZ7WZBpetqQp8BgxaayxWbhl6vNaYbThw5keD29CQafhdjxYW6GCLLhP6SZLEhqX9IZ1J8ffIoQvvo0W_v5V_PHFBt61ylcqGjXfXAISceUr9Xnj8QSvej_5mgcdCtfSi_UQj5VcUV9vbNLMbSKsltzL-RnEGZtLil5APGcjSHaJt9gdUQoE49vjX-f3gJti7BNYAV7TAxtJTtEXpVPJSEest0KyD_HMkOAyB891s=w128 128w, https://lh3.googleusercontent.com/aida-public/AB6AXuCcGG7hgpBM1l-r1w-UBUzOsGn80V8dCDIV-_AZ7WZBpetqQp8BgxaayxWbhl6vNaYbThw5keD29CQafhdjxYW6GCLLhP6SZLEhqX9IZ1J8ffIoQvvo0W_v5V_PHFBt61ylcqGjXfXAISceUr9Xnj8QSvej_5mgcdCtfSi_UQj5VcUV9vbNLMbSKsltzL-RnEGZtLil5APGcjSHaJt9gdUQoE49vjX-f3gJti7BNYAV7TAxtJTtEXpVPJSEest0KyD_HMkOAyB891s=w256 256w"
+                                sizes="64px"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcGG7hgpBM1l-r1w-UBUzOsGn80V8dCDIV-_AZ7WZBpetqQp8BgxaayxWbhl6vNaYbThw5keD29CQafhdjxYW6GCLLhP6SZLEhqX9IZ1J8ffIoQvvo0W_v5V_PHFBt61ylcqGjXfXAISceUr9Xnj8QSvej_5mgcdCtfSi_UQj5VcUV9vbNLMbSKsltzL-RnEGZtLil5APGcjSHaJt9gdUQoE49vjX-f3gJti7BNYAV7TAxtJTtEXpVPJSEest0KyD_HMkOAyB891s=w128"
+                                loading="lazy" decoding="async" />
+                        </picture>
                     </div>
                     <span class="font-label fw-bold text-uppercase text-on-surface-variant"
                         style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.1em;">Desserts</span>
@@ -101,9 +141,17 @@
                 <!-- Cocktails -->
                 <button class="category-btn flex-shrink-0">
                     <div class="category-img-container">
-                        <img class="w-100 h-100 rounded-circle object-fit-cover"
-                            data-alt="artisan cocktail with garnishes in a crystal glass on a dark bar counter"
-                            srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuA514_DGB2eKHRzWPiQxAOsym6AuIwdM0PeRFKznKn-gM01Bx-3Bphqns6uvanohK24e5MD-JfICfSpxmJntvWSBpKVQxi97upi6CaMxU0dNY_Wn5FsSk1edZu35MHAoV_ixzlEL4kKATYy3rYbsSLU2pELuc1edybqiPTId0beFsnsx_ZBWeHs55cZC79kERUU8GzYubV65q_CcwM3moJ5qnVSSUbLj6AjxP7aiIPhRY7PrppfbESl06OSRqnygwdDcpOdpwOfn0c=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuA514_DGB2eKHRzWPiQxAOsym6AuIwdM0PeRFKznKn-gM01Bx-3Bphqns6uvanohK24e5MD-JfICfSpxmJntvWSBpKVQxi97upi6CaMxU0dNY_Wn5FsSk1edZu35MHAoV_ixzlEL4kKATYy3rYbsSLU2pELuc1edybqiPTId0beFsnsx_ZBWeHs55cZC79kERUU8GzYubV65q_CcwM3moJ5qnVSSUbLj6AjxP7aiIPhRY7PrppfbESl06OSRqnygwdDcpOdpwOfn0c=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuA514_DGB2eKHRzWPiQxAOsym6AuIwdM0PeRFKznKn-gM01Bx-3Bphqns6uvanohK24e5MD-JfICfSpxmJntvWSBpKVQxi97upi6CaMxU0dNY_Wn5FsSk1edZu35MHAoV_ixzlEL4kKATYy3rYbsSLU2pELuc1edybqiPTId0beFsnsx_ZBWeHs55cZC79kERUU8GzYubV65q_CcwM3moJ5qnVSSUbLj6AjxP7aiIPhRY7PrppfbESl06OSRqnygwdDcpOdpwOfn0c=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA514_DGB2eKHRzWPiQxAOsym6AuIwdM0PeRFKznKn-gM01Bx-3Bphqns6uvanohK24e5MD-JfICfSpxmJntvWSBpKVQxi97upi6CaMxU0dNY_Wn5FsSk1edZu35MHAoV_ixzlEL4kKATYy3rYbsSLU2pELuc1edybqiPTId0beFsnsx_ZBWeHs55cZC79kERUU8GzYubV65q_CcwM3moJ5qnVSSUbLj6AjxP7aiIPhRY7PrppfbESl06OSRqnygwdDcpOdpwOfn0c" />
+                        <picture>
+                            <source type="image/webp"
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuA514_DGB2eKHRzWPiQxAOsym6AuIwdM0PeRFKznKn-gM01Bx-3Bphqns6uvanohK24e5MD-JfICfSpxmJntvWSBpKVQxi97upi6CaMxU0dNY_Wn5FsSk1edZu35MHAoV_ixzlEL4kKATYy3rYbsSLU2pELuc1edybqiPTId0beFsnsx_ZBWeHs55cZC79kERUU8GzYubV65q_CcwM3moJ5qnVSSUbLj6AjxP7aiIPhRY7PrppfbESl06OSRqnygwdDcpOdpwOfn0c=w128-rw 128w, https://lh3.googleusercontent.com/aida-public/AB6AXuA514_DGB2eKHRzWPiQxAOsym6AuIwdM0PeRFKznKn-gM01Bx-3Bphqns6uvanohK24e5MD-JfICfSpxmJntvWSBpKVQxi97upi6CaMxU0dNY_Wn5FsSk1edZu35MHAoV_ixzlEL4kKATYy3rYbsSLU2pELuc1edybqiPTId0beFsnsx_ZBWeHs55cZC79kERUU8GzYubV65q_CcwM3moJ5qnVSSUbLj6AjxP7aiIPhRY7PrppfbESl06OSRqnygwdDcpOdpwOfn0c=w256-rw 256w"
+                                sizes="64px" />
+                            <img class="w-100 h-100 rounded-circle object-fit-cover"
+                                alt="Cocktails category"
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuA514_DGB2eKHRzWPiQxAOsym6AuIwdM0PeRFKznKn-gM01Bx-3Bphqns6uvanohK24e5MD-JfICfSpxmJntvWSBpKVQxi97upi6CaMxU0dNY_Wn5FsSk1edZu35MHAoV_ixzlEL4kKATYy3rYbsSLU2pELuc1edybqiPTId0beFsnsx_ZBWeHs55cZC79kERUU8GzYubV65q_CcwM3moJ5qnVSSUbLj6AjxP7aiIPhRY7PrppfbESl06OSRqnygwdDcpOdpwOfn0c=w128 128w, https://lh3.googleusercontent.com/aida-public/AB6AXuA514_DGB2eKHRzWPiQxAOsym6AuIwdM0PeRFKznKn-gM01Bx-3Bphqns6uvanohK24e5MD-JfICfSpxmJntvWSBpKVQxi97upi6CaMxU0dNY_Wn5FsSk1edZu35MHAoV_ixzlEL4kKATYy3rYbsSLU2pELuc1edybqiPTId0beFsnsx_ZBWeHs55cZC79kERUU8GzYubV65q_CcwM3moJ5qnVSSUbLj6AjxP7aiIPhRY7PrppfbESl06OSRqnygwdDcpOdpwOfn0c=w256 256w"
+                                sizes="64px"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA514_DGB2eKHRzWPiQxAOsym6AuIwdM0PeRFKznKn-gM01Bx-3Bphqns6uvanohK24e5MD-JfICfSpxmJntvWSBpKVQxi97upi6CaMxU0dNY_Wn5FsSk1edZu35MHAoV_ixzlEL4kKATYy3rYbsSLU2pELuc1edybqiPTId0beFsnsx_ZBWeHs55cZC79kERUU8GzYubV65q_CcwM3moJ5qnVSSUbLj6AjxP7aiIPhRY7PrppfbESl06OSRqnygwdDcpOdpwOfn0c=w128"
+                                loading="lazy" decoding="async" />
+                        </picture>
                     </div>
                     <span class="font-label fw-bold text-uppercase text-on-surface-variant"
                         style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.1em;">Cocktails</span>
@@ -112,9 +160,15 @@
                 <!-- Vegan -->
                 <button class="category-btn flex-shrink-0">
                     <div class="category-img-container">
-                        <img class="w-100 h-100 rounded-circle object-fit-cover"
-                            data-alt="colorful vegan salad bowl"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBErjnZLVV-kJ7L4v9eEaa477v2lqU_KKh71uEnqEdxxTE0WH_D7TN7umL8jrXNJhksP8Zmeq-O9PM9ugv5VRSiy4zHpgJ-6WaoVH39CxJimmfDMXjzPrsUuOJ3pMgKDLFRXU-XZ5LSM-SZcjQdDSduAYz9fJYOFJSZXOELOv6xeEmEcGuq-miXmM5ABpoAkAzLA039NEn9IhiOApOZnJnMY0vSAQIBThWK4CS_iOETBs7j6VriSeUJHqnjOd8fLOlCVVzo9ihiph0" />
+                        <picture>
+                            <source type="image/webp"
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuBErjnZLVV-kJ7L4v9eEaa477v2lqU_KKh71uEnqEdxxTE0WH_D7TN7umL8jrXNJhksP8Zmeq-O9PM9ugv5VRSiy4zHpgJ-6WaoVH39CxJimmfDMXjzPrsUuOJ3pMgKDLFRXU-XZ5LSM-SZcjQdDSduAYz9fJYOFJSZXOELOv6xeEmEcGuq-miXmM5ABpoAkAzLA039NEn9IhiOApOZnJnMY0vSAQIBThWK4CS_iOETBs7j6VriSeUJHqnjOd8fLOlCVVzo9ihiph0=w128-rw 128w, https://lh3.googleusercontent.com/aida-public/AB6AXuBErjnZLVV-kJ7L4v9eEaa477v2lqU_KKh71uEnqEdxxTE0WH_D7TN7umL8jrXNJhksP8Zmeq-O9PM9ugv5VRSiy4zHpgJ-6WaoVH39CxJimmfDMXjzPrsUuOJ3pMgKDLFRXU-XZ5LSM-SZcjQdDSduAYz9fJYOFJSZXOELOv6xeEmEcGuq-miXmM5ABpoAkAzLA039NEn9IhiOApOZnJnMY0vSAQIBThWK4CS_iOETBs7j6VriSeUJHqnjOd8fLOlCVVzo9ihiph0=w256-rw 256w"
+                                sizes="64px" />
+                            <img class="w-100 h-100 rounded-circle object-fit-cover" alt="Vegan category"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBErjnZLVV-kJ7L4v9eEaa477v2lqU_KKh71uEnqEdxxTE0WH_D7TN7umL8jrXNJhksP8Zmeq-O9PM9ugv5VRSiy4zHpgJ-6WaoVH39CxJimmfDMXjzPrsUuOJ3pMgKDLFRXU-XZ5LSM-SZcjQdDSduAYz9fJYOFJSZXOELOv6xeEmEcGuq-miXmM5ABpoAkAzLA039NEn9IhiOApOZnJnMY0vSAQIBThWK4CS_iOETBs7j6VriSeUJHqnjOd8fLOlCVVzo9ihiph0=w128"
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuBErjnZLVV-kJ7L4v9eEaa477v2lqU_KKh71uEnqEdxxTE0WH_D7TN7umL8jrXNJhksP8Zmeq-O9PM9ugv5VRSiy4zHpgJ-6WaoVH39CxJimmfDMXjzPrsUuOJ3pMgKDLFRXU-XZ5LSM-SZcjQdDSduAYz9fJYOFJSZXOELOv6xeEmEcGuq-miXmM5ABpoAkAzLA039NEn9IhiOApOZnJnMY0vSAQIBThWK4CS_iOETBs7j6VriSeUJHqnjOd8fLOlCVVzo9ihiph0=w128 128w, https://lh3.googleusercontent.com/aida-public/AB6AXuBErjnZLVV-kJ7L4v9eEaa477v2lqU_KKh71uEnqEdxxTE0WH_D7TN7umL8jrXNJhksP8Zmeq-O9PM9ugv5VRSiy4zHpgJ-6WaoVH39CxJimmfDMXjzPrsUuOJ3pMgKDLFRXU-XZ5LSM-SZcjQdDSduAYz9fJYOFJSZXOELOv6xeEmEcGuq-miXmM5ABpoAkAzLA039NEn9IhiOApOZnJnMY0vSAQIBThWK4CS_iOETBs7j6VriSeUJHqnjOd8fLOlCVVzo9ihiph0=w256 256w"
+                                sizes="64px" loading="lazy" decoding="async" />
+                        </picture>
                     </div>
                     <span class="font-label fw-bold text-uppercase text-on-surface-variant"
                         style="font-size: clamp(0.5rem, 1.5vw, 0.625rem); letter-spacing: 0.1em;">Vegan</span>
@@ -122,9 +176,9 @@
                 <!-- Pasta -->
                 <button class="category-btn flex-shrink-0">
                     <div class="category-img-container">
-                        <img class="w-100 h-100 rounded-circle object-fit-cover"
-                            data-alt="fresh handmade pasta"
-                            src="assets/images/pasta_cover.png" />
+                        <img class="w-100 h-100 rounded-circle object-fit-cover" alt="Pasta category"
+                            src="assets/images/pasta_cover.png"
+                            loading="lazy" decoding="async" />
                     </div>
                     <span class="font-label fw-bold text-uppercase text-on-surface-variant"
                         style="font-size: clamp(0.5rem, 1.5vw, 0.625rem); letter-spacing: 0.1em;">Pasta</span>
@@ -132,9 +186,14 @@
                 <!-- Steakhouse -->
                 <button class="category-btn flex-shrink-0">
                     <div class="category-img-container">
-                        <img class="w-100 h-100 rounded-circle object-fit-cover"
-                            data-alt="juicy grilled steak"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8Y64owEY6UHmbU2Y0aWhNTiM-29PTvwuAE7eBCc65XpCFhLYlFmXs_WzdYfrhu2Cf4OIj_0pKyxXvSEMVoHZmXJACjBD8KS9A1jM-Pv1pPmU1sFUUVEM-HtZOUacOMhub2qtfeNaTI4p2Xv1WCzTD1ujcNrPiIf04-d3lAsLdcUOAU8svPieasDN5R8BvVCQgzYB235TTiB5CUql9TaKUPBUxbtoe0rsbpUMa8XOFnpO7fFRsxalnk25n6jVILBzoMzEo142MiQY" />
+                        <picture>
+                            <source type="image/webp"
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuB8Y64owEY6UHmbU2Y0aWhNTiM-29PTvwuAE7eBCc65XpCFhLYlFmXs_WzdYfrhu2Cf4OIj_0pKyxXvSEMVoHZmXJACjBD8KS9A1jM-Pv1pPmU1sFUUVEM-HtZOUacOMhub2qtfeNaTI4p2Xv1WCzTD1ujcNrPiIf04-d3lAsLdcUOAU8svPieasDN5R8BvVCQgzYB235TTiB5CUql9TaKUPBUxbtoe0rsbpUMa8XOFnpO7fFRsxalnk25n6jVILBzoMzEo142MiQY=w128-rw 128w, https://lh3.googleusercontent.com/aida-public/AB6AXuB8Y64owEY6UHmbU2Y0aWhNTiM-29PTvwuAE7eBCc65XpCFhLYlFmXs_WzdYfrhu2Cf4OIj_0pKyxXvSEMVoHZmXJACjBD8KS9A1jM-Pv1pPmU1sFUUVEM-HtZOUacOMhub2qtfeNaTI4p2Xv1WCzTD1ujcNrPiIf04-d3lAsLdcUOAU8svPieasDN5R8BvVCQgzYB235TTiB5CUql9TaKUPBUxbtoe0rsbpUMa8XOFnpO7fFRsxalnk25n6jVILBzoMzEo142MiQY=w256-rw 256w"
+                                sizes="64px" />
+                            <img class="w-100 h-100 rounded-circle object-fit-cover" alt="Steakhouse category"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8Y64owEY6UHmbU2Y0aWhNTiM-29PTvwuAE7eBCc65XpCFhLYlFmXs_WzdYfrhu2Cf4OIj_0pKyxXvSEMVoHZmXJACjBD8KS9A1jM-Pv1pPmU1sFUUVEM-HtZOUacOMhub2qtfeNaTI4p2Xv1WCzTD1ujcNrPiIf04-d3lAsLdcUOAU8svPieasDN5R8BvVCQgzYB235TTiB5CUql9TaKUPBUxbtoe0rsbpUMa8XOFnpO7fFRsxalnk25n6jVILBzoMzEo142MiQY=w128"
+                                loading="lazy" decoding="async" />
+                        </picture>
                     </div>
                     <span class="font-label fw-bold text-uppercase text-on-surface-variant"
                         style="font-size: clamp(0.5rem, 1.5vw, 0.625rem); letter-spacing: 0.1em;">Steakhouse</span>
@@ -142,9 +201,14 @@
                 <!-- Sushi -->
                 <button class="category-btn flex-shrink-0">
                     <div class="category-img-container">
-                        <img class="w-100 h-100 rounded-circle object-fit-cover"
-                            data-alt="fresh sushi platter"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuABST8I4MAqlgCHqU7w6XBXI3qZ443BRZWn9ys-UoTGh6X6avCfOpIsaZh9n4NBTxUYvhTkuTDvxAOBTyyOVNPYLwTaRpCGP0WGtPCGd9CmnGhn-upl0Kx6a3xpod5xslBjilymXV0yWTUe5PsFKvlqTH6f0Sw9rDHsioc37PfsrtX9bjnRAzXSQcYEhjjR9us-ZMwGKSS71QAZGqwFaQ5dmfd8E8qdk7xiFRrHPUnKZkrWfTYLSQpYOWuqL3C4bauNBMtdMAbpKxM" />
+                        <picture>
+                            <source type="image/webp"
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuABST8I4MAqlgCHqU7w6XBXI3qZ443BRZWn9ys-UoTGh6X6avCfOpIsaZh9n4NBTxUYvhTkuTDvxAOBTyyOVNPYLwTaRpCGP0WGtPCGd9CmnGhn-upl0Kx6a3xpod5xslBjilymXV0yWTUe5PsFKvlqTH6f0Sw9rDHsioc37PfsrtX9bjnRAzXSQcYEhjjR9us-ZMwGKSS71QAZGqwFaQ5dmfd8E8qdk7xiFRrHPUnKZkrWfTYLSQpYOWuqL3C4bauNBMtdMAbpKxM=w128-rw 128w, https://lh3.googleusercontent.com/aida-public/AB6AXuABST8I4MAqlgCHqU7w6XBXI3qZ443BRZWn9ys-UoTGh6X6avCfOpIsaZh9n4NBTxUYvhTkuTDvxAOBTyyOVNPYLwTaRpCGP0WGtPCGd9CmnGhn-upl0Kx6a3xpod5xslBjilymXV0yWTUe5PsFKvlqTH6f0Sw9rDHsioc37PfsrtX9bjnRAzXSQcYEhjjR9us-ZMwGKSS71QAZGqwFaQ5dmfd8E8qdk7xiFRrHPUnKZkrWfTYLSQpYOWuqL3C4bauNBMtdMAbpKxM=w256-rw 256w"
+                                sizes="64px" />
+                            <img class="w-100 h-100 rounded-circle object-fit-cover" alt="Sushi category"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuABST8I4MAqlgCHqU7w6XBXI3qZ443BRZWn9ys-UoTGh6X6avCfOpIsaZh9n4NBTxUYvhTkuTDvxAOBTyyOVNPYLwTaRpCGP0WGtPCGd9CmnGhn-upl0Kx6a3xpod5xslBjilymXV0yWTUe5PsFKvlqTH6f0Sw9rDHsioc37PfsrtX9bjnRAzXSQcYEhjjR9us-ZMwGKSS71QAZGqwFaQ5dmfd8E8qdk7xiFRrHPUnKZkrWfTYLSQpYOWuqL3C4bauNBMtdMAbpKxM=w128"
+                                loading="lazy" decoding="async" />
+                        </picture>
                     </div>
                     <span class="font-label fw-bold text-uppercase text-on-surface-variant"
                         style="font-size: clamp(0.5rem, 1.5vw, 0.625rem); letter-spacing: 0.1em;">Sushi</span>
@@ -159,107 +223,142 @@
                     <h2 class="font-headline fs-3 m-0">Trending This Week</h2>
                     <a class="font-label fw-bold text-primary text-uppercase text-decoration-none d-flex align-items-center gap-1"
                         href="#" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem); letter-spacing: 0.1em;">
-                        View All <span class="material-symbols-outlined fs-6">arrow_forward</span>
+                        View All <i class="bi bi-arrow-right fs-6"></i>
                     </a>
                 </div>
                 <div class="row g-4 mb-4">
                     <!-- Featured Card 1 -->
                     <div class="col-md-6">
                         <a href="dish-detail.html" class="text-decoration-none">
-                        <div class="card card-custom h-100">
-                            <div class="card-img-wrap">
-                                <img data-alt="gorgeous roasted salmon with herbs and citrus on a wooden table with soft candle lighting"
-                                    srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuB4-FCIsg-kXbxI6dO196COY059NGHXi2DgoyTLFRAmC9FiMMyaanXZi2WB1Jfxbym1Vs8tbcWSwSrjNGAU0ntkKHJ1MenNz0Zw9Gp5uAI9tSyCBHxVuy6Q-OI4fwxxYElFT43GXL4So8gT9CE56A00Um5Uc9BOOSaKnLF6_ubRzlPnveEhpL9c9SoJs4QuSq3aN5UFyKudHsj0lGg8GInznZQ884EE2Xbxs0CcUrF1ylhiYKjU4mWrBbyWpZ_Z5S-Fz8AmVkyuovs=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuB4-FCIsg-kXbxI6dO196COY059NGHXi2DgoyTLFRAmC9FiMMyaanXZi2WB1Jfxbym1Vs8tbcWSwSrjNGAU0ntkKHJ1MenNz0Zw9Gp5uAI9tSyCBHxVuy6Q-OI4fwxxYElFT43GXL4So8gT9CE56A00Um5Uc9BOOSaKnLF6_ubRzlPnveEhpL9c9SoJs4QuSq3aN5UFyKudHsj0lGg8GInznZQ884EE2Xbxs0CcUrF1ylhiYKjU4mWrBbyWpZ_Z5S-Fz8AmVkyuovs=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuB4-FCIsg-kXbxI6dO196COY059NGHXi2DgoyTLFRAmC9FiMMyaanXZi2WB1Jfxbym1Vs8tbcWSwSrjNGAU0ntkKHJ1MenNz0Zw9Gp5uAI9tSyCBHxVuy6Q-OI4fwxxYElFT43GXL4So8gT9CE56A00Um5Uc9BOOSaKnLF6_ubRzlPnveEhpL9c9SoJs4QuSq3aN5UFyKudHsj0lGg8GInznZQ884EE2Xbxs0CcUrF1ylhiYKjU4mWrBbyWpZ_Z5S-Fz8AmVkyuovs=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4-FCIsg-kXbxI6dO196COY059NGHXi2DgoyTLFRAmC9FiMMyaanXZi2WB1Jfxbym1Vs8tbcWSwSrjNGAU0ntkKHJ1MenNz0Zw9Gp5uAI9tSyCBHxVuy6Q-OI4fwxxYElFT43GXL4So8gT9CE56A00Um5Uc9BOOSaKnLF6_ubRzlPnveEhpL9c9SoJs4QuSq3aN5UFyKudHsj0lGg8GInznZQ884EE2Xbxs0CcUrF1ylhiYKjU4mWrBbyWpZ_Z5S-Fz8AmVkyuovs" />
-                                <div class="position-absolute top-0 start-0 p-3">
-                                    <span class="badge-custom">Signature</span>
-                                </div>
-                                <div class="position-absolute top-0 end-0 p-3">
-                                    <button class="btn-fav">
-                                        <span class="material-symbols-outlined fs-5" data-weight="fill">favorite</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-body p-4 d-flex flex-column">
-                                <div class="d-flex align-items-center gap-1 text-primary mb-2">
-                                    <span class="material-symbols-outlined fs-6" data-weight="fill">star</span>
-                                    <span class="material-symbols-outlined fs-6" data-weight="fill">star</span>
-                                    <span class="material-symbols-outlined fs-6" data-weight="fill">star</span>
-                                    <span class="material-symbols-outlined fs-6" data-weight="fill">star</span>
-                                    <span class="material-symbols-outlined fs-6">star</span>
-                                    <span class="text-on-surface-variant ms-1 fw-medium" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">4.8
-                                        (210)</span>
-                                </div>
-                                <h3 class="font-headline fs-5 mb-2 card-title text-decoration-none text-dark">Wild
-                                    Herb-Infused Pan Seared Salmon</h3>
-                                <p class="text-on-surface-variant font-body mb-4"
-                                    style="font-size: clamp(0.7rem, 2.1875vw, 1.05rem); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
-                                    A delicate balance of rosemary and thyme crust with a maple glaze, served over
-                                    seasonal asparagus.</p>
-                                <div class="mt-auto d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center gap-2">
-                                        <div class="rounded-circle overflow-hidden bg-surface-container"
-                                            style="width: 1.5rem; height: 1.5rem;">
-                                            <img class="w-100 h-100 object-fit-cover"
-                                                data-alt="portrait of a woman food writer in a warm sunlit kitchen"
-                                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuBRO1jT-e-ufi9vRfkDE3WhTF-tSM5-aGqPNqSyFo0v2xfoEk3scK5l0Ft44TbpRqNkZ-yPrUeTb9Df24E1j5el7OGbJbR9AIUna3qq8djwJjh94sIqZPJlDWRJ7oM_Ved73Un-Oh8m00QfXnXMXv1pBT-jqIjQ705NXJcA150fxZd8uHz1IrWRJDyPYj_E2Fbkl1rfJU2PiAcOJ3FGz-P9dR_ZJZvHwUaTqWKocmIw7-l84-6hsOp6S8TR5pHws2TpuHMme0QMqng=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuBRO1jT-e-ufi9vRfkDE3WhTF-tSM5-aGqPNqSyFo0v2xfoEk3scK5l0Ft44TbpRqNkZ-yPrUeTb9Df24E1j5el7OGbJbR9AIUna3qq8djwJjh94sIqZPJlDWRJ7oM_Ved73Un-Oh8m00QfXnXMXv1pBT-jqIjQ705NXJcA150fxZd8uHz1IrWRJDyPYj_E2Fbkl1rfJU2PiAcOJ3FGz-P9dR_ZJZvHwUaTqWKocmIw7-l84-6hsOp6S8TR5pHws2TpuHMme0QMqng=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuBRO1jT-e-ufi9vRfkDE3WhTF-tSM5-aGqPNqSyFo0v2xfoEk3scK5l0Ft44TbpRqNkZ-yPrUeTb9Df24E1j5el7OGbJbR9AIUna3qq8djwJjh94sIqZPJlDWRJ7oM_Ved73Un-Oh8m00QfXnXMXv1pBT-jqIjQ705NXJcA150fxZd8uHz1IrWRJDyPYj_E2Fbkl1rfJU2PiAcOJ3FGz-P9dR_ZJZvHwUaTqWKocmIw7-l84-6hsOp6S8TR5pHws2TpuHMme0QMqng=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRO1jT-e-ufi9vRfkDE3WhTF-tSM5-aGqPNqSyFo0v2xfoEk3scK5l0Ft44TbpRqNkZ-yPrUeTb9Df24E1j5el7OGbJbR9AIUna3qq8djwJjh94sIqZPJlDWRJ7oM_Ved73Un-Oh8m00QfXnXMXv1pBT-jqIjQ705NXJcA150fxZd8uHz1IrWRJDyPYj_E2Fbkl1rfJU2PiAcOJ3FGz-P9dR_ZJZvHwUaTqWKocmIw7-l84-6hsOp6S8TR5pHws2TpuHMme0QMqng" />
-                                        </div>
-                                        <span class="font-label fw-semibold" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">Elena Russo</span>
+                            <div class="card card-custom h-100">
+                                <div class="card-img-wrap">
+                                    <picture>
+                                        <source type="image/webp"
+                                            srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuB4-FCIsg-kXbxI6dO196COY059NGHXi2DgoyTLFRAmC9FiMMyaanXZi2WB1Jfxbym1Vs8tbcWSwSrjNGAU0ntkKHJ1MenNz0Zw9Gp5uAI9tSyCBHxVuy6Q-OI4fwxxYElFT43GXL4So8gT9CE56A00Um5Uc9BOOSaKnLF6_ubRzlPnveEhpL9c9SoJs4QuSq3aN5UFyKudHsj0lGg8GInznZQ884EE2Xbxs0CcUrF1ylhiYKjU4mWrBbyWpZ_Z5S-Fz8AmVkyuovs=w400-rw 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuB4-FCIsg-kXbxI6dO196COY059NGHXi2DgoyTLFRAmC9FiMMyaanXZi2WB1Jfxbym1Vs8tbcWSwSrjNGAU0ntkKHJ1MenNz0Zw9Gp5uAI9tSyCBHxVuy6Q-OI4fwxxYElFT43GXL4So8gT9CE56A00Um5Uc9BOOSaKnLF6_ubRzlPnveEhpL9c9SoJs4QuSq3aN5UFyKudHsj0lGg8GInznZQ884EE2Xbxs0CcUrF1ylhiYKjU4mWrBbyWpZ_Z5S-Fz8AmVkyuovs=w800-rw 800w"
+                                            sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw" />
+                                        <img alt="Wild Herb-Infused Pan Seared Salmon"
+                                            srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuB4-FCIsg-kXbxI6dO196COY059NGHXi2DgoyTLFRAmC9FiMMyaanXZi2WB1Jfxbym1Vs8tbcWSwSrjNGAU0ntkKHJ1MenNz0Zw9Gp5uAI9tSyCBHxVuy6Q-OI4fwxxYElFT43GXL4So8gT9CE56A00Um5Uc9BOOSaKnLF6_ubRzlPnveEhpL9c9SoJs4QuSq3aN5UFyKudHsj0lGg8GInznZQ884EE2Xbxs0CcUrF1ylhiYKjU4mWrBbyWpZ_Z5S-Fz8AmVkyuovs=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuB4-FCIsg-kXbxI6dO196COY059NGHXi2DgoyTLFRAmC9FiMMyaanXZi2WB1Jfxbym1Vs8tbcWSwSrjNGAU0ntkKHJ1MenNz0Zw9Gp5uAI9tSyCBHxVuy6Q-OI4fwxxYElFT43GXL4So8gT9CE56A00Um5Uc9BOOSaKnLF6_ubRzlPnveEhpL9c9SoJs4QuSq3aN5UFyKudHsj0lGg8GInznZQ884EE2Xbxs0CcUrF1ylhiYKjU4mWrBbyWpZ_Z5S-Fz8AmVkyuovs=w800 800w"
+                                            sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4-FCIsg-kXbxI6dO196COY059NGHXi2DgoyTLFRAmC9FiMMyaanXZi2WB1Jfxbym1Vs8tbcWSwSrjNGAU0ntkKHJ1MenNz0Zw9Gp5uAI9tSyCBHxVuy6Q-OI4fwxxYElFT43GXL4So8gT9CE56A00Um5Uc9BOOSaKnLF6_ubRzlPnveEhpL9c9SoJs4QuSq3aN5UFyKudHsj0lGg8GInznZQ884EE2Xbxs0CcUrF1ylhiYKjU4mWrBbyWpZ_Z5S-Fz8AmVkyuovs=w400"
+                                            loading="lazy" decoding="async" />
+                                    </picture>
+                                    <div class="position-absolute top-0 start-0 p-3">
+                                        <span class="badge-custom">Signature</span>
                                     </div>
-                                    <span class="font-label fw-bold text-on-surface-variant text-uppercase"
-                                        style="font-size: clamp(0.6rem, 1.875vw, 0.9rem); letter-spacing: 0.1em;">35 Min</span>
+                                    <div class="position-absolute top-0 end-0 p-3">
+                                        <button class="btn-fav">
+                                            <i class="bi bi-heart-fill fs-5"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-body p-4 d-flex flex-column">
+                                    <div class="d-flex align-items-center gap-1 text-primary mb-2">
+                                        <i class="bi bi-star-fill fs-6"></i>
+                                        <i class="bi bi-star-fill fs-6"></i>
+                                        <i class="bi bi-star-fill fs-6"></i>
+                                        <i class="bi bi-star-fill fs-6"></i>
+                                        <i class="bi bi-star fs-6"></i>
+                                        <span class="text-on-surface-variant ms-1 fw-medium"
+                                            style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">4.8
+                                            (210)</span>
+                                    </div>
+                                    <h3 class="font-headline fs-5 mb-2 card-title text-decoration-none text-dark">Wild
+                                        Herb-Infused Pan Seared Salmon</h3>
+                                    <p class="text-on-surface-variant font-body mb-4"
+                                        style="font-size: clamp(0.7rem, 2.1875vw, 1.05rem); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                        A delicate balance of rosemary and thyme crust with a maple glaze, served over
+                                        seasonal asparagus.</p>
+                                    <div class="mt-auto d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="rounded-circle overflow-hidden bg-surface-container"
+                                                style="width: 1.5rem; height: 1.5rem;">
+                                                <picture>
+                                                    <source type="image/webp"
+                                                        srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuBRO1jT-e-ufi9vRfkDE3WhTF-tSM5-aGqPNqSyFo0v2xfoEk3scK5l0Ft44TbpRqNkZ-yPrUeTb9Df24E1j5el7OGbJbR9AIUna3qq8djwJjh94sIqZPJlDWRJ7oM_Ved73Un-Oh8m00QfXnXMXv1pBT-jqIjQ705NXJcA150fxZd8uHz1IrWRJDyPYj_E2Fbkl1rfJU2PiAcOJ3FGz-P9dR_ZJZvHwUaTqWKocmIw7-l84-6hsOp6S8TR5pHws2TpuHMme0QMqng=w60-rw 60w"
+                                                        sizes="24px" />
+                                                    <img class="w-100 h-100 object-fit-cover"
+                                                        alt="Elena Russo"
+                                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRO1jT-e-ufi9vRfkDE3WhTF-tSM5-aGqPNqSyFo0v2xfoEk3scK5l0Ft44TbpRqNkZ-yPrUeTb9Df24E1j5el7OGbJbR9AIUna3qq8djwJjh94sIqZPJlDWRJ7oM_Ved73Un-Oh8m00QfXnXMXv1pBT-jqIjQ705NXJcA150fxZd8uHz1IrWRJDyPYj_E2Fbkl1rfJU2PiAcOJ3FGz-P9dR_ZJZvHwUaTqWKocmIw7-l84-6hsOp6S8TR5pHws2TpuHMme0QMqng=w60"
+                                                        loading="lazy" decoding="async" />
+                                                </picture>
+                                            </div>
+                                            <span class="font-label fw-semibold"
+                                                style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">Elena Russo</span>
+                                        </div>
+                                        <span class="font-label fw-bold text-on-surface-variant text-uppercase"
+                                            style="font-size: clamp(0.6rem, 1.875vw, 0.9rem); letter-spacing: 0.1em;">35
+                                            Min</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         </a>
                     </div>
                     <!-- Featured Card 2 -->
                     <div class="col-md-6">
                         <a href="dish-detail.html" class="text-decoration-none">
-                        <div class="card card-custom h-100">
-                            <div class="card-img-wrap">
-                                <img data-alt="golden brown syrupy pancakes topped with blueberries and honey drizzle in morning sunlight"
-                                    srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuAcUwQDNw-zkb-oKXcFo5olv41NlkqyGDPQaQolGfi9F7YUzu1VZtVKRJsIxfoOei7fPB3Los7Zefh7g0Cnk4O1-R9Pc07afzXsgeAjAoQd7YbcpzuQsMjQamSUU8lxUDArgX5IFEHX0Z9o900xz0TnTHLv_6tE9Kzo0cyVl5XGFrV3kHkCm00l0dDqexut3jCU-g2i6S-vwxOpLAq15IjQ339nkkDeFHUDwl5dbP_PFhINibogTSw-vYNXPxdf3abgJsJfnjO081w=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuAcUwQDNw-zkb-oKXcFo5olv41NlkqyGDPQaQolGfi9F7YUzu1VZtVKRJsIxfoOei7fPB3Los7Zefh7g0Cnk4O1-R9Pc07afzXsgeAjAoQd7YbcpzuQsMjQamSUU8lxUDArgX5IFEHX0Z9o900xz0TnTHLv_6tE9Kzo0cyVl5XGFrV3kHkCm00l0dDqexut3jCU-g2i6S-vwxOpLAq15IjQ339nkkDeFHUDwl5dbP_PFhINibogTSw-vYNXPxdf3abgJsJfnjO081w=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuAcUwQDNw-zkb-oKXcFo5olv41NlkqyGDPQaQolGfi9F7YUzu1VZtVKRJsIxfoOei7fPB3Los7Zefh7g0Cnk4O1-R9Pc07afzXsgeAjAoQd7YbcpzuQsMjQamSUU8lxUDArgX5IFEHX0Z9o900xz0TnTHLv_6tE9Kzo0cyVl5XGFrV3kHkCm00l0dDqexut3jCU-g2i6S-vwxOpLAq15IjQ339nkkDeFHUDwl5dbP_PFhINibogTSw-vYNXPxdf3abgJsJfnjO081w=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcUwQDNw-zkb-oKXcFo5olv41NlkqyGDPQaQolGfi9F7YUzu1VZtVKRJsIxfoOei7fPB3Los7Zefh7g0Cnk4O1-R9Pc07afzXsgeAjAoQd7YbcpzuQsMjQamSUU8lxUDArgX5IFEHX0Z9o900xz0TnTHLv_6tE9Kzo0cyVl5XGFrV3kHkCm00l0dDqexut3jCU-g2i6S-vwxOpLAq15IjQ339nkkDeFHUDwl5dbP_PFhINibogTSw-vYNXPxdf3abgJsJfnjO081w" />
-                                <div class="position-absolute top-0 start-0 p-3">
-                                    <span class="badge-custom">Editor's Pick</span>
-                                </div>
-                                <div class="position-absolute top-0 end-0 p-3">
-                                    <button class="btn-fav">
-                                        <span class="material-symbols-outlined fs-5">favorite</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-body p-4 d-flex flex-column">
-                                <div class="d-flex align-items-center gap-1 text-primary mb-2">
-                                    <span class="material-symbols-outlined fs-6" data-weight="fill">star</span>
-                                    <span class="material-symbols-outlined fs-6" data-weight="fill">star</span>
-                                    <span class="material-symbols-outlined fs-6" data-weight="fill">star</span>
-                                    <span class="material-symbols-outlined fs-6" data-weight="fill">star</span>
-                                    <span class="material-symbols-outlined fs-6" data-weight="fill">star</span>
-                                    <span class="text-on-surface-variant ms-1 fw-medium" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">5.0
-                                        (84)</span>
-                                </div>
-                                <h3 class="font-headline fs-5 mb-2 card-title text-decoration-none text-dark">Heirloom
-                                    Berry Soufflé Pancakes</h3>
-                                <p class="text-on-surface-variant font-body mb-4"
-                                    style="font-size: clamp(0.7rem, 2.1875vw, 1.05rem); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
-                                    Cloud-like textures paired with a vibrant compote of seasonal berries and wild
-                                    honey.</p>
-                                <div class="mt-auto d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center gap-2">
-                                        <div class="rounded-circle overflow-hidden bg-surface-container"
-                                            style="width: 1.5rem; height: 1.5rem;">
-                                            <img class="w-100 h-100 object-fit-cover"
-                                                data-alt="portrait of a male chef in professional attire"
-                                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuCMsMvQgX_Lj0CBdUM3AxN0QCFpi759ygeL15G4-DBsEDZ4hco-Gab30b7cCBrnVCVPKfKfoorwum5K-db4dg1SMVJkgvYqdfsf9jIvzqJ8iBgJ5jU8FUXbCUFyf0oTF83GHoAe-zVIfpIJq4P9gOksW8nxTxifvMRNCe9cRQEIe9ypFM8oqGVyTEMQMjiQUiCoIfZmBuWsnQE7v9TtV_mx9xE1qT4uvNPjgZnuh6FP3RWLn7MZSc7xTjDNvY0BzqM5LszpDpbxZ8M=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuCMsMvQgX_Lj0CBdUM3AxN0QCFpi759ygeL15G4-DBsEDZ4hco-Gab30b7cCBrnVCVPKfKfoorwum5K-db4dg1SMVJkgvYqdfsf9jIvzqJ8iBgJ5jU8FUXbCUFyf0oTF83GHoAe-zVIfpIJq4P9gOksW8nxTxifvMRNCe9cRQEIe9ypFM8oqGVyTEMQMjiQUiCoIfZmBuWsnQE7v9TtV_mx9xE1qT4uvNPjgZnuh6FP3RWLn7MZSc7xTjDNvY0BzqM5LszpDpbxZ8M=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuCMsMvQgX_Lj0CBdUM3AxN0QCFpi759ygeL15G4-DBsEDZ4hco-Gab30b7cCBrnVCVPKfKfoorwum5K-db4dg1SMVJkgvYqdfsf9jIvzqJ8iBgJ5jU8FUXbCUFyf0oTF83GHoAe-zVIfpIJq4P9gOksW8nxTxifvMRNCe9cRQEIe9ypFM8oqGVyTEMQMjiQUiCoIfZmBuWsnQE7v9TtV_mx9xE1qT4uvNPjgZnuh6FP3RWLn7MZSc7xTjDNvY0BzqM5LszpDpbxZ8M=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMsMvQgX_Lj0CBdUM3AxN0QCFpi759ygeL15G4-DBsEDZ4hco-Gab30b7cCBrnVCVPKfKfoorwum5K-db4dg1SMVJkgvYqdfsf9jIvzqJ8iBgJ5jU8FUXbCUFyf0oTF83GHoAe-zVIfpIJq4P9gOksW8nxTxifvMRNCe9cRQEIe9ypFM8oqGVyTEMQMjiQUiCoIfZmBuWsnQE7v9TtV_mx9xE1qT4uvNPjgZnuh6FP3RWLn7MZSc7xTjDNvY0BzqM5LszpDpbxZ8M" />
-                                        </div>
-                                        <span class="font-label fw-semibold" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">Marc
-                                            Vallery</span>
+                            <div class="card card-custom h-100">
+                                <div class="card-img-wrap">
+                                    <picture>
+                                        <source type="image/webp"
+                                            srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuAcUwQDNw-zkb-oKXcFo5olv41NlkqyGDPQaQolGfi9F7YUzu1VZtVKRJsIxfoOei7fPB3Los7Zefh7g0Cnk4O1-R9Pc07afzXsgeAjAoQd7YbcpzuQsMjQamSUU8lxUDArgX5IFEHX0Z9o900xz0TnTHLv_6tE9Kzo0cyVl5XGFrV3kHkCm00l0dDqexut3jCU-g2i6S-vwxOpLAq15IjQ339nkkDeFHUDwl5dbP_PFhINibogTSw-vYNXPxdf3abgJsJfnjO081w=w400-rw 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuAcUwQDNw-zkb-oKXcFo5olv41NlkqyGDPQaQolGfi9F7YUzu1VZtVKRJsIxfoOei7fPB3Los7Zefh7g0Cnk4O1-R9Pc07afzXsgeAjAoQd7YbcpzuQsMjQamSUU8lxUDArgX5IFEHX0Z9o900xz0TnTHLv_6tE9Kzo0cyVl5XGFrV3kHkCm00l0dDqexut3jCU-g2i6S-vwxOpLAq15IjQ339nkkDeFHUDwl5dbP_PFhINibogTSw-vYNXPxdf3abgJsJfnjO081w=w800-rw 800w"
+                                            sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw" />
+                                        <img alt="Heirloom Berry Soufflé Pancakes"
+                                            srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuAcUwQDNw-zkb-oKXcFo5olv41NlkqyGDPQaQolGfi9F7YUzu1VZtVKRJsIxfoOei7fPB3Los7Zefh7g0Cnk4O1-R9Pc07afzXsgeAjAoQd7YbcpzuQsMjQamSUU8lxUDArgX5IFEHX0Z9o900xz0TnTHLv_6tE9Kzo0cyVl5XGFrV3kHkCm00l0dDqexut3jCU-g2i6S-vwxOpLAq15IjQ339nkkDeFHUDwl5dbP_PFhINibogTSw-vYNXPxdf3abgJsJfnjO081w=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuAcUwQDNw-zkb-oKXcFo5olv41NlkqyGDPQaQolGfi9F7YUzu1VZtVKRJsIxfoOei7fPB3Los7Zefh7g0Cnk4O1-R9Pc07afzXsgeAjAoQd7YbcpzuQsMjQamSUU8lxUDArgX5IFEHX0Z9o900xz0TnTHLv_6tE9Kzo0cyVl5XGFrV3kHkCm00l0dDqexut3jCU-g2i6S-vwxOpLAq15IjQ339nkkDeFHUDwl5dbP_PFhINibogTSw-vYNXPxdf3abgJsJfnjO081w=w800 800w"
+                                            sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcUwQDNw-zkb-oKXcFo5olv41NlkqyGDPQaQolGfi9F7YUzu1VZtVKRJsIxfoOei7fPB3Los7Zefh7g0Cnk4O1-R9Pc07afzXsgeAjAoQd7YbcpzuQsMjQamSUU8lxUDArgX5IFEHX0Z9o900xz0TnTHLv_6tE9Kzo0cyVl5XGFrV3kHkCm00l0dDqexut3jCU-g2i6S-vwxOpLAq15IjQ339nkkDeFHUDwl5dbP_PFhINibogTSw-vYNXPxdf3abgJsJfnjO081w=w400"
+                                            loading="lazy" decoding="async" />
+                                    </picture>
+                                    <div class="position-absolute top-0 start-0 p-3">
+                                        <span class="badge-custom">Editor's Pick</span>
                                     </div>
-                                    <span class="font-label fw-bold text-on-surface-variant text-uppercase"
-                                        style="font-size: clamp(0.6rem, 1.875vw, 0.9rem); letter-spacing: 0.1em;">20 Min</span>
+                                    <div class="position-absolute top-0 end-0 p-3">
+                                        <button class="btn-fav">
+                                            <i class="bi bi-heart fs-5"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-body p-4 d-flex flex-column">
+                                    <div class="d-flex align-items-center gap-1 text-primary mb-2">
+                                        <i class="bi bi-star-fill fs-6"></i>
+                                        <i class="bi bi-star-fill fs-6"></i>
+                                        <i class="bi bi-star-fill fs-6"></i>
+                                        <i class="bi bi-star-fill fs-6"></i>
+                                        <i class="bi bi-star-fill fs-6"></i>
+                                        <span class="text-on-surface-variant ms-1 fw-medium"
+                                            style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">5.0
+                                            (84)</span>
+                                    </div>
+                                    <h3 class="font-headline fs-5 mb-2 card-title text-decoration-none text-dark">
+                                        Heirloom
+                                        Berry Soufflé Pancakes</h3>
+                                    <p class="text-on-surface-variant font-body mb-4"
+                                        style="font-size: clamp(0.7rem, 2.1875vw, 1.05rem); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                        Cloud-like textures paired with a vibrant compote of seasonal berries and wild
+                                        honey.</p>
+                                    <div class="mt-auto d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="rounded-circle overflow-hidden bg-surface-container"
+                                                style="width: 1.5rem; height: 1.5rem;">
+                                                <picture>
+                                                    <source type="image/webp"
+                                                        srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuCMsMvQgX_Lj0CBdUM3AxN0QCFpi759ygeL15G4-DBsEDZ4hco-Gab30b7cCBrnVCVPKfKfoorwum5K-db4dg1SMVJkgvYqdfsf9jIvzqJ8iBgJ5jU8FUXbCUFyf0oTF83GHoAe-zVIfpIJq4P9gOksW8nxTxifvMRNCe9cRQEIe9ypFM8oqGVyTEMQMjiQUiCoIfZmBuWsnQE7v9TtV_mx9xE1qT4uvNPjgZnuh6FP3RWLn7MZSc7xTjDNvY0BzqM5LszpDpbxZ8M=w60-rw 60w"
+                                                        sizes="24px" />
+                                                    <img class="w-100 h-100 object-fit-cover"
+                                                        alt="Marc Vallery"
+                                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMsMvQgX_Lj0CBdUM3AxN0QCFpi759ygeL15G4-DBsEDZ4hco-Gab30b7cCBrnVCVPKfKfoorwum5K-db4dg1SMVJkgvYqdfsf9jIvzqJ8iBgJ5jU8FUXbCUFyf0oTF83GHoAe-zVIfpIJq4P9gOksW8nxTxifvMRNCe9cRQEIe9ypFM8oqGVyTEMQMjiQUiCoIfZmBuWsnQE7v9TtV_mx9xE1qT4uvNPjgZnuh6FP3RWLn7MZSc7xTjDNvY0BzqM5LszpDpbxZ8M=w60"
+                                                        loading="lazy" decoding="async" />
+                                                </picture>
+                                            </div>
+                                            <span class="font-label fw-semibold"
+                                                style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">Marc
+                                                Vallery</span>
+                                        </div>
+                                        <span class="font-label fw-bold text-on-surface-variant text-uppercase"
+                                            style="font-size: clamp(0.6rem, 1.875vw, 0.9rem); letter-spacing: 0.1em;">20
+                                            Min</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         </a>
                     </div>
                 </div>
@@ -268,35 +367,51 @@
                     <div class="col-6 col-sm-3">
                         <button class="small-card w-100 h-100">
                             <img class="active" data-alt="fresh garden salad with vibrant vegetables and vinaigrette"
-                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuBErjnZLVV-kJ7L4v9eEaa477v2lqU_KKh71uEnqEdxxTE0WH_D7TN7umL8jrXNJhksP8Zmeq-O9PM9ugv5VRSiy4zHpgJ-6WaoVH39CxJimmfDMXjzPrsUuOJ3pMgKDLFRXU-XZ5LSM-SZcjQdDSduAYz9fJYOFJSZXOELOv6xeEmEcGuq-miXmM5ABpoAkAzLA039NEn9IhiOApOZnJnMY0vSAQIBThWK4CS_iOETBs7j6VriSeUJHqnjOd8fLOlCVVzo9ihiph0=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuBErjnZLVV-kJ7L4v9eEaa477v2lqU_KKh71uEnqEdxxTE0WH_D7TN7umL8jrXNJhksP8Zmeq-O9PM9ugv5VRSiy4zHpgJ-6WaoVH39CxJimmfDMXjzPrsUuOJ3pMgKDLFRXU-XZ5LSM-SZcjQdDSduAYz9fJYOFJSZXOELOv6xeEmEcGuq-miXmM5ABpoAkAzLA039NEn9IhiOApOZnJnMY0vSAQIBThWK4CS_iOETBs7j6VriSeUJHqnjOd8fLOlCVVzo9ihiph0=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuBErjnZLVV-kJ7L4v9eEaa477v2lqU_KKh71uEnqEdxxTE0WH_D7TN7umL8jrXNJhksP8Zmeq-O9PM9ugv5VRSiy4zHpgJ-6WaoVH39CxJimmfDMXjzPrsUuOJ3pMgKDLFRXU-XZ5LSM-SZcjQdDSduAYz9fJYOFJSZXOELOv6xeEmEcGuq-miXmM5ABpoAkAzLA039NEn9IhiOApOZnJnMY0vSAQIBThWK4CS_iOETBs7j6VriSeUJHqnjOd8fLOlCVVzo9ihiph0=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBErjnZLVV-kJ7L4v9eEaa477v2lqU_KKh71uEnqEdxxTE0WH_D7TN7umL8jrXNJhksP8Zmeq-O9PM9ugv5VRSiy4zHpgJ-6WaoVH39CxJimmfDMXjzPrsUuOJ3pMgKDLFRXU-XZ5LSM-SZcjQdDSduAYz9fJYOFJSZXOELOv6xeEmEcGuq-miXmM5ABpoAkAzLA039NEn9IhiOApOZnJnMY0vSAQIBThWK4CS_iOETBs7j6VriSeUJHqnjOd8fLOlCVVzo9ihiph0" />
-                            <h4 class="font-headline m-0 mb-1" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">Summer Bowls</h4>
-                            <span class="font-label fw-bold text-primary" style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">12 Recipes</span>
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuBErjnZLVV-kJ7L4v9eEaa477v2lqU_KKh71uEnqEdxxTE0WH_D7TN7umL8jrXNJhksP8Zmeq-O9PM9ugv5VRSiy4zHpgJ-6WaoVH39CxJimmfDMXjzPrsUuOJ3pMgKDLFRXU-XZ5LSM-SZcjQdDSduAYz9fJYOFJSZXOELOv6xeEmEcGuq-miXmM5ABpoAkAzLA039NEn9IhiOApOZnJnMY0vSAQIBThWK4CS_iOETBs7j6VriSeUJHqnjOd8fLOlCVVzo9ihiph0=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuBErjnZLVV-kJ7L4v9eEaa477v2lqU_KKh71uEnqEdxxTE0WH_D7TN7umL8jrXNJhksP8Zmeq-O9PM9ugv5VRSiy4zHpgJ-6WaoVH39CxJimmfDMXjzPrsUuOJ3pMgKDLFRXU-XZ5LSM-SZcjQdDSduAYz9fJYOFJSZXOELOv6xeEmEcGuq-miXmM5ABpoAkAzLA039NEn9IhiOApOZnJnMY0vSAQIBThWK4CS_iOETBs7j6VriSeUJHqnjOd8fLOlCVVzo9ihiph0=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuBErjnZLVV-kJ7L4v9eEaa477v2lqU_KKh71uEnqEdxxTE0WH_D7TN7umL8jrXNJhksP8Zmeq-O9PM9ugv5VRSiy4zHpgJ-6WaoVH39CxJimmfDMXjzPrsUuOJ3pMgKDLFRXU-XZ5LSM-SZcjQdDSduAYz9fJYOFJSZXOELOv6xeEmEcGuq-miXmM5ABpoAkAzLA039NEn9IhiOApOZnJnMY0vSAQIBThWK4CS_iOETBs7j6VriSeUJHqnjOd8fLOlCVVzo9ihiph0=w1200 1200w"
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBErjnZLVV-kJ7L4v9eEaa477v2lqU_KKh71uEnqEdxxTE0WH_D7TN7umL8jrXNJhksP8Zmeq-O9PM9ugv5VRSiy4zHpgJ-6WaoVH39CxJimmfDMXjzPrsUuOJ3pMgKDLFRXU-XZ5LSM-SZcjQdDSduAYz9fJYOFJSZXOELOv6xeEmEcGuq-miXmM5ABpoAkAzLA039NEn9IhiOApOZnJnMY0vSAQIBThWK4CS_iOETBs7j6VriSeUJHqnjOd8fLOlCVVzo9ihiph0" />
+                            <h4 class="font-headline m-0 mb-1" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">Summer
+                                Bowls</h4>
+                            <span class="font-label fw-bold text-primary"
+                                style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">12 Recipes</span>
                         </button>
                     </div>
                     <div class="col-6 col-sm-3">
                         <button class="small-card w-100 h-100">
                             <img data-alt="skewers of grilled meat with peppers and onions over open flame"
-                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuB8Y64owEY6UHmbU2Y0aWhNTiM-29PTvwuAE7eBCc65XpCFhLYlFmXs_WzdYfrhu2Cf4OIj_0pKyxXvSEMVoHZmXJACjBD8KS9A1jM-Pv1pPmU1sFUUVEM-HtZOUacOMhub2qtfeNaTI4p2Xv1WCzTD1ujcNrPiIf04-d3lAsLdcUOAU8svPieasDN5R8BvVCQgzYB235TTiB5CUql9TaKUPBUxbtoe0rsbpUMa8XOFnpO7fFRsxalnk25n6jVILBzoMzEo142MiQY=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuB8Y64owEY6UHmbU2Y0aWhNTiM-29PTvwuAE7eBCc65XpCFhLYlFmXs_WzdYfrhu2Cf4OIj_0pKyxXvSEMVoHZmXJACjBD8KS9A1jM-Pv1pPmU1sFUUVEM-HtZOUacOMhub2qtfeNaTI4p2Xv1WCzTD1ujcNrPiIf04-d3lAsLdcUOAU8svPieasDN5R8BvVCQgzYB235TTiB5CUql9TaKUPBUxbtoe0rsbpUMa8XOFnpO7fFRsxalnk25n6jVILBzoMzEo142MiQY=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuB8Y64owEY6UHmbU2Y0aWhNTiM-29PTvwuAE7eBCc65XpCFhLYlFmXs_WzdYfrhu2Cf4OIj_0pKyxXvSEMVoHZmXJACjBD8KS9A1jM-Pv1pPmU1sFUUVEM-HtZOUacOMhub2qtfeNaTI4p2Xv1WCzTD1ujcNrPiIf04-d3lAsLdcUOAU8svPieasDN5R8BvVCQgzYB235TTiB5CUql9TaKUPBUxbtoe0rsbpUMa8XOFnpO7fFRsxalnk25n6jVILBzoMzEo142MiQY=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8Y64owEY6UHmbU2Y0aWhNTiM-29PTvwuAE7eBCc65XpCFhLYlFmXs_WzdYfrhu2Cf4OIj_0pKyxXvSEMVoHZmXJACjBD8KS9A1jM-Pv1pPmU1sFUUVEM-HtZOUacOMhub2qtfeNaTI4p2Xv1WCzTD1ujcNrPiIf04-d3lAsLdcUOAU8svPieasDN5R8BvVCQgzYB235TTiB5CUql9TaKUPBUxbtoe0rsbpUMa8XOFnpO7fFRsxalnk25n6jVILBzoMzEo142MiQY" />
-                            <h4 class="font-headline m-0 mb-1" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">Night Market</h4>
-                            <span class="font-label fw-bold text-on-surface-variant" style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">18
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuB8Y64owEY6UHmbU2Y0aWhNTiM-29PTvwuAE7eBCc65XpCFhLYlFmXs_WzdYfrhu2Cf4OIj_0pKyxXvSEMVoHZmXJACjBD8KS9A1jM-Pv1pPmU1sFUUVEM-HtZOUacOMhub2qtfeNaTI4p2Xv1WCzTD1ujcNrPiIf04-d3lAsLdcUOAU8svPieasDN5R8BvVCQgzYB235TTiB5CUql9TaKUPBUxbtoe0rsbpUMa8XOFnpO7fFRsxalnk25n6jVILBzoMzEo142MiQY=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuB8Y64owEY6UHmbU2Y0aWhNTiM-29PTvwuAE7eBCc65XpCFhLYlFmXs_WzdYfrhu2Cf4OIj_0pKyxXvSEMVoHZmXJACjBD8KS9A1jM-Pv1pPmU1sFUUVEM-HtZOUacOMhub2qtfeNaTI4p2Xv1WCzTD1ujcNrPiIf04-d3lAsLdcUOAU8svPieasDN5R8BvVCQgzYB235TTiB5CUql9TaKUPBUxbtoe0rsbpUMa8XOFnpO7fFRsxalnk25n6jVILBzoMzEo142MiQY=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuB8Y64owEY6UHmbU2Y0aWhNTiM-29PTvwuAE7eBCc65XpCFhLYlFmXs_WzdYfrhu2Cf4OIj_0pKyxXvSEMVoHZmXJACjBD8KS9A1jM-Pv1pPmU1sFUUVEM-HtZOUacOMhub2qtfeNaTI4p2Xv1WCzTD1ujcNrPiIf04-d3lAsLdcUOAU8svPieasDN5R8BvVCQgzYB235TTiB5CUql9TaKUPBUxbtoe0rsbpUMa8XOFnpO7fFRsxalnk25n6jVILBzoMzEo142MiQY=w1200 1200w"
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8Y64owEY6UHmbU2Y0aWhNTiM-29PTvwuAE7eBCc65XpCFhLYlFmXs_WzdYfrhu2Cf4OIj_0pKyxXvSEMVoHZmXJACjBD8KS9A1jM-Pv1pPmU1sFUUVEM-HtZOUacOMhub2qtfeNaTI4p2Xv1WCzTD1ujcNrPiIf04-d3lAsLdcUOAU8svPieasDN5R8BvVCQgzYB235TTiB5CUql9TaKUPBUxbtoe0rsbpUMa8XOFnpO7fFRsxalnk25n6jVILBzoMzEo142MiQY" />
+                            <h4 class="font-headline m-0 mb-1" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">Night
+                                Market</h4>
+                            <span class="font-label fw-bold text-on-surface-variant"
+                                style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">18
                                 Recipes</span>
                         </button>
                     </div>
                     <div class="col-6 col-sm-3">
                         <button class="small-card w-100 h-100">
                             <img data-alt="artisanal pepperoni pizza with melting cheese and fresh basil"
-                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuDszeM0hvpGfxdJO9A9c6_0VgsnzZrg_jxWlgDJPQKvT54PcIoVSw2wSQXOHPe84qSYLHVSBtSGNdKxdC0rHmW-8LIUH-8VbzAAPoCcH6razoxM6jPcpTKn1DE_hBkknuWsSunySG-B5IOhjYVhRTEbqNGfADSSP29EsR69xXdAoXNwfqc0WH0y1QZzkT4Gk5vMvIhRiMucdALUdLv8nb2h3bi51Z40TcWiaFs0oYf6HwMvwTK1t8FdUVXS4FSEPPUh5WVIJUQUIEg=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuDszeM0hvpGfxdJO9A9c6_0VgsnzZrg_jxWlgDJPQKvT54PcIoVSw2wSQXOHPe84qSYLHVSBtSGNdKxdC0rHmW-8LIUH-8VbzAAPoCcH6razoxM6jPcpTKn1DE_hBkknuWsSunySG-B5IOhjYVhRTEbqNGfADSSP29EsR69xXdAoXNwfqc0WH0y1QZzkT4Gk5vMvIhRiMucdALUdLv8nb2h3bi51Z40TcWiaFs0oYf6HwMvwTK1t8FdUVXS4FSEPPUh5WVIJUQUIEg=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuDszeM0hvpGfxdJO9A9c6_0VgsnzZrg_jxWlgDJPQKvT54PcIoVSw2wSQXOHPe84qSYLHVSBtSGNdKxdC0rHmW-8LIUH-8VbzAAPoCcH6razoxM6jPcpTKn1DE_hBkknuWsSunySG-B5IOhjYVhRTEbqNGfADSSP29EsR69xXdAoXNwfqc0WH0y1QZzkT4Gk5vMvIhRiMucdALUdLv8nb2h3bi51Z40TcWiaFs0oYf6HwMvwTK1t8FdUVXS4FSEPPUh5WVIJUQUIEg=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDszeM0hvpGfxdJO9A9c6_0VgsnzZrg_jxWlgDJPQKvT54PcIoVSw2wSQXOHPe84qSYLHVSBtSGNdKxdC0rHmW-8LIUH-8VbzAAPoCcH6razoxM6jPcpTKn1DE_hBkknuWsSunySG-B5IOhjYVhRTEbqNGfADSSP29EsR69xXdAoXNwfqc0WH0y1QZzkT4Gk5vMvIhRiMucdALUdLv8nb2h3bi51Z40TcWiaFs0oYf6HwMvwTK1t8FdUVXS4FSEPPUh5WVIJUQUIEg" />
-                            <h4 class="font-headline m-0 mb-1" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">Artisan Pizza</h4>
-                            <span class="font-label fw-bold text-on-surface-variant" style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">24
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuDszeM0hvpGfxdJO9A9c6_0VgsnzZrg_jxWlgDJPQKvT54PcIoVSw2wSQXOHPe84qSYLHVSBtSGNdKxdC0rHmW-8LIUH-8VbzAAPoCcH6razoxM6jPcpTKn1DE_hBkknuWsSunySG-B5IOhjYVhRTEbqNGfADSSP29EsR69xXdAoXNwfqc0WH0y1QZzkT4Gk5vMvIhRiMucdALUdLv8nb2h3bi51Z40TcWiaFs0oYf6HwMvwTK1t8FdUVXS4FSEPPUh5WVIJUQUIEg=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuDszeM0hvpGfxdJO9A9c6_0VgsnzZrg_jxWlgDJPQKvT54PcIoVSw2wSQXOHPe84qSYLHVSBtSGNdKxdC0rHmW-8LIUH-8VbzAAPoCcH6razoxM6jPcpTKn1DE_hBkknuWsSunySG-B5IOhjYVhRTEbqNGfADSSP29EsR69xXdAoXNwfqc0WH0y1QZzkT4Gk5vMvIhRiMucdALUdLv8nb2h3bi51Z40TcWiaFs0oYf6HwMvwTK1t8FdUVXS4FSEPPUh5WVIJUQUIEg=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuDszeM0hvpGfxdJO9A9c6_0VgsnzZrg_jxWlgDJPQKvT54PcIoVSw2wSQXOHPe84qSYLHVSBtSGNdKxdC0rHmW-8LIUH-8VbzAAPoCcH6razoxM6jPcpTKn1DE_hBkknuWsSunySG-B5IOhjYVhRTEbqNGfADSSP29EsR69xXdAoXNwfqc0WH0y1QZzkT4Gk5vMvIhRiMucdALUdLv8nb2h3bi51Z40TcWiaFs0oYf6HwMvwTK1t8FdUVXS4FSEPPUh5WVIJUQUIEg=w1200 1200w"
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDszeM0hvpGfxdJO9A9c6_0VgsnzZrg_jxWlgDJPQKvT54PcIoVSw2wSQXOHPe84qSYLHVSBtSGNdKxdC0rHmW-8LIUH-8VbzAAPoCcH6razoxM6jPcpTKn1DE_hBkknuWsSunySG-B5IOhjYVhRTEbqNGfADSSP29EsR69xXdAoXNwfqc0WH0y1QZzkT4Gk5vMvIhRiMucdALUdLv8nb2h3bi51Z40TcWiaFs0oYf6HwMvwTK1t8FdUVXS4FSEPPUh5WVIJUQUIEg" />
+                            <h4 class="font-headline m-0 mb-1" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">
+                                Artisan Pizza</h4>
+                            <span class="font-label fw-bold text-on-surface-variant"
+                                style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">24
                                 Recipes</span>
                         </button>
                     </div>
                     <div class="col-6 col-sm-3">
                         <button class="small-card w-100 h-100">
                             <img data-alt="collection of colorful tropical cocktails with umbrellas"
-                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuDu5A0GsW1woBf-xpLrfJOfUbCvvVtzwUmJ9q-PEoLqLjv2shcTPjbSmDEm6x_w9z5qxwOb-r7opn3pRBv_u0GAaD13outEBULdgSrKNM3NP7Gf02OD4HUzPHGILaPnvaCedpy_ij0ADTkp5XYPaaC1RWxWTCnzn-wyCkKFqtxi9gPwIb1XvokWULyEKuoMYS4cJZRQS_Q2GrOx2NpVaiH7IHrV9q7HKMo_53rYtsaUkJ4u2m2N9V0HUQOYNW_VpaIJXgsmcg2HX2I=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuDu5A0GsW1woBf-xpLrfJOfUbCvvVtzwUmJ9q-PEoLqLjv2shcTPjbSmDEm6x_w9z5qxwOb-r7opn3pRBv_u0GAaD13outEBULdgSrKNM3NP7Gf02OD4HUzPHGILaPnvaCedpy_ij0ADTkp5XYPaaC1RWxWTCnzn-wyCkKFqtxi9gPwIb1XvokWULyEKuoMYS4cJZRQS_Q2GrOx2NpVaiH7IHrV9q7HKMo_53rYtsaUkJ4u2m2N9V0HUQOYNW_VpaIJXgsmcg2HX2I=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuDu5A0GsW1woBf-xpLrfJOfUbCvvVtzwUmJ9q-PEoLqLjv2shcTPjbSmDEm6x_w9z5qxwOb-r7opn3pRBv_u0GAaD13outEBULdgSrKNM3NP7Gf02OD4HUzPHGILaPnvaCedpy_ij0ADTkp5XYPaaC1RWxWTCnzn-wyCkKFqtxi9gPwIb1XvokWULyEKuoMYS4cJZRQS_Q2GrOx2NpVaiH7IHrV9q7HKMo_53rYtsaUkJ4u2m2N9V0HUQOYNW_VpaIJXgsmcg2HX2I=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu5A0GsW1woBf-xpLrfJOfUbCvvVtzwUmJ9q-PEoLqLjv2shcTPjbSmDEm6x_w9z5qxwOb-r7opn3pRBv_u0GAaD13outEBULdgSrKNM3NP7Gf02OD4HUzPHGILaPnvaCedpy_ij0ADTkp5XYPaaC1RWxWTCnzn-wyCkKFqtxi9gPwIb1XvokWULyEKuoMYS4cJZRQS_Q2GrOx2NpVaiH7IHrV9q7HKMo_53rYtsaUkJ4u2m2N9V0HUQOYNW_VpaIJXgsmcg2HX2I" />
-                            <h4 class="font-headline m-0 mb-1" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">Mixology</h4>
-                            <span class="font-label fw-bold text-on-surface-variant" style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">9
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuDu5A0GsW1woBf-xpLrfJOfUbCvvVtzwUmJ9q-PEoLqLjv2shcTPjbSmDEm6x_w9z5qxwOb-r7opn3pRBv_u0GAaD13outEBULdgSrKNM3NP7Gf02OD4HUzPHGILaPnvaCedpy_ij0ADTkp5XYPaaC1RWxWTCnzn-wyCkKFqtxi9gPwIb1XvokWULyEKuoMYS4cJZRQS_Q2GrOx2NpVaiH7IHrV9q7HKMo_53rYtsaUkJ4u2m2N9V0HUQOYNW_VpaIJXgsmcg2HX2I=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuDu5A0GsW1woBf-xpLrfJOfUbCvvVtzwUmJ9q-PEoLqLjv2shcTPjbSmDEm6x_w9z5qxwOb-r7opn3pRBv_u0GAaD13outEBULdgSrKNM3NP7Gf02OD4HUzPHGILaPnvaCedpy_ij0ADTkp5XYPaaC1RWxWTCnzn-wyCkKFqtxi9gPwIb1XvokWULyEKuoMYS4cJZRQS_Q2GrOx2NpVaiH7IHrV9q7HKMo_53rYtsaUkJ4u2m2N9V0HUQOYNW_VpaIJXgsmcg2HX2I=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuDu5A0GsW1woBf-xpLrfJOfUbCvvVtzwUmJ9q-PEoLqLjv2shcTPjbSmDEm6x_w9z5qxwOb-r7opn3pRBv_u0GAaD13outEBULdgSrKNM3NP7Gf02OD4HUzPHGILaPnvaCedpy_ij0ADTkp5XYPaaC1RWxWTCnzn-wyCkKFqtxi9gPwIb1XvokWULyEKuoMYS4cJZRQS_Q2GrOx2NpVaiH7IHrV9q7HKMo_53rYtsaUkJ4u2m2N9V0HUQOYNW_VpaIJXgsmcg2HX2I=w1200 1200w"
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu5A0GsW1woBf-xpLrfJOfUbCvvVtzwUmJ9q-PEoLqLjv2shcTPjbSmDEm6x_w9z5qxwOb-r7opn3pRBv_u0GAaD13outEBULdgSrKNM3NP7Gf02OD4HUzPHGILaPnvaCedpy_ij0ADTkp5XYPaaC1RWxWTCnzn-wyCkKFqtxi9gPwIb1XvokWULyEKuoMYS4cJZRQS_Q2GrOx2NpVaiH7IHrV9q7HKMo_53rYtsaUkJ4u2m2N9V0HUQOYNW_VpaIJXgsmcg2HX2I" />
+                            <h4 class="font-headline m-0 mb-1" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">
+                                Mixology</h4>
+                            <span class="font-label fw-bold text-on-surface-variant"
+                                style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">9
                                 Recipes</span>
                         </button>
                     </div>
@@ -309,40 +424,43 @@
                     <div class="d-flex align-items-center justify-content-between mb-3">
                         <h3 class="font-headline fs-5 m-0">Activity</h3>
                         <span class="font-label fw-bolder text-on-surface-variant text-uppercase"
-                            style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.1em;">Friends Feed</span>
+                            style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.1em;">Friends
+                            Feed</span>
                     </div>
                     <div>
                         <div class="activity-item">
                             <div class="rounded-circle bg-primary-container text-on-primary d-flex align-items-center justify-content-center fw-bold flex-shrink-0"
                                 style="width: 2.5rem; height: 2.5rem;">JD</div>
                             <div>
-                                <p class="font-body m-0" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);"><span class="fw-bold">Julian D.</span>
+                                <p class="font-body m-0" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);"><span
+                                        class="fw-bold">Julian D.</span>
                                     shared a new review for <span class="fw-bold text-primary">The Red Cellar</span></p>
                                 <div class="d-flex gap-1 mt-1 text-primary">
-                                    <span class="material-symbols-outlined" data-weight="fill"
-                                        style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">star</span>
-                                    <span class="material-symbols-outlined" data-weight="fill"
-                                        style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">star</span>
-                                    <span class="material-symbols-outlined" data-weight="fill"
-                                        style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">star</span>
-                                    <span class="material-symbols-outlined" data-weight="fill"
-                                        style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">star</span>
-                                    <span class="material-symbols-outlined" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">star</span>
+                                    <i class="bi bi-star-fill" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);"></i>
+                                    <i class="bi bi-star-fill" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);"></i>
+                                    <i class="bi bi-star-fill" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);"></i>
+                                    <i class="bi bi-star-fill" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);"></i>
+                                    <i class="bi bi-star" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);"></i>
                                 </div>
-                                <span class="text-on-surface-variant d-block mt-1" style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">2 hours
+                                <span class="text-on-surface-variant d-block mt-1"
+                                    style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">2 hours
                                     ago</span>
                             </div>
                         </div>
                         <div class="activity-item">
                             <img class="rounded-circle object-fit-cover flex-shrink-0"
                                 data-alt="smiling woman portrait with curly hair"
-                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuA4_UxtPHhmyG8DtV0uKF7oFZbb7qzjYDsF0B1ZFXncbRKZx8N0HHgTFXuD5tRWxO2_R6eoBg8ByqF6rg83BjnLsEKxhMvHwuPKBKG76cLE70UrZpnkSkG9aKoWs_tNv2efE_jzXan9iSzTF1avVJM_41ukjz-LazI1NBFEHRA6b1sauhuPv2G8OzgzCDDBJyxMn9xvKOWUQ6TBMl-tTXZK76v2o7RIttkT8S54eKB07RJWBM-MTBwslKFWgiGkTc9lSEOOp_WqokA=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuA4_UxtPHhmyG8DtV0uKF7oFZbb7qzjYDsF0B1ZFXncbRKZx8N0HHgTFXuD5tRWxO2_R6eoBg8ByqF6rg83BjnLsEKxhMvHwuPKBKG76cLE70UrZpnkSkG9aKoWs_tNv2efE_jzXan9iSzTF1avVJM_41ukjz-LazI1NBFEHRA6b1sauhuPv2G8OzgzCDDBJyxMn9xvKOWUQ6TBMl-tTXZK76v2o7RIttkT8S54eKB07RJWBM-MTBwslKFWgiGkTc9lSEOOp_WqokA=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuA4_UxtPHhmyG8DtV0uKF7oFZbb7qzjYDsF0B1ZFXncbRKZx8N0HHgTFXuD5tRWxO2_R6eoBg8ByqF6rg83BjnLsEKxhMvHwuPKBKG76cLE70UrZpnkSkG9aKoWs_tNv2efE_jzXan9iSzTF1avVJM_41ukjz-LazI1NBFEHRA6b1sauhuPv2G8OzgzCDDBJyxMn9xvKOWUQ6TBMl-tTXZK76v2o7RIttkT8S54eKB07RJWBM-MTBwslKFWgiGkTc9lSEOOp_WqokA=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4_UxtPHhmyG8DtV0uKF7oFZbb7qzjYDsF0B1ZFXncbRKZx8N0HHgTFXuD5tRWxO2_R6eoBg8ByqF6rg83BjnLsEKxhMvHwuPKBKG76cLE70UrZpnkSkG9aKoWs_tNv2efE_jzXan9iSzTF1avVJM_41ukjz-LazI1NBFEHRA6b1sauhuPv2G8OzgzCDDBJyxMn9xvKOWUQ6TBMl-tTXZK76v2o7RIttkT8S54eKB07RJWBM-MTBwslKFWgiGkTc9lSEOOp_WqokA"
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuA4_UxtPHhmyG8DtV0uKF7oFZbb7qzjYDsF0B1ZFXncbRKZx8N0HHgTFXuD5tRWxO2_R6eoBg8ByqF6rg83BjnLsEKxhMvHwuPKBKG76cLE70UrZpnkSkG9aKoWs_tNv2efE_jzXan9iSzTF1avVJM_41ukjz-LazI1NBFEHRA6b1sauhuPv2G8OzgzCDDBJyxMn9xvKOWUQ6TBMl-tTXZK76v2o7RIttkT8S54eKB07RJWBM-MTBwslKFWgiGkTc9lSEOOp_WqokA=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuA4_UxtPHhmyG8DtV0uKF7oFZbb7qzjYDsF0B1ZFXncbRKZx8N0HHgTFXuD5tRWxO2_R6eoBg8ByqF6rg83BjnLsEKxhMvHwuPKBKG76cLE70UrZpnkSkG9aKoWs_tNv2efE_jzXan9iSzTF1avVJM_41ukjz-LazI1NBFEHRA6b1sauhuPv2G8OzgzCDDBJyxMn9xvKOWUQ6TBMl-tTXZK76v2o7RIttkT8S54eKB07RJWBM-MTBwslKFWgiGkTc9lSEOOp_WqokA=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuA4_UxtPHhmyG8DtV0uKF7oFZbb7qzjYDsF0B1ZFXncbRKZx8N0HHgTFXuD5tRWxO2_R6eoBg8ByqF6rg83BjnLsEKxhMvHwuPKBKG76cLE70UrZpnkSkG9aKoWs_tNv2efE_jzXan9iSzTF1avVJM_41ukjz-LazI1NBFEHRA6b1sauhuPv2G8OzgzCDDBJyxMn9xvKOWUQ6TBMl-tTXZK76v2o7RIttkT8S54eKB07RJWBM-MTBwslKFWgiGkTc9lSEOOp_WqokA=w1200 1200w"
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4_UxtPHhmyG8DtV0uKF7oFZbb7qzjYDsF0B1ZFXncbRKZx8N0HHgTFXuD5tRWxO2_R6eoBg8ByqF6rg83BjnLsEKxhMvHwuPKBKG76cLE70UrZpnkSkG9aKoWs_tNv2efE_jzXan9iSzTF1avVJM_41ukjz-LazI1NBFEHRA6b1sauhuPv2G8OzgzCDDBJyxMn9xvKOWUQ6TBMl-tTXZK76v2o7RIttkT8S54eKB07RJWBM-MTBwslKFWgiGkTc9lSEOOp_WqokA"
                                 style="width: 2.5rem; height: 2.5rem;" />
                             <div>
-                                <p class="font-body m-0" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);"><span class="fw-bold">Sara M.</span>
+                                <p class="font-body m-0" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);"><span
+                                        class="fw-bold">Sara M.</span>
                                     saved <span class="fw-bold text-primary">Truffle Carbonara</span> to her Brunch List
                                 </p>
-                                <span class="text-on-surface-variant d-block mt-1" style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">4 hours
+                                <span class="text-on-surface-variant d-block mt-1"
+                                    style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">4 hours
                                     ago</span>
                             </div>
                         </div>
@@ -350,10 +468,12 @@
                             <div class="rounded-circle bg-secondary-container text-on-secondary-container d-flex align-items-center justify-content-center fw-bold flex-shrink-0"
                                 style="width: 2.5rem; height: 2.5rem;">BK</div>
                             <div>
-                                <p class="font-body m-0" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);"><span class="fw-bold">Ben K.</span> is
+                                <p class="font-body m-0" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);"><span
+                                        class="fw-bold">Ben K.</span> is
                                     currently dining at <span class="fw-bold text-primary">Mizu Sushi</span></p>
                                 <span class="text-primary fw-bold text-uppercase d-flex align-items-center gap-1 mt-1"
-                                    style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: -0.05em;">Live • Tokyo</span>
+                                    style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: -0.05em;">Live •
+                                    Tokyo</span>
                             </div>
                         </div>
                     </div>
@@ -364,28 +484,41 @@
                     <div>
                         <div class="list-card">
                             <img data-alt="interior of a cozy dim lit library themed bar with many books and warm lights"
-                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuB_EXecnoZ2jBgemYuphOP_5h0DXcsgfORjerdSPTeNxqur2WQ1yel_xAN8uR6sUo9infPquuxfZsfYpxOT22o5JHKZq4BbIFXHNjeJfwgXh77U7qUExQC9YqnYJCBbpn6KLT7Hz9S1UyXV1uw6tQ4qWJxp8SghAjRpnT1IECt36xO3HzUDn-KgO-V-2gbIjaOPAiEJYZweDJwG6vZzpmCMlkTegUUDKcVDh4eRLC2hRWF6Prc_rQfokzyI65xTlUqFurLpRGtRDJI=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuB_EXecnoZ2jBgemYuphOP_5h0DXcsgfORjerdSPTeNxqur2WQ1yel_xAN8uR6sUo9infPquuxfZsfYpxOT22o5JHKZq4BbIFXHNjeJfwgXh77U7qUExQC9YqnYJCBbpn6KLT7Hz9S1UyXV1uw6tQ4qWJxp8SghAjRpnT1IECt36xO3HzUDn-KgO-V-2gbIjaOPAiEJYZweDJwG6vZzpmCMlkTegUUDKcVDh4eRLC2hRWF6Prc_rQfokzyI65xTlUqFurLpRGtRDJI=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuB_EXecnoZ2jBgemYuphOP_5h0DXcsgfORjerdSPTeNxqur2WQ1yel_xAN8uR6sUo9infPquuxfZsfYpxOT22o5JHKZq4BbIFXHNjeJfwgXh77U7qUExQC9YqnYJCBbpn6KLT7Hz9S1UyXV1uw6tQ4qWJxp8SghAjRpnT1IECt36xO3HzUDn-KgO-V-2gbIjaOPAiEJYZweDJwG6vZzpmCMlkTegUUDKcVDh4eRLC2hRWF6Prc_rQfokzyI65xTlUqFurLpRGtRDJI=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_EXecnoZ2jBgemYuphOP_5h0DXcsgfORjerdSPTeNxqur2WQ1yel_xAN8uR6sUo9infPquuxfZsfYpxOT22o5JHKZq4BbIFXHNjeJfwgXh77U7qUExQC9YqnYJCBbpn6KLT7Hz9S1UyXV1uw6tQ4qWJxp8SghAjRpnT1IECt36xO3HzUDn-KgO-V-2gbIjaOPAiEJYZweDJwG6vZzpmCMlkTegUUDKcVDh4eRLC2hRWF6Prc_rQfokzyI65xTlUqFurLpRGtRDJI" />
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuB_EXecnoZ2jBgemYuphOP_5h0DXcsgfORjerdSPTeNxqur2WQ1yel_xAN8uR6sUo9infPquuxfZsfYpxOT22o5JHKZq4BbIFXHNjeJfwgXh77U7qUExQC9YqnYJCBbpn6KLT7Hz9S1UyXV1uw6tQ4qWJxp8SghAjRpnT1IECt36xO3HzUDn-KgO-V-2gbIjaOPAiEJYZweDJwG6vZzpmCMlkTegUUDKcVDh4eRLC2hRWF6Prc_rQfokzyI65xTlUqFurLpRGtRDJI=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuB_EXecnoZ2jBgemYuphOP_5h0DXcsgfORjerdSPTeNxqur2WQ1yel_xAN8uR6sUo9infPquuxfZsfYpxOT22o5JHKZq4BbIFXHNjeJfwgXh77U7qUExQC9YqnYJCBbpn6KLT7Hz9S1UyXV1uw6tQ4qWJxp8SghAjRpnT1IECt36xO3HzUDn-KgO-V-2gbIjaOPAiEJYZweDJwG6vZzpmCMlkTegUUDKcVDh4eRLC2hRWF6Prc_rQfokzyI65xTlUqFurLpRGtRDJI=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuB_EXecnoZ2jBgemYuphOP_5h0DXcsgfORjerdSPTeNxqur2WQ1yel_xAN8uR6sUo9infPquuxfZsfYpxOT22o5JHKZq4BbIFXHNjeJfwgXh77U7qUExQC9YqnYJCBbpn6KLT7Hz9S1UyXV1uw6tQ4qWJxp8SghAjRpnT1IECt36xO3HzUDn-KgO-V-2gbIjaOPAiEJYZweDJwG6vZzpmCMlkTegUUDKcVDh4eRLC2hRWF6Prc_rQfokzyI65xTlUqFurLpRGtRDJI=w1200 1200w"
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_EXecnoZ2jBgemYuphOP_5h0DXcsgfORjerdSPTeNxqur2WQ1yel_xAN8uR6sUo9infPquuxfZsfYpxOT22o5JHKZq4BbIFXHNjeJfwgXh77U7qUExQC9YqnYJCBbpn6KLT7Hz9S1UyXV1uw6tQ4qWJxp8SghAjRpnT1IECt36xO3HzUDn-KgO-V-2gbIjaOPAiEJYZweDJwG6vZzpmCMlkTegUUDKcVDh4eRLC2hRWF6Prc_rQfokzyI65xTlUqFurLpRGtRDJI" />
                             <div class="list-card-overlay">
                                 <h4 class="text-white font-headline fs-6 m-0">Best Secret Speakeasies</h4>
-                                <p class="text-white-50 font-label text-uppercase m-0 mt-1" style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">
+                                <p class="text-white-50 font-label text-uppercase m-0 mt-1"
+                                    style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">
                                     Hidden Gems • New York</p>
                             </div>
                         </div>
                         <div class="list-card">
                             <img data-alt="plates of gourmet food at a fine dining table overlooking a city at night"
-                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuABST8I4MAqlgCHqU7w6XBXI3qZ443BRZWn9ys-UoTGh6X6avCfOpIsaZh9n4NBTxUYvhTkuTDvxAOBTyyOVNPYLwTaRpCGP0WGtPCGd9CmnGhn-upl0Kx6a3xpod5xslBjilymXV0yWTUe5PsFKvlqTH6f0Sw9rDHsioc37PfsrtX9bjnRAzXSQcYEhjjR9us-ZMwGKSS71QAZGqwFaQ5dmfd8E8qdk7xiFRrHPUnKZkrWfTYLSQpYOWuqL3C4bauNBMtdMAbpKxM=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuABST8I4MAqlgCHqU7w6XBXI3qZ443BRZWn9ys-UoTGh6X6avCfOpIsaZh9n4NBTxUYvhTkuTDvxAOBTyyOVNPYLwTaRpCGP0WGtPCGd9CmnGhn-upl0Kx6a3xpod5xslBjilymXV0yWTUe5PsFKvlqTH6f0Sw9rDHsioc37PfsrtX9bjnRAzXSQcYEhjjR9us-ZMwGKSS71QAZGqwFaQ5dmfd8E8qdk7xiFRrHPUnKZkrWfTYLSQpYOWuqL3C4bauNBMtdMAbpKxM=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuABST8I4MAqlgCHqU7w6XBXI3qZ443BRZWn9ys-UoTGh6X6avCfOpIsaZh9n4NBTxUYvhTkuTDvxAOBTyyOVNPYLwTaRpCGP0WGtPCGd9CmnGhn-upl0Kx6a3xpod5xslBjilymXV0yWTUe5PsFKvlqTH6f0Sw9rDHsioc37PfsrtX9bjnRAzXSQcYEhjjR9us-ZMwGKSS71QAZGqwFaQ5dmfd8E8qdk7xiFRrHPUnKZkrWfTYLSQpYOWuqL3C4bauNBMtdMAbpKxM=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABST8I4MAqlgCHqU7w6XBXI3qZ443BRZWn9ys-UoTGh6X6avCfOpIsaZh9n4NBTxUYvhTkuTDvxAOBTyyOVNPYLwTaRpCGP0WGtPCGd9CmnGhn-upl0Kx6a3xpod5xslBjilymXV0yWTUe5PsFKvlqTH6f0Sw9rDHsioc37PfsrtX9bjnRAzXSQcYEhjjR9us-ZMwGKSS71QAZGqwFaQ5dmfd8E8qdk7xiFRrHPUnKZkrWfTYLSQpYOWuqL3C4bauNBMtdMAbpKxM" />
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuABST8I4MAqlgCHqU7w6XBXI3qZ443BRZWn9ys-UoTGh6X6avCfOpIsaZh9n4NBTxUYvhTkuTDvxAOBTyyOVNPYLwTaRpCGP0WGtPCGd9CmnGhn-upl0Kx6a3xpod5xslBjilymXV0yWTUe5PsFKvlqTH6f0Sw9rDHsioc37PfsrtX9bjnRAzXSQcYEhjjR9us-ZMwGKSS71QAZGqwFaQ5dmfd8E8qdk7xiFRrHPUnKZkrWfTYLSQpYOWuqL3C4bauNBMtdMAbpKxM=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuABST8I4MAqlgCHqU7w6XBXI3qZ443BRZWn9ys-UoTGh6X6avCfOpIsaZh9n4NBTxUYvhTkuTDvxAOBTyyOVNPYLwTaRpCGP0WGtPCGd9CmnGhn-upl0Kx6a3xpod5xslBjilymXV0yWTUe5PsFKvlqTH6f0Sw9rDHsioc37PfsrtX9bjnRAzXSQcYEhjjR9us-ZMwGKSS71QAZGqwFaQ5dmfd8E8qdk7xiFRrHPUnKZkrWfTYLSQpYOWuqL3C4bauNBMtdMAbpKxM=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuABST8I4MAqlgCHqU7w6XBXI3qZ443BRZWn9ys-UoTGh6X6avCfOpIsaZh9n4NBTxUYvhTkuTDvxAOBTyyOVNPYLwTaRpCGP0WGtPCGd9CmnGhn-upl0Kx6a3xpod5xslBjilymXV0yWTUe5PsFKvlqTH6f0Sw9rDHsioc37PfsrtX9bjnRAzXSQcYEhjjR9us-ZMwGKSS71QAZGqwFaQ5dmfd8E8qdk7xiFRrHPUnKZkrWfTYLSQpYOWuqL3C4bauNBMtdMAbpKxM=w1200 1200w"
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuABST8I4MAqlgCHqU7w6XBXI3qZ443BRZWn9ys-UoTGh6X6avCfOpIsaZh9n4NBTxUYvhTkuTDvxAOBTyyOVNPYLwTaRpCGP0WGtPCGd9CmnGhn-upl0Kx6a3xpod5xslBjilymXV0yWTUe5PsFKvlqTH6f0Sw9rDHsioc37PfsrtX9bjnRAzXSQcYEhjjR9us-ZMwGKSS71QAZGqwFaQ5dmfd8E8qdk7xiFRrHPUnKZkrWfTYLSQpYOWuqL3C4bauNBMtdMAbpKxM" />
                             <div class="list-card-overlay">
-                                <h4 class="text-white font-headline fs-6 m-0">Michelin <span class="material-symbols-outlined" style="font-size: clamp(0.8rem, 2.5vw, 1.2rem); font-variation-settings: 'FILL' 1; color: var(--primary); vertical-align: middle;">star</span><span class="material-symbols-outlined" style="font-size: clamp(0.8rem, 2.5vw, 1.2rem); font-variation-settings: 'FILL' 1; color: var(--primary); vertical-align: middle;">star</span> Under $100</h4>
-                                <p class="text-white-50 font-label text-uppercase m-0 mt-1" style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">
+                                <h4 class="text-white font-headline fs-6 m-0">Michelin <i class="bi bi-star-fill"
+                                        style="font-size: clamp(0.8rem, 2.5vw, 1.2rem); color: var(--primary); vertical-align: middle;"></i><i
+                                        class="bi bi-star-fill"
+                                        style="font-size: clamp(0.8rem, 2.5vw, 1.2rem); color: var(--primary); vertical-align: middle;"></i>
+                                    Under $100</h4>
+                                <p class="text-white-50 font-label text-uppercase m-0 mt-1"
+                                    style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">
                                     Value Fine Dining • Global</p>
                             </div>
                         </div>
                         <div class="list-card">
                             <img data-alt="row of artisan pastries and cakes behind a glass display case"
-                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuBdUOCl8siNiCXkXuYNacU416vZQg357AKFHF5XHO3hsMDC8g1de7ytjZdjsNSi6al-CamVgc55p7c46O5dCGI2SHhUsLL1KfUcdm4GqjGhxUaEfhREaI7XzS0IXZq-II4IMc69Sm3_PdWiac-lP7P_eDbCBF_hXhuOlUjJ7Jan8shgU9Zrki0iGNc6aBszGyKwZ00dl5JGWlvmO5MC2KywkQrnn9UuNE_W_8c4S0tcmQzNH3iVB36jwskDwvj5_lwY1n0yYJOSSiI=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuBdUOCl8siNiCXkXuYNacU416vZQg357AKFHF5XHO3hsMDC8g1de7ytjZdjsNSi6al-CamVgc55p7c46O5dCGI2SHhUsLL1KfUcdm4GqjGhxUaEfhREaI7XzS0IXZq-II4IMc69Sm3_PdWiac-lP7P_eDbCBF_hXhuOlUjJ7Jan8shgU9Zrki0iGNc6aBszGyKwZ00dl5JGWlvmO5MC2KywkQrnn9UuNE_W_8c4S0tcmQzNH3iVB36jwskDwvj5_lwY1n0yYJOSSiI=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuBdUOCl8siNiCXkXuYNacU416vZQg357AKFHF5XHO3hsMDC8g1de7ytjZdjsNSi6al-CamVgc55p7c46O5dCGI2SHhUsLL1KfUcdm4GqjGhxUaEfhREaI7XzS0IXZq-II4IMc69Sm3_PdWiac-lP7P_eDbCBF_hXhuOlUjJ7Jan8shgU9Zrki0iGNc6aBszGyKwZ00dl5JGWlvmO5MC2KywkQrnn9UuNE_W_8c4S0tcmQzNH3iVB36jwskDwvj5_lwY1n0yYJOSSiI=w1200 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdUOCl8siNiCXkXuYNacU416vZQg357AKFHF5XHO3hsMDC8g1de7ytjZdjsNSi6al-CamVgc55p7c46O5dCGI2SHhUsLL1KfUcdm4GqjGhxUaEfhREaI7XzS0IXZq-II4IMc69Sm3_PdWiac-lP7P_eDbCBF_hXhuOlUjJ7Jan8shgU9Zrki0iGNc6aBszGyKwZ00dl5JGWlvmO5MC2KywkQrnn9UuNE_W_8c4S0tcmQzNH3iVB36jwskDwvj5_lwY1n0yYJOSSiI" />
+                                srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuBdUOCl8siNiCXkXuYNacU416vZQg357AKFHF5XHO3hsMDC8g1de7ytjZdjsNSi6al-CamVgc55p7c46O5dCGI2SHhUsLL1KfUcdm4GqjGhxUaEfhREaI7XzS0IXZq-II4IMc69Sm3_PdWiac-lP7P_eDbCBF_hXhuOlUjJ7Jan8shgU9Zrki0iGNc6aBszGyKwZ00dl5JGWlvmO5MC2KywkQrnn9UuNE_W_8c4S0tcmQzNH3iVB36jwskDwvj5_lwY1n0yYJOSSiI=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuBdUOCl8siNiCXkXuYNacU416vZQg357AKFHF5XHO3hsMDC8g1de7ytjZdjsNSi6al-CamVgc55p7c46O5dCGI2SHhUsLL1KfUcdm4GqjGhxUaEfhREaI7XzS0IXZq-II4IMc69Sm3_PdWiac-lP7P_eDbCBF_hXhuOlUjJ7Jan8shgU9Zrki0iGNc6aBszGyKwZ00dl5JGWlvmO5MC2KywkQrnn9UuNE_W_8c4S0tcmQzNH3iVB36jwskDwvj5_lwY1n0yYJOSSiI=w800 800w, https://lh3.googleusercontent.com/aida-public/AB6AXuBdUOCl8siNiCXkXuYNacU416vZQg357AKFHF5XHO3hsMDC8g1de7ytjZdjsNSi6al-CamVgc55p7c46O5dCGI2SHhUsLL1KfUcdm4GqjGhxUaEfhREaI7XzS0IXZq-II4IMc69Sm3_PdWiac-lP7P_eDbCBF_hXhuOlUjJ7Jan8shgU9Zrki0iGNc6aBszGyKwZ00dl5JGWlvmO5MC2KywkQrnn9UuNE_W_8c4S0tcmQzNH3iVB36jwskDwvj5_lwY1n0yYJOSSiI=w1200 1200w"
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdUOCl8siNiCXkXuYNacU416vZQg357AKFHF5XHO3hsMDC8g1de7ytjZdjsNSi6al-CamVgc55p7c46O5dCGI2SHhUsLL1KfUcdm4GqjGhxUaEfhREaI7XzS0IXZq-II4IMc69Sm3_PdWiac-lP7P_eDbCBF_hXhuOlUjJ7Jan8shgU9Zrki0iGNc6aBszGyKwZ00dl5JGWlvmO5MC2KywkQrnn9UuNE_W_8c4S0tcmQzNH3iVB36jwskDwvj5_lwY1n0yYJOSSiI" />
                             <div class="list-card-overlay">
                                 <h4 class="text-white font-headline fs-6 m-0">The Great Pastry Crawl</h4>
-                                <p class="text-white-50 font-label text-uppercase m-0 mt-1" style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">
+                                <p class="text-white-50 font-label text-uppercase m-0 mt-1"
+                                    style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem);">
                                     Patisserie • Paris</p>
                             </div>
                         </div>
@@ -394,7 +527,8 @@
                 <!-- Newsletter / Call to Action -->
                 <section class="newsletter-card">
                     <h3 class="font-headline fs-5 mb-2">Taste the Future</h3>
-                    <p class="font-body text-white-50 mb-4 lh-base" style="font-size: clamp(0.7rem, 2.1875vw, 1.05rem);">Join our private circle of
+                    <p class="font-body text-white-50 mb-4 lh-base"
+                        style="font-size: clamp(0.7rem, 2.1875vw, 1.05rem);">Join our private circle of
                         gourmands for weekly editorial deep-dives and exclusive reservations.</p>
                     <div class="d-flex gap-2">
                         <input class="form-control newsletter-input" placeholder="Your email" type="email" />
@@ -410,37 +544,37 @@
             <div class="row g-4">
                 <div class="col-6 col-md-4 col-lg-2">
                     <div class="mood-card">
-                        <span class="material-symbols-outlined text-primary display-6 mb-3">bakery_dining</span>
+                        <i class="bi bi-egg-fried text-primary display-6 mb-3"></i>
                         <h4 class="font-headline fs-5 m-0">Boulangerie</h4>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
                     <div class="mood-card offset-y">
-                        <span class="material-symbols-outlined text-primary display-6 mb-3">ramen_dining</span>
+                        <i class="bi bi-fire text-primary display-6 mb-3"></i>
                         <h4 class="font-headline fs-5 m-0">Asian Fusion</h4>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
                     <div class="mood-card">
-                        <span class="material-symbols-outlined text-primary display-6 mb-3">dinner_dining</span>
+                        <i class="bi bi-cup-hot text-primary display-6 mb-3"></i>
                         <h4 class="font-headline fs-5 m-0">Supper Club</h4>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
                     <div class="mood-card offset-y">
-                        <span class="material-symbols-outlined text-primary display-6 mb-3">local_bar</span>
+                        <i class="bi bi-cup-straw text-primary display-6 mb-3"></i>
                         <h4 class="font-headline fs-5 m-0">Mixology</h4>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
                     <div class="mood-card">
-                        <span class="material-symbols-outlined text-primary display-6 mb-3">brunch_dining</span>
+                        <i class="bi bi-sunrise text-primary display-6 mb-3"></i>
                         <h4 class="font-headline fs-5 m-0">Morning Rituals</h4>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
                     <div class="mood-card offset-y">
-                        <span class="material-symbols-outlined text-primary display-6 mb-3">icecream</span>
+                        <i class="bi bi-snow2 text-primary display-6 mb-3"></i>
                         <h4 class="font-headline fs-5 m-0">Artisanal Sips</h4>
                     </div>
                 </div>
@@ -450,28 +584,30 @@
     <!-- Bottom Navigation Bar (Mobile only) -->
     <nav class="d-md-none fixed-bottom mobile-nav d-flex justify-content-around px-3 pb-4 pt-2">
         <a href="home.html" class="mobile-nav-btn active text-decoration-none" style="color: inherit;">
-            <span class="material-symbols-outlined mb-1" data-weight="fill">explore</span>
+            <i class="bi bi-compass mb-1"></i>
             <span class="font-label fw-bold text-uppercase"
                 style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.05rem;">Discover</span>
         </a>
         <a href="log-meal.html" class="mobile-nav-btn text-decoration-none" style="color: inherit;">
-            <span class="material-symbols-outlined mb-1">add_circle</span>
-            <span class="font-label fw-bold text-uppercase" style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.05rem;">Log</span>
+            <i class="bi bi-plus-circle mb-1"></i>
+            <span class="font-label fw-bold text-uppercase"
+                style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.05rem;">Log</span>
         </a>
         <a href="home.html" class="mobile-nav-btn text-decoration-none" style="color: inherit;">
-            <span class="material-symbols-outlined mb-1">trending_up</span>
+            <i class="bi bi-graph-up-arrow mb-1"></i>
             <span class="font-label fw-bold text-uppercase"
                 style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.05rem;">Trending</span>
         </a>
         <a href="profile.html" class="mobile-nav-btn text-decoration-none" style="color: inherit;">
-            <span class="material-symbols-outlined mb-1">person_2</span>
+            <i class="bi bi-person mb-1"></i>
             <span class="font-label fw-bold text-uppercase"
                 style="font-size: clamp(0.5rem, 1.5625vw, 0.75rem); letter-spacing: 0.05rem;">Profile</span>
         </a>
     </nav>
     <!-- Floating Action Button (FAB) -->
-    <a href="log-meal.html" class="d-none d-sm-flex d-md-none d-lg-flex position-fixed bottom-0 end-0 m-4 m-md-5 fab z-3 text-decoration-none">
-        <span class="material-symbols-outlined">restaurant_menu</span>
+    <a href="log-meal.html"
+        class="d-none d-sm-flex d-md-none d-lg-flex position-fixed bottom-0 end-0 m-4 m-md-5 fab z-3 text-decoration-none">
+        <i class="bi bi-journal-bookmark"></i>
     </a>
     <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmxc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -486,7 +622,7 @@
                         buttons.forEach(b => b.querySelector('.category-img-container').classList.remove('active'));
                         // Add active class to clicked
                         btn.querySelector('.category-img-container').classList.add('active');
-                        
+
                         // Center the clicked button in the scroll view
                         btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
                     });

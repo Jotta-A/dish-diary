@@ -8,9 +8,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&amp;family=Manrope:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
     rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <!-- Bootstrap 5.3 CSS -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/styles/main.css" />
@@ -33,11 +31,11 @@
         </div>
         <div class="d-flex align-items-center gap-3">
           <button class="btn btn-link p-2 text-on-surface-variant rounded-circle text-decoration-none">
-            <span class="material-symbols-outlined">notifications</span>
+            <i class="bi bi-bell"></i>
           </button>
           <a href="log-meal.html" class="btn btn-gradient rounded-pill d-none d-md-inline-flex align-items-center gap-1 font-label text-uppercase fw-bold px-4 py-2 text-decoration-none"
             style="font-size: 0.75rem; letter-spacing: 0.1em;">
-            <span class="material-symbols-outlined" style="font-size: 1rem; font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-size: 1rem; font-variation-settings: 'FILL' 1;">star_half</span>
+            <i class="bi bi-star-fill" style="font-size: 1rem;"></i><i class="bi bi-star-half" style="font-size: 1rem;"></i>
             Log Meal
           </a>
           <a href="profile.html" class="rounded-circle overflow-hidden border border-2 border-danger" style="width: 2.5rem; height: 2.5rem; display: block;">
@@ -64,8 +62,8 @@
           <div
             class="position-absolute bottom-0 end-0 bg-secondary text-white p-2 rounded-circle shadow-sm d-flex align-items-center justify-content-center"
             style="transform: translate(-10%, -10%);">
-            <span class="material-symbols-outlined"
-              style="font-variation-settings: 'FILL' 1; font-size: 1.25rem;">verified</span>
+            <i class="bi bi-patch-check-fill"
+              style="font-size: 1.25rem;"></i>
           </div>
         </div>
       </div>
@@ -105,7 +103,7 @@
         <h2 class="fs-3 fw-bold font-headline text-on-surface mb-0">Four Favorites</h2>
         <a class="font-label text-uppercase fw-bold text-primary-custom text-decoration-none d-flex align-items-center gap-2"
           href="#" style="font-size: 0.75rem; letter-spacing: 0.1em;">
-          View Archive <span class="material-symbols-outlined" style="font-size: 1rem;">arrow_forward</span>
+          View Archive <i class="bi bi-arrow-right" style="font-size: 1rem;"></i>
         </a>
       </div>
       <div class="row g-3 g-md-4">
@@ -118,8 +116,8 @@
             <div class="card-overlay"></div>
             <div class="card-content">
               <div class="glass-pill px-3 py-1 rounded-pill d-inline-flex align-items-center gap-2 mb-2">
-                <span class="material-symbols-outlined text-primary-custom"
-                  style="font-size: 0.875rem; font-variation-settings: 'FILL' 1;">favorite</span>
+                <i class="bi bi-heart-fill text-primary-custom"
+                  style="font-size: 0.875rem;"></i>
                 <span class="font-label text-on-surface text-uppercase fw-bold"
                   style="font-size: 0.625rem; letter-spacing: 0.05em;">Kyoto Umami</span>
               </div>
@@ -136,8 +134,8 @@
             <div class="card-overlay"></div>
             <div class="card-content">
               <div class="glass-pill px-3 py-1 rounded-pill d-inline-flex align-items-center gap-2 mb-2">
-                <span class="material-symbols-outlined text-primary-custom"
-                  style="font-size: 0.875rem; font-variation-settings: 'FILL' 1;">favorite</span>
+                <i class="bi bi-heart-fill text-primary-custom"
+                  style="font-size: 0.875rem;"></i>
                 <span class="font-label text-on-surface text-uppercase fw-bold"
                   style="font-size: 0.625rem; letter-spacing: 0.05em;">Nordic Bloom</span>
               </div>
@@ -154,8 +152,8 @@
             <div class="card-overlay"></div>
             <div class="card-content">
               <div class="glass-pill px-3 py-1 rounded-pill d-inline-flex align-items-center gap-2 mb-2">
-                <span class="material-symbols-outlined text-primary-custom"
-                  style="font-size: 0.875rem; font-variation-settings: 'FILL' 1;">favorite</span>
+                <i class="bi bi-heart-fill text-primary-custom"
+                  style="font-size: 0.875rem;"></i>
                 <span class="font-label text-on-surface text-uppercase fw-bold"
                   style="font-size: 0.625rem; letter-spacing: 0.05em;">A5 Searing</span>
               </div>
@@ -172,8 +170,8 @@
             <div class="card-overlay"></div>
             <div class="card-content">
               <div class="glass-pill px-3 py-1 rounded-pill d-inline-flex align-items-center gap-2 mb-2">
-                <span class="material-symbols-outlined text-primary-custom"
-                  style="font-size: 0.875rem; font-variation-settings: 'FILL' 1;">favorite</span>
+                <i class="bi bi-heart-fill text-primary-custom"
+                  style="font-size: 0.875rem;"></i>
                 <span class="font-label text-on-surface text-uppercase fw-bold"
                   style="font-size: 0.625rem; letter-spacing: 0.05em;">Botanical Mix</span>
               </div>
@@ -188,8 +186,8 @@
       <div class="d-flex justify-content-between align-items-center mb-4 pb-2">
         <h2 class="fs-3 fw-bold font-headline text-on-surface mb-0">Culinary Log</h2>
         <div class="d-flex gap-2">
-          <span class="material-symbols-outlined text-on-surface-variant" style="cursor: pointer;">filter_list</span>
-          <span class="material-symbols-outlined text-on-surface-variant" style="cursor: pointer;">search</span>
+          <i class="bi bi-funnel text-on-surface-variant" style="cursor: pointer;"></i>
+          <i class="bi bi-search text-on-surface-variant" style="cursor: pointer;"></i>
         </div>
       </div>
       <div class="table-responsive border-0">
@@ -209,24 +207,19 @@
               <td class="font-label text-on-surface-variant" style="font-size: 0.75rem;">OCT 14, 2023</td>
               <td>
                 <div class="d-flex align-items-center gap-2">
-                  <span class="material-symbols-outlined text-secondary-custom"
-                    style="font-size: 1.125rem;">location_on</span>
+                  <i class="bi bi-geo-alt-fill text-secondary-custom"
+                    style="font-size: 1.125rem;"></i>
                   <span class="font-body fw-bold text-on-surface">Kanda, Tokyo</span>
                 </div>
               </td>
               <td class="font-body text-on-surface">Midnight Soba Ritual — Traditional charcoal-filtered buckwheat.</td>
               <td class="text-end">
                 <div class="d-inline-flex text-primary-custom">
-                  <span class="material-symbols-outlined"
-                    style="font-size: 1rem; font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined"
-                    style="font-size: 1rem; font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined"
-                    style="font-size: 1rem; font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined"
-                    style="font-size: 1rem; font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined"
-                    style="font-size: 1rem; font-variation-settings: 'FILL' 1;">star</span>
+                  <i class="bi bi-star-fill" style="font-size: 1rem;"></i>
+                  <i class="bi bi-star-fill" style="font-size: 1rem;"></i>
+                  <i class="bi bi-star-fill" style="font-size: 1rem;"></i>
+                  <i class="bi bi-star-fill" style="font-size: 1rem;"></i>
+                  <i class="bi bi-star-fill" style="font-size: 1rem;"></i>
                 </div>
               </td>
             </tr>
@@ -234,23 +227,19 @@
               <td class="font-label text-on-surface-variant" style="font-size: 0.75rem;">OCT 12, 2023</td>
               <td>
                 <div class="d-flex align-items-center gap-2">
-                  <span class="material-symbols-outlined text-secondary-custom"
-                    style="font-size: 1.125rem;">location_on</span>
+                  <i class="bi bi-geo-alt-fill text-secondary-custom"
+                    style="font-size: 1.125rem;"></i>
                   <span class="font-body fw-bold text-on-surface">Ginza, Tokyo</span>
                 </div>
               </td>
               <td class="font-body text-on-surface">Omakase Shima — Rare Bluefin tuna series with aged soy.</td>
               <td class="text-end">
                 <div class="d-inline-flex text-primary-custom">
-                  <span class="material-symbols-outlined"
-                    style="font-size: 1rem; font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined"
-                    style="font-size: 1rem; font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined"
-                    style="font-size: 1rem; font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined"
-                    style="font-size: 1rem; font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined" style="font-size: 1rem; font-variation-settings: 'FILL' 0; opacity: 0.3;">star</span>
+                  <i class="bi bi-star-fill" style="font-size: 1rem;"></i>
+                  <i class="bi bi-star-fill" style="font-size: 1rem;"></i>
+                  <i class="bi bi-star-fill" style="font-size: 1rem;"></i>
+                  <i class="bi bi-star-fill" style="font-size: 1rem;"></i>
+                  <i class="bi bi-star" style="font-size: 1rem; opacity: 0.3;"></i>
                 </div>
               </td>
             </tr>
@@ -258,24 +247,19 @@
               <td class="font-label text-on-surface-variant" style="font-size: 0.75rem;">OCT 08, 2023</td>
               <td>
                 <div class="d-flex align-items-center gap-2">
-                  <span class="material-symbols-outlined text-secondary-custom"
-                    style="font-size: 1.125rem;">location_on</span>
+                  <i class="bi bi-geo-alt-fill text-secondary-custom"
+                    style="font-size: 1.125rem;"></i>
                   <span class="font-body fw-bold text-on-surface">Copenhagen</span>
                 </div>
               </td>
               <td class="font-body text-on-surface">Fermentation Lab Tasting — Reindeer moss and spruce tips.</td>
               <td class="text-end">
                 <div class="d-inline-flex text-primary-custom">
-                  <span class="material-symbols-outlined"
-                    style="font-size: 1rem; font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined"
-                    style="font-size: 1rem; font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined"
-                    style="font-size: 1rem; font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined"
-                    style="font-size: 1rem; font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined"
-                    style="font-size: 1rem; font-variation-settings: 'FILL' 1;">star</span>
+                  <i class="bi bi-star-fill" style="font-size: 1rem;"></i>
+                  <i class="bi bi-star-fill" style="font-size: 1rem;"></i>
+                  <i class="bi bi-star-fill" style="font-size: 1rem;"></i>
+                  <i class="bi bi-star-fill" style="font-size: 1rem;"></i>
+                  <i class="bi bi-star-fill" style="font-size: 1rem;"></i>
                 </div>
               </td>
             </tr>
@@ -283,8 +267,8 @@
               <td class="font-label text-on-surface-variant" style="font-size: 0.75rem;">OCT 05, 2023</td>
               <td>
                 <div class="d-flex align-items-center gap-2">
-                  <span class="material-symbols-outlined text-secondary-custom"
-                    style="font-size: 1.125rem;">location_on</span>
+                  <i class="bi bi-geo-alt-fill text-secondary-custom"
+                    style="font-size: 1.125rem;"></i>
                   <span class="font-body fw-bold text-on-surface">Paris, 1er</span>
                 </div>
               </td>
@@ -292,14 +276,11 @@
               </td>
               <td class="text-end border-bottom-0">
                 <div class="d-inline-flex text-primary-custom">
-                  <span class="material-symbols-outlined"
-                    style="font-size: 1rem; font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined"
-                    style="font-size: 1rem; font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined"
-                    style="font-size: 1rem; font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined" style="font-size: 1rem; font-variation-settings: 'FILL' 0; opacity: 0.3;">star</span>
-                  <span class="material-symbols-outlined" style="font-size: 1rem; font-variation-settings: 'FILL' 0; opacity: 0.3;">star</span>
+                  <i class="bi bi-star-fill" style="font-size: 1rem;"></i>
+                  <i class="bi bi-star-fill" style="font-size: 1rem;"></i>
+                  <i class="bi bi-star-fill" style="font-size: 1rem;"></i>
+                  <i class="bi bi-star" style="font-size: 1rem; opacity: 0.3;"></i>
+                  <i class="bi bi-star" style="font-size: 1rem; opacity: 0.3;"></i>
                 </div>
               </td>
             </tr>
@@ -319,20 +300,20 @@
   <nav class="fixed-bottom bottom-nav d-md-none w-100 rounded-top-4 pb-4 pt-2 px-3">
     <div class="d-flex justify-content-around align-items-center">
       <a class="mobile-nav-item d-flex flex-column align-items-center p-2" href="home.html">
-        <span class="material-symbols-outlined mb-1">explore</span>
+        <i class="bi bi-compass mb-1"></i>
         <span class="font-label text-uppercase fw-bold" style="font-size: 0.625rem; letter-spacing: 0.05em;">Discover</span>
       </a>
       <a class="mobile-nav-item d-flex flex-column align-items-center p-2" href="log-meal.html">
-        <span class="material-symbols-outlined mb-1">add_circle</span>
+        <i class="bi bi-plus-circle mb-1"></i>
         <span class="font-label text-uppercase fw-bold" style="font-size: 0.625rem; letter-spacing: 0.05em;">Log</span>
       </a>
       <a class="mobile-nav-item d-flex flex-column align-items-center p-2" href="home.html">
-        <span class="material-symbols-outlined mb-1">trending_up</span>
+        <i class="bi bi-graph-up-arrow mb-1"></i>
         <span class="font-label text-uppercase fw-bold" style="font-size: 0.625rem; letter-spacing: 0.05em;">Trending</span>
       </a>
       <a class="mobile-nav-item d-flex flex-column align-items-center p-2 btn-gradient rounded-4 text-white text-decoration-none"
         href="profile.html">
-        <span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">person_2</span>
+        <i class="bi bi-person-fill mb-1"></i>
         <span class="font-label text-uppercase fw-bold" style="font-size: 0.625rem; letter-spacing: 0.05em;">Profile</span>
       </a>
     </div>
