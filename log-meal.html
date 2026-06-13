@@ -1,0 +1,86 @@
+<!DOCTYPE html><html lang=en><meta charset=utf-8><meta content="width=device-width, initial-scale=1.0" name=viewport><title>The Editorial Gourmand - Log Meal</title><link rel=preconnect href=https://lh3.googleusercontent.com crossorigin><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css crossorigin=anonymous><link rel=stylesheet href=/dish-diary/home.e028bcc0.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css><body class="align-items-center bg-backdrop d-flex justify-content-center min-vh-100 p-3 p-sm-4">
+    
+    <div class="bg-surface d-flex flex-column modal-container overflow-hidden rounded w-100">
+        
+        <header class="align-items-center bg-header-footer border-bottom border-custom d-flex justify-content-between px-4 py-4">
+            <h1 class="fs-3 fw-bold m-0 text-main" style=letter-spacing:-.025em>Log a Meal</h1>
+            <button aria-label="Close modal" onclick=history.back() class="btn btn-link p-0 text-decoration-none text-muted-custom">
+                <i class="bi bi-x-lg" style=font-size:1.75rem></i>
+            </button>
+        </header>
+        
+        <div class="bg-surface d-flex flex-column flex-grow-1 gap-5 overflow-auto p-4 p-md-5">
+            
+            <div>
+                <label class="d-block font-ui fs-6 fw-semibold mb-2 text-main text-uppercase" for=dish-name style=letter-spacing:.05em>What did you eat?</label>
+                <input class="font-display input-dish text-main w-100" id=dish-name placeholder="e.g., Truffle Gnocchi at Le Bernardin">
+            </div>
+            
+            <div>
+                <label class="d-block font-ui fs-6 fw-semibold mb-2 text-main text-uppercase" style=letter-spacing:.05em>The Visuals</label>
+                <div class="align-items-center d-flex dropzone flex-column justify-content-center rounded w-100">
+                    <i class="bi bi-camera fs-1 mb-3 text-muted-custom" style="transition:color .3s"></i>
+                    <p class="font-ui fw-medium m-0 text-main" style=font-size:.875rem>Drag &amp; drop a
+                        high-resolution photo</p>
+                    <p class="font-ui mb-0 mt-1 text-muted-custom" style=font-size:.75rem>or click to browse</p>
+                </div>
+            </div>
+            
+            <div>
+                <label class="d-block font-ui fs-6 fw-semibold mb-3 text-main text-uppercase" style=letter-spacing:.05em>Your Rating</label>
+                <input type=hidden id=rating-value name=rating value=0>
+                <div class="align-items-center d-flex gap-1" id=star-rating-widget role=group aria-label="Star rating">
+                    
+                    <div class="position-relative star-unit" data-index=1>
+                        <i class="bi bi-star star-icon" data-index=1 style="color:var(--outline);font-size:2.5rem;transition:color .15s"></i>
+                        <button class="left-half star-half-btn" data-value=0.5 aria-label="0.5 stars" title=0.5></button>
+                        <button class="right-half star-half-btn" data-value=1 aria-label="1 star" title=1></button>
+                    </div>
+                    <div class="position-relative star-unit" data-index=2>
+                        <i class="bi bi-star star-icon" data-index=2 style="color:var(--outline);font-size:2.5rem;transition:color .15s"></i>
+                        <button class="left-half star-half-btn" data-value=1.5 aria-label="1.5 stars" title=1.5></button>
+                        <button class="right-half star-half-btn" data-value=2 aria-label="2 stars" title=2></button>
+                    </div>
+                    <div class="position-relative star-unit" data-index=3>
+                        <i class="bi bi-star star-icon" data-index=3 style="color:var(--outline);font-size:2.5rem;transition:color .15s"></i>
+                        <button class="left-half star-half-btn" data-value=2.5 aria-label="2.5 stars" title=2.5></button>
+                        <button class="right-half star-half-btn" data-value=3 aria-label="3 stars" title=3></button>
+                    </div>
+                    <div class="position-relative star-unit" data-index=4>
+                        <i class="bi bi-star star-icon" data-index=4 style="color:var(--outline);font-size:2.5rem;transition:color .15s"></i>
+                        <button class="left-half star-half-btn" data-value=3.5 aria-label="3.5 stars" title=3.5></button>
+                        <button class="right-half star-half-btn" data-value=4 aria-label="4 stars" title=4></button>
+                    </div>
+                    <div class="position-relative star-unit" data-index=5>
+                        <i class="bi bi-star star-icon" data-index=5 style="color:var(--outline);font-size:2.5rem;transition:color .15s"></i>
+                        <button class="left-half star-half-btn" data-value=4.5 aria-label="4.5 stars" title=4.5></button>
+                        <button class="right-half star-half-btn" data-value=5 aria-label="5 stars" title=5></button>
+                    </div>
+                    <span id=rating-label class="font-ui fw-bold ms-3" style=color:var(--primary);min-width:4rem;font-size:1rem>— / 5</span>
+                </div>
+            </div>
+            
+            <div style=max-width:20rem>
+                <label class="d-block font-ui fs-6 fw-semibold mb-2 text-main text-uppercase" style=letter-spacing:.05em>Date</label>
+                <div class=position-relative>
+                    <input class="font-display fs-5 input-custom pe-5 ps-3 py-2 text-main w-100" value=Today>
+                    <i class="bi bi-calendar position-absolute text-muted-custom" style=top:50%;right:.75rem;transform:translateY(-50%)></i>
+                </div>
+            </div>
+            
+            <div>
+                <label class="d-block font-ui fs-6 fw-semibold mb-2 text-main text-uppercase" for=review-body style=letter-spacing:.05em>The Verdict</label>
+                <textarea class="font-display fs-5 input-custom p-3 text-main w-100" id=review-body placeholder="Describe the plating, the complex flavors, the ambiance..." rows=6 style=resize:vertical;line-height:1.625></textarea>
+            </div>
+        </div>
+        
+        <footer class="align-items-center bg-header-footer border-custom border-top d-flex gap-3 justify-content-end px-4 py-3">
+            <button onclick=history.back() class="btn btn-cancel btn-link font-ui fw-bold px-3 py-2 text-decoration-none text-uppercase" style=letter-spacing:.1em;font-size:.875rem>Cancel</button>
+            <a href=/dish-diary/home.html class="bg-primary-custom border-0 btn font-ui fw-bold px-4 py-2 rounded shadow-sm text-decoration-none text-uppercase" style=letter-spacing:.1em;font-size:.875rem>Publish</a>
+        </footer>
+    </div>
+    
+    <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js></script>
+    <script>!function(){let e=document.getElementById("star-rating-widget"),t=document.getElementById("rating-value"),a=document.getElementById("rating-label"),l=e.querySelectorAll(".star-icon"),r=0;function n(e){l.forEach((t,a)=>{let l=a+1;e>=l?(t.className="bi bi-star-fill star-icon",t.style.color="var(--primary)"):e>=l-.5?(t.className="bi bi-star-half star-icon",t.style.color="var(--primary)"):(t.className="bi bi-star star-icon",t.style.color="var(--outline)")})}e.querySelectorAll(".star-half-btn").forEach(e=>{e.addEventListener("mouseenter",()=>{n(parseFloat(e.dataset.value))}),e.addEventListener("click",()=>{t.value=r=parseFloat(e.dataset.value),a.textContent=r+" / 5",n(r)})}),e.addEventListener("mouseleave",()=>{n(r)})}();</script>
+
+
