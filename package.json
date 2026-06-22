@@ -1,8 +1,7 @@
 {
   "name": "projeto-dishdiary",
   "version": "1.0.0",
-  "description": "DishDiary é um projeto de uma aplicação web inspirada no Letterboxd, focada na avaliação e organização de receitas culinarias digitais.\r O sistema permite que usuários listem, atribuam notas e escrevam comentários sobre receitas, criando um histórico pessoal com experiências de suas comidas favoritas.",
-  "main": "index.js",
+  "description": "DishDiary - recipe tracking app",
   "directories": {
     "doc": "docs"
   },
@@ -10,7 +9,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass:build": "sass assets/sass/main.scss assets/styles/main.css --style=expanded",
     "sass:watch": "sass assets/sass/main.scss assets/styles/main.css --style=expanded --watch",
-    "dev": "npm run sass:watch"
+    "dev": "npm run sass:watch",
+    "server": "json-server --watch db.json --port 3000",
+    "dev:all": "npm run server",
+    "start": "parcel index.html",
+    "clean": "rd /s /q .parcel-cache 2>nul & rd /s /q dist 2>nul & exit 0",
+    "build": "npm run clean && parcel build index.html home.html dish-detail.html log-meal.html login.html profile.html dish.html --public-url /dish-diary/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -19,11 +25,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Jotta-A/dish-diary/issues"
   },
-  "homepage": "https://github.com/Jotta-A/dish-diary#readme",
+  "homepage": "https://Jotta-A.github.io/dish-diary",
   "dependencies": {
     "bootstrap": "^5.3.8",
     "jquery": "^4.0.0",
@@ -31,6 +36,8 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
+    "json-server": "^1.0.0-beta.15",
+    "parcel": "^2.16.4",
     "sass": "^1.100.0"
   }
 }
