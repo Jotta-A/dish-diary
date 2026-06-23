@@ -149,6 +149,53 @@
     </main>
     <!-- Bootstrap 5.3 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
+    <script src="assets/js/effects.js"></script>
+    <script src="assets/js/storage.js"></script>
+    <script>
+    (function () {
+        // Apply saved theme
+        StorageUtil.theme.apply();
+
+        // If already logged in, redirect to home
+        if (StorageUtil.user.isLoggedIn()) {
+            // Allow staying on login page if explicitly navigated
+        }
+
+        // Restore remembered email
+        var rememberedUser = StorageUtil.local.get('rememberedUser');
+        if (rememberedUser && rememberedUser.email) {
+            var emailInput = document.getElementById('email');
+            var rememberCheckbox = document.getElementById('remember');
+            if (emailInput) emailInput.value = rememberedUser.email;
+            if (rememberCheckbox) rememberCheckbox.checked = true;
+        }
+
+        // Handle Sign In
+        var signInBtn = document.querySelector('.btn-submit');
+        if (signInBtn) {
+            signInBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                var email = document.getElementById('email').value || 'curator@atelier.com';
+                var remember = document.getElementById('remember').checked;
+
+                // Create user session (simulating with default user from db.json)
+                var userData = {
+                    id: 1,
+                    name: 'The Critic',
+                    email: email,
+                    avatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAQ8yWz5FveHCsNhNtCRettRnswHXrauVGglBb5zCNmZ7S0L3AELrHAb7hlwv2dvzhwlBWMl4zPRVGlYHelztiNaV_mIIEj30M-_1Bp42IVIGAwOAi-P7bLsyKXLw1cG6NFC2_24dESxOuqAqNm5bwSywNLfZZl1s68-5tLieH5mFhIIq3fGXOCKcOUBUuzozdj_B5JuW7rTvKZU0Mk-nzoz-kJBcTN1vDTJpZhv1g4nt8YVLkCS9lhg45nJjDYSXZK3Tq7S8ejYvY=w400',
+                    loginTime: new Date().toISOString()
+                };
+
+                StorageUtil.user.login(userData, remember);
+
+                // Redirect to home
+                window.location.href = 'home.html';
+            });
+        }
+    })();
+    </script>
 </body>
 
 </html>

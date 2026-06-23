@@ -402,6 +402,53 @@
     </footer>
     <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmxc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
+    <script src="assets/js/effects.js"></script>
+    <script src="assets/js/storage.js"></script>
+    <script>
+    (function () {
+        // Apply saved theme
+        StorageUtil.theme.apply();
+
+        // Track this dish as recently viewed
+        StorageUtil.recentlyViewed.add({
+            id: 3,
+            title: 'Truffle Tagliatelle',
+            image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBDoKYZlrJx9ePkVJk5rhB3rgtdJ7JicAzZKA36rQXYvBhNCSXuJK04XkwaDqXEOuefcbjRDEKsq75Ko_gwS93ALM79S9LY4BgmjN71u2wX2627vN6U-BuO46EczJWXk2CfedjhbxsRd6g5mOr7jpej74KcnXYv7H4YMxhSbQKkiffV3uzFbbku0nf7ELp3UxMr6Gk9wReAvH_4HZwQd_gzlL2PwYrG4MA2hOdM0HJ3kY9tRkEKNW1Eg0ZtJBoxW6yNowIotMCyN8Q=w800',
+            rating: 4.8
+        });
+
+        // "Add to List" button as a favorites toggle
+        var addToListBtn = document.querySelector('button[style*="border-color: var(--outline)"]');
+        if (addToListBtn) {
+            // Restore state
+            if (StorageUtil.favorites.isFavorited('3')) {
+                addToListBtn.innerHTML = '<i class="bi bi-check2 me-2"></i>Added to List';
+                addToListBtn.classList.add('btn-success');
+                addToListBtn.classList.remove('btn-outline-secondary');
+            }
+
+            addToListBtn.addEventListener('click', function () {
+                var isFav = StorageUtil.favorites.toggle('3');
+                if (isFav) {
+                    this.innerHTML = '<i class="bi bi-check2 me-2"></i>Added to List';
+                    this.classList.add('btn-success');
+                    this.classList.remove('btn-outline-secondary');
+                } else {
+                    this.textContent = 'Add to List';
+                    this.classList.remove('btn-success');
+                    this.classList.add('btn-outline-secondary');
+                }
+            });
+        }
+
+        // Log recently viewed in console for debugging
+        var recent = StorageUtil.recentlyViewed.getAll();
+        if (recent.length > 0) {
+            console.log('[DishDiary] Recently viewed dishes:', recent.map(function(d) { return d.title; }));
+        }
+    })();
+    </script>
 </body>
 
 </html>

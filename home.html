@@ -611,22 +611,75 @@
     </a>
     <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmxc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
+    <script src="assets/js/effects.js"></script>
+    <script src="assets/js/storage.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const carousel = document.getElementById('category-carousel');
-            if (carousel) {
-                const buttons = carousel.querySelectorAll('.category-btn');
-                buttons.forEach(btn => {
-                    btn.addEventListener('click', () => {
-                        // Remove active class from all
-                        buttons.forEach(b => b.querySelector('.category-img-container').classList.remove('active'));
-                        // Add active class to clicked
-                        btn.querySelector('.category-img-container').classList.add('active');
+        document.addEventListener('DOMContentLoaded', function () {
+            // Apply saved theme
+            StorageUtil.theme.apply();
 
-                        // Center the clicked button in the scroll view
+            // ── Category Carousel with persistence ──
+            var carousel = document.getElementById('category-carousel');
+            if (carousel) {
+                var buttons = carousel.querySelectorAll('.category-btn');
+                var savedCategory = StorageUtil.category.getActive();
+
+                buttons.forEach(function (btn) {
+                    var categoryName = btn.querySelector('span') ? btn.querySelector('span').textContent.trim() : '';
+
+                    // Restore saved active category
+                    if (savedCategory && categoryName === savedCategory) {
+                        buttons.forEach(function (b) { b.querySelector('.category-img-container').classList.remove('active'); });
+                        btn.querySelector('.category-img-container').classList.add('active');
+                    }
+
+                    btn.addEventListener('click', function () {
+                        buttons.forEach(function (b) { b.querySelector('.category-img-container').classList.remove('active'); });
+                        btn.querySelector('.category-img-container').classList.add('active');
                         btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+
+                        // Save active category to sessionStorage
+                        StorageUtil.category.setActive(categoryName);
                     });
                 });
+            }
+
+            // ── Favorite (heart) buttons ──
+            var favButtons = document.querySelectorAll('.btn-fav');
+            favButtons.forEach(function (btn, index) {
+                var dishId = String(index + 1);
+                var icon = btn.querySelector('i');
+
+                // Restore favorite state from storage
+                if (StorageUtil.favorites.isFavorited(dishId)) {
+                    icon.className = 'bi bi-heart-fill fs-5';
+                } else {
+                    icon.className = 'bi bi-heart fs-5';
+                }
+
+                btn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    var nowFavorited = StorageUtil.favorites.toggle(dishId);
+                    icon.className = nowFavorited ? 'bi bi-heart-fill fs-5' : 'bi bi-heart fs-5';
+                });
+            });
+
+            // ── Search history ──
+            var searchInput = document.querySelector('.search-input');
+            if (searchInput) {
+                searchInput.addEventListener('keypress', function (e) {
+                    if (e.key === 'Enter' && this.value.trim()) {
+                        StorageUtil.searchHistory.add(this.value);
+                    }
+                });
+            }
+
+            // ── Show logged-in user greeting (console) ──
+            var currentUser = StorageUtil.user.getCurrent();
+            if (currentUser) {
+                console.log('[DishDiary] Welcome back, ' + currentUser.name + '!');
             }
         });
     </script>

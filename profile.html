@@ -322,6 +322,38 @@
   <div class="d-md-none" style="height: 6.25rem;"></div>
   <!-- Bootstrap 5.3 JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
+  <script src="assets/js/effects.js"></script>
+  <script src="assets/js/storage.js"></script>
+  <script>
+  (function () {
+      // Apply saved theme
+      StorageUtil.theme.apply();
+
+      // Display current user info
+      var currentUser = StorageUtil.user.getCurrent();
+      if (currentUser) {
+          console.log('[DishDiary] Profile loaded for: ' + currentUser.name);
+          // Could dynamically update the profile name here if desired
+      }
+
+      // Show favorites count in console
+      var favCount = StorageUtil.favorites.count();
+      console.log('[DishDiary] Total favorites: ' + favCount);
+
+      // Show recently viewed
+      var recent = StorageUtil.recentlyViewed.getAll();
+      if (recent.length > 0) {
+          console.log('[DishDiary] Recently viewed:', recent.map(function(d) { return d.title; }));
+      }
+
+      // Show user meal logs from localStorage
+      var userLogs = StorageUtil.local.get('userMealLogs') || [];
+      if (userLogs.length > 0) {
+          console.log('[DishDiary] User meal logs (' + userLogs.length + '):', userLogs);
+      }
+  })();
+  </script>
 </body>
 
 </html>

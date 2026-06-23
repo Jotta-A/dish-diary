@@ -111,48 +111,130 @@
     </div>
     <!-- Bootstrap 5.3 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
+    <script src="assets/js/effects.js"></script>
+    <script src="assets/js/storage.js"></script>
     <script>
     (function () {
-        const widget = document.getElementById('star-rating-widget');
-        const hiddenInput = document.getElementById('rating-value');
-        const label = document.getElementById('rating-label');
-        const icons = widget.querySelectorAll('.star-icon');
-        let selectedValue = 0;
+        // Apply saved theme
+        StorageUtil.theme.apply();
+
+        // ── Star Rating Widget ──
+        var widget = document.getElementById('star-rating-widget');
+        var hiddenInput = document.getElementById('rating-value');
+        var label = document.getElementById('rating-label');
+        var icons = widget.querySelectorAll('.star-icon');
+        var selectedValue = 0;
 
         function renderStars(value) {
-            icons.forEach((icon, i) => {
-                const starPos = i + 1; // 1-based
+            icons.forEach(function (icon, i) {
+                var starPos = i + 1;
                 if (value >= starPos) {
-                    // full star
                     icon.className = 'bi bi-star-fill star-icon';
                     icon.style.color = 'var(--primary)';
                 } else if (value >= starPos - 0.5) {
-                    // half star
                     icon.className = 'bi bi-star-half star-icon';
                     icon.style.color = 'var(--primary)';
                 } else {
-                    // empty star
                     icon.className = 'bi bi-star star-icon';
                     icon.style.color = 'var(--outline)';
                 }
             });
         }
 
-        widget.querySelectorAll('.star-half-btn').forEach(btn => {
-            btn.addEventListener('mouseenter', () => {
+        widget.querySelectorAll('.star-half-btn').forEach(function (btn) {
+            btn.addEventListener('mouseenter', function () {
                 renderStars(parseFloat(btn.dataset.value));
             });
-            btn.addEventListener('click', () => {
+            btn.addEventListener('click', function () {
                 selectedValue = parseFloat(btn.dataset.value);
                 hiddenInput.value = selectedValue;
                 label.textContent = selectedValue + ' / 5';
                 renderStars(selectedValue);
+                saveDraft();
             });
         });
 
-        widget.addEventListener('mouseleave', () => {
+        widget.addEventListener('mouseleave', function () {
             renderStars(selectedValue);
         });
+
+        // ── Draft Auto-Save (debounced) ──
+        var dishNameInput = document.getElementById('dish-name');
+        var reviewBody = document.getElementById('review-body');
+        var saveTimeout = null;
+
+        function saveDraft() {
+            var formData = {
+                dishName: dishNameInput ? dishNameInput.value : '',
+                rating: selectedValue,
+                review: reviewBody ? reviewBody.value : '',
+                savedAt: new Date().toISOString()
+            };
+            StorageUtil.draft.save(formData);
+            console.log('[DishDiary] Draft saved automatically.');
+        }
+
+        function debouncedSave() {
+            clearTimeout(saveTimeout);
+            saveTimeout = setTimeout(saveDraft, 800);
+        }
+
+        // Attach auto-save listeners
+        if (dishNameInput) {
+            dishNameInput.addEventListener('input', debouncedSave);
+        }
+        if (reviewBody) {
+            reviewBody.addEventListener('input', debouncedSave);
+        }
+
+        // ── Restore Draft on Page Load ──
+        var savedDraft = StorageUtil.draft.load();
+        if (savedDraft) {
+            if (savedDraft.dishName && dishNameInput) {
+                dishNameInput.value = savedDraft.dishName;
+            }
+            if (savedDraft.rating && savedDraft.rating > 0) {
+                selectedValue = savedDraft.rating;
+                hiddenInput.value = selectedValue;
+                label.textContent = selectedValue + ' / 5';
+                renderStars(selectedValue);
+            }
+            if (savedDraft.review && reviewBody) {
+                reviewBody.value = savedDraft.review;
+            }
+            console.log('[DishDiary] Draft restored from ' + new Date(savedDraft.savedAt).toLocaleString());
+        }
+
+        // ── Clear Draft on Publish ──
+        var publishBtn = document.querySelector('.bg-primary-custom');
+        if (publishBtn) {
+            publishBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                // Save the meal log to localStorage as well
+                var currentUser = StorageUtil.user.getCurrent();
+                var mealLog = {
+                    dishName: dishNameInput ? dishNameInput.value : '',
+                    rating: selectedValue,
+                    review: reviewBody ? reviewBody.value : '',
+                    date: new Date().toISOString(),
+                    userId: currentUser ? currentUser.id : null
+                };
+
+                // Store in a meal logs array
+                var logs = StorageUtil.local.get('userMealLogs') || [];
+                logs.unshift(mealLog);
+                StorageUtil.local.set('userMealLogs', logs);
+
+                // Clear the draft
+                StorageUtil.draft.clear();
+                console.log('[DishDiary] Meal published and draft cleared!');
+
+                // Redirect to home
+                window.location.href = 'home.html';
+            });
+        }
     })();
     </script>
 </body>
