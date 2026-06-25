@@ -151,8 +151,21 @@
     </main>
     <!-- Bootstrap 5.3 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/effects.js"></script>
+    <script src="assets/js/storage.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Apply saved theme
+            if (window.StorageUtil && StorageUtil.theme) {
+                StorageUtil.theme.apply();
+            }
+
+            // If already logged in, redirect to home
+            if (window.StorageUtil && StorageUtil.user && StorageUtil.user.isLoggedIn()) {
+                // Allow staying on login page if explicitly navigated
+            }
+
             const form = document.getElementById('login-form');
             const emailInput = document.getElementById('email');
             const passwordInput = document.getElementById('password');
@@ -218,8 +231,12 @@
                     if (response.ok) {
                         const savedUser = await response.json();
                         
-                        // Save session to localStorage
-                        localStorage.setItem('currentUser', JSON.stringify(savedUser));
+                        // Save session using StorageUtil if available, else localStorage
+                        if (window.StorageUtil && StorageUtil.user) {
+                            StorageUtil.user.login(savedUser, remember);
+                        } else {
+                            localStorage.setItem('currentUser', JSON.stringify(savedUser));
+                        }
                         
                         if (remember) {
                             localStorage.setItem('rememberedEmail', email);
@@ -239,8 +256,15 @@
                     // If JSON server is not running, we'll still let them login as a mock fallback
                     alert('Could not connect to JSON server, but logging you in locally anyway!');
                     
-                    // Fallback to just localStorage
-                    localStorage.setItem('currentUser', JSON.stringify({ ...userData, id: Date.now() }));
+                    const localUser = { ...userData, id: Date.now() };
+                    
+                    // Fallback to StorageUtil or localStorage
+                    if (window.StorageUtil && StorageUtil.user) {
+                        StorageUtil.user.login(localUser, remember);
+                    } else {
+                        localStorage.setItem('currentUser', JSON.stringify(localUser));
+                    }
+                    
                     if (remember) {
                         localStorage.setItem('rememberedEmail', email);
                     }
