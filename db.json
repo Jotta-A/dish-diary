@@ -154,6 +154,28 @@
         "4": 10,
         "5": 85
       }
+    },
+    {
+      "id": "4",
+      "title": "Avocado Toast Supreme",
+      "description": "Crispy sourdough bread topped with creamy avocado, poached egg, and chili flakes.",
+      "image": "https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?w=800&q=80",
+      "rating": 4.5,
+      "reviewCount": 128,
+      "badge": "Popular",
+      "prepTime": "15 Min",
+      "favorited": false
+    },
+    {
+      "id": "5",
+      "title": "Spicy Ramen Bowl",
+      "description": "Rich pork broth with fresh noodles, soft-boiled egg, and tender chashu pork belly.",
+      "image": "https://images.unsplash.com/photo-1557872943-16a5ac26437e?w=800&q=80",
+      "rating": 4.9,
+      "reviewCount": 342,
+      "badge": "Trending",
+      "prepTime": "25 Min",
+      "favorited": true
     }
   ],
   "reviews": [

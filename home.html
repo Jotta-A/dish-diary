@@ -219,6 +219,21 @@
         <div class="row g-4">
             <!-- Trending This Week (Left Column - Large) -->
             <section class="col-lg-8">
+                <!-- Recipe of the Day (Dynamic API) -->
+                <div class="mb-5" id="recipe-of-the-day-container">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h2 class="font-headline fs-3 m-0">Inspiration: Recipe of the Day</h2>
+                    </div>
+                    <div id="recipe-of-the-day-content">
+                        <!-- Loading State -->
+                        <div class="card card-custom w-100 p-5 text-center">
+                            <div class="spinner-border text-primary mx-auto" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="d-flex align-items-center justify-content-between mb-4">
                     <h2 class="font-headline fs-3 m-0">Trending This Week</h2>
                     <a class="font-label fw-bold text-primary text-uppercase text-decoration-none d-flex align-items-center gap-1"
@@ -226,140 +241,11 @@
                         View All <i class="bi bi-arrow-right fs-6"></i>
                     </a>
                 </div>
-                <div class="row g-4 mb-4">
-                    <!-- Featured Card 1 -->
-                    <div class="col-md-6">
-                        <a href="dish-detail.html" class="text-decoration-none">
-                            <div class="card card-custom h-100">
-                                <div class="card-img-wrap">
-                                    <picture>
-                                        <source type="image/webp"
-                                            srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuB4-FCIsg-kXbxI6dO196COY059NGHXi2DgoyTLFRAmC9FiMMyaanXZi2WB1Jfxbym1Vs8tbcWSwSrjNGAU0ntkKHJ1MenNz0Zw9Gp5uAI9tSyCBHxVuy6Q-OI4fwxxYElFT43GXL4So8gT9CE56A00Um5Uc9BOOSaKnLF6_ubRzlPnveEhpL9c9SoJs4QuSq3aN5UFyKudHsj0lGg8GInznZQ884EE2Xbxs0CcUrF1ylhiYKjU4mWrBbyWpZ_Z5S-Fz8AmVkyuovs=w400-rw 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuB4-FCIsg-kXbxI6dO196COY059NGHXi2DgoyTLFRAmC9FiMMyaanXZi2WB1Jfxbym1Vs8tbcWSwSrjNGAU0ntkKHJ1MenNz0Zw9Gp5uAI9tSyCBHxVuy6Q-OI4fwxxYElFT43GXL4So8gT9CE56A00Um5Uc9BOOSaKnLF6_ubRzlPnveEhpL9c9SoJs4QuSq3aN5UFyKudHsj0lGg8GInznZQ884EE2Xbxs0CcUrF1ylhiYKjU4mWrBbyWpZ_Z5S-Fz8AmVkyuovs=w800-rw 800w"
-                                            sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw" />
-                                        <img alt="Wild Herb-Infused Pan Seared Salmon"
-                                            srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuB4-FCIsg-kXbxI6dO196COY059NGHXi2DgoyTLFRAmC9FiMMyaanXZi2WB1Jfxbym1Vs8tbcWSwSrjNGAU0ntkKHJ1MenNz0Zw9Gp5uAI9tSyCBHxVuy6Q-OI4fwxxYElFT43GXL4So8gT9CE56A00Um5Uc9BOOSaKnLF6_ubRzlPnveEhpL9c9SoJs4QuSq3aN5UFyKudHsj0lGg8GInznZQ884EE2Xbxs0CcUrF1ylhiYKjU4mWrBbyWpZ_Z5S-Fz8AmVkyuovs=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuB4-FCIsg-kXbxI6dO196COY059NGHXi2DgoyTLFRAmC9FiMMyaanXZi2WB1Jfxbym1Vs8tbcWSwSrjNGAU0ntkKHJ1MenNz0Zw9Gp5uAI9tSyCBHxVuy6Q-OI4fwxxYElFT43GXL4So8gT9CE56A00Um5Uc9BOOSaKnLF6_ubRzlPnveEhpL9c9SoJs4QuSq3aN5UFyKudHsj0lGg8GInznZQ884EE2Xbxs0CcUrF1ylhiYKjU4mWrBbyWpZ_Z5S-Fz8AmVkyuovs=w800 800w"
-                                            sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
-                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4-FCIsg-kXbxI6dO196COY059NGHXi2DgoyTLFRAmC9FiMMyaanXZi2WB1Jfxbym1Vs8tbcWSwSrjNGAU0ntkKHJ1MenNz0Zw9Gp5uAI9tSyCBHxVuy6Q-OI4fwxxYElFT43GXL4So8gT9CE56A00Um5Uc9BOOSaKnLF6_ubRzlPnveEhpL9c9SoJs4QuSq3aN5UFyKudHsj0lGg8GInznZQ884EE2Xbxs0CcUrF1ylhiYKjU4mWrBbyWpZ_Z5S-Fz8AmVkyuovs=w400"
-                                            loading="lazy" decoding="async" />
-                                    </picture>
-                                    <div class="position-absolute top-0 start-0 p-3">
-                                        <span class="badge-custom">Signature</span>
-                                    </div>
-                                    <div class="position-absolute top-0 end-0 p-3">
-                                        <button class="btn-fav">
-                                            <i class="bi bi-heart-fill fs-5"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="card-body p-4 d-flex flex-column">
-                                    <div class="d-flex align-items-center gap-1 text-primary mb-2">
-                                        <i class="bi bi-star-fill fs-6"></i>
-                                        <i class="bi bi-star-fill fs-6"></i>
-                                        <i class="bi bi-star-fill fs-6"></i>
-                                        <i class="bi bi-star-fill fs-6"></i>
-                                        <i class="bi bi-star fs-6"></i>
-                                        <span class="text-on-surface-variant ms-1 fw-medium"
-                                            style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">4.8
-                                            (210)</span>
-                                    </div>
-                                    <h3 class="font-headline fs-5 mb-2 card-title text-decoration-none text-dark">Wild
-                                        Herb-Infused Pan Seared Salmon</h3>
-                                    <p class="text-on-surface-variant font-body mb-4"
-                                        style="font-size: clamp(0.7rem, 2.1875vw, 1.05rem); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
-                                        A delicate balance of rosemary and thyme crust with a maple glaze, served over
-                                        seasonal asparagus.</p>
-                                    <div class="mt-auto d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <div class="rounded-circle overflow-hidden bg-surface-container"
-                                                style="width: 1.5rem; height: 1.5rem;">
-                                                <picture>
-                                                    <source type="image/webp"
-                                                        srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuBRO1jT-e-ufi9vRfkDE3WhTF-tSM5-aGqPNqSyFo0v2xfoEk3scK5l0Ft44TbpRqNkZ-yPrUeTb9Df24E1j5el7OGbJbR9AIUna3qq8djwJjh94sIqZPJlDWRJ7oM_Ved73Un-Oh8m00QfXnXMXv1pBT-jqIjQ705NXJcA150fxZd8uHz1IrWRJDyPYj_E2Fbkl1rfJU2PiAcOJ3FGz-P9dR_ZJZvHwUaTqWKocmIw7-l84-6hsOp6S8TR5pHws2TpuHMme0QMqng=w60-rw 60w"
-                                                        sizes="24px" />
-                                                    <img class="w-100 h-100 object-fit-cover"
-                                                        alt="Elena Russo"
-                                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRO1jT-e-ufi9vRfkDE3WhTF-tSM5-aGqPNqSyFo0v2xfoEk3scK5l0Ft44TbpRqNkZ-yPrUeTb9Df24E1j5el7OGbJbR9AIUna3qq8djwJjh94sIqZPJlDWRJ7oM_Ved73Un-Oh8m00QfXnXMXv1pBT-jqIjQ705NXJcA150fxZd8uHz1IrWRJDyPYj_E2Fbkl1rfJU2PiAcOJ3FGz-P9dR_ZJZvHwUaTqWKocmIw7-l84-6hsOp6S8TR5pHws2TpuHMme0QMqng=w60"
-                                                        loading="lazy" decoding="async" />
-                                                </picture>
-                                            </div>
-                                            <span class="font-label fw-semibold"
-                                                style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">Elena Russo</span>
-                                        </div>
-                                        <span class="font-label fw-bold text-on-surface-variant text-uppercase"
-                                            style="font-size: clamp(0.6rem, 1.875vw, 0.9rem); letter-spacing: 0.1em;">35
-                                            Min</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Featured Card 2 -->
-                    <div class="col-md-6">
-                        <a href="dish-detail.html" class="text-decoration-none">
-                            <div class="card card-custom h-100">
-                                <div class="card-img-wrap">
-                                    <picture>
-                                        <source type="image/webp"
-                                            srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuAcUwQDNw-zkb-oKXcFo5olv41NlkqyGDPQaQolGfi9F7YUzu1VZtVKRJsIxfoOei7fPB3Los7Zefh7g0Cnk4O1-R9Pc07afzXsgeAjAoQd7YbcpzuQsMjQamSUU8lxUDArgX5IFEHX0Z9o900xz0TnTHLv_6tE9Kzo0cyVl5XGFrV3kHkCm00l0dDqexut3jCU-g2i6S-vwxOpLAq15IjQ339nkkDeFHUDwl5dbP_PFhINibogTSw-vYNXPxdf3abgJsJfnjO081w=w400-rw 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuAcUwQDNw-zkb-oKXcFo5olv41NlkqyGDPQaQolGfi9F7YUzu1VZtVKRJsIxfoOei7fPB3Los7Zefh7g0Cnk4O1-R9Pc07afzXsgeAjAoQd7YbcpzuQsMjQamSUU8lxUDArgX5IFEHX0Z9o900xz0TnTHLv_6tE9Kzo0cyVl5XGFrV3kHkCm00l0dDqexut3jCU-g2i6S-vwxOpLAq15IjQ339nkkDeFHUDwl5dbP_PFhINibogTSw-vYNXPxdf3abgJsJfnjO081w=w800-rw 800w"
-                                            sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw" />
-                                        <img alt="Heirloom Berry Soufflé Pancakes"
-                                            srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuAcUwQDNw-zkb-oKXcFo5olv41NlkqyGDPQaQolGfi9F7YUzu1VZtVKRJsIxfoOei7fPB3Los7Zefh7g0Cnk4O1-R9Pc07afzXsgeAjAoQd7YbcpzuQsMjQamSUU8lxUDArgX5IFEHX0Z9o900xz0TnTHLv_6tE9Kzo0cyVl5XGFrV3kHkCm00l0dDqexut3jCU-g2i6S-vwxOpLAq15IjQ339nkkDeFHUDwl5dbP_PFhINibogTSw-vYNXPxdf3abgJsJfnjO081w=w400 400w, https://lh3.googleusercontent.com/aida-public/AB6AXuAcUwQDNw-zkb-oKXcFo5olv41NlkqyGDPQaQolGfi9F7YUzu1VZtVKRJsIxfoOei7fPB3Los7Zefh7g0Cnk4O1-R9Pc07afzXsgeAjAoQd7YbcpzuQsMjQamSUU8lxUDArgX5IFEHX0Z9o900xz0TnTHLv_6tE9Kzo0cyVl5XGFrV3kHkCm00l0dDqexut3jCU-g2i6S-vwxOpLAq15IjQ339nkkDeFHUDwl5dbP_PFhINibogTSw-vYNXPxdf3abgJsJfnjO081w=w800 800w"
-                                            sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
-                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcUwQDNw-zkb-oKXcFo5olv41NlkqyGDPQaQolGfi9F7YUzu1VZtVKRJsIxfoOei7fPB3Los7Zefh7g0Cnk4O1-R9Pc07afzXsgeAjAoQd7YbcpzuQsMjQamSUU8lxUDArgX5IFEHX0Z9o900xz0TnTHLv_6tE9Kzo0cyVl5XGFrV3kHkCm00l0dDqexut3jCU-g2i6S-vwxOpLAq15IjQ339nkkDeFHUDwl5dbP_PFhINibogTSw-vYNXPxdf3abgJsJfnjO081w=w400"
-                                            loading="lazy" decoding="async" />
-                                    </picture>
-                                    <div class="position-absolute top-0 start-0 p-3">
-                                        <span class="badge-custom">Editor's Pick</span>
-                                    </div>
-                                    <div class="position-absolute top-0 end-0 p-3">
-                                        <button class="btn-fav">
-                                            <i class="bi bi-heart fs-5"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="card-body p-4 d-flex flex-column">
-                                    <div class="d-flex align-items-center gap-1 text-primary mb-2">
-                                        <i class="bi bi-star-fill fs-6"></i>
-                                        <i class="bi bi-star-fill fs-6"></i>
-                                        <i class="bi bi-star-fill fs-6"></i>
-                                        <i class="bi bi-star-fill fs-6"></i>
-                                        <i class="bi bi-star-fill fs-6"></i>
-                                        <span class="text-on-surface-variant ms-1 fw-medium"
-                                            style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">5.0
-                                            (84)</span>
-                                    </div>
-                                    <h3 class="font-headline fs-5 mb-2 card-title text-decoration-none text-dark">
-                                        Heirloom
-                                        Berry Soufflé Pancakes</h3>
-                                    <p class="text-on-surface-variant font-body mb-4"
-                                        style="font-size: clamp(0.7rem, 2.1875vw, 1.05rem); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
-                                        Cloud-like textures paired with a vibrant compote of seasonal berries and wild
-                                        honey.</p>
-                                    <div class="mt-auto d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <div class="rounded-circle overflow-hidden bg-surface-container"
-                                                style="width: 1.5rem; height: 1.5rem;">
-                                                <picture>
-                                                    <source type="image/webp"
-                                                        srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuCMsMvQgX_Lj0CBdUM3AxN0QCFpi759ygeL15G4-DBsEDZ4hco-Gab30b7cCBrnVCVPKfKfoorwum5K-db4dg1SMVJkgvYqdfsf9jIvzqJ8iBgJ5jU8FUXbCUFyf0oTF83GHoAe-zVIfpIJq4P9gOksW8nxTxifvMRNCe9cRQEIe9ypFM8oqGVyTEMQMjiQUiCoIfZmBuWsnQE7v9TtV_mx9xE1qT4uvNPjgZnuh6FP3RWLn7MZSc7xTjDNvY0BzqM5LszpDpbxZ8M=w60-rw 60w"
-                                                        sizes="24px" />
-                                                    <img class="w-100 h-100 object-fit-cover"
-                                                        alt="Marc Vallery"
-                                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMsMvQgX_Lj0CBdUM3AxN0QCFpi759ygeL15G4-DBsEDZ4hco-Gab30b7cCBrnVCVPKfKfoorwum5K-db4dg1SMVJkgvYqdfsf9jIvzqJ8iBgJ5jU8FUXbCUFyf0oTF83GHoAe-zVIfpIJq4P9gOksW8nxTxifvMRNCe9cRQEIe9ypFM8oqGVyTEMQMjiQUiCoIfZmBuWsnQE7v9TtV_mx9xE1qT4uvNPjgZnuh6FP3RWLn7MZSc7xTjDNvY0BzqM5LszpDpbxZ8M=w60"
-                                                        loading="lazy" decoding="async" />
-                                                </picture>
-                                            </div>
-                                            <span class="font-label fw-semibold"
-                                                style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">Marc
-                                                Vallery</span>
-                                        </div>
-                                        <span class="font-label fw-bold text-on-surface-variant text-uppercase"
-                                            style="font-size: clamp(0.6rem, 1.875vw, 0.9rem); letter-spacing: 0.1em;">20
-                                            Min</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                <div class="row g-4 mb-4" id="trending-container">
+                    <div class="col-12 p-5 text-center">
+                        <div class="spinner-border text-primary mx-auto" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
                     </div>
                 </div>
                 <!-- Secondary Small Grid -->
@@ -628,6 +514,119 @@
                     });
                 });
             }
+
+            // Fetch Recipe of the Day from TheMealDB API
+            async function fetchRecipeOfTheDay() {
+                try {
+                    const response = await fetch('https://www.themealdb.com/api/json/v1/1/random.php');
+                    if (!response.ok) throw new Error('Network response was not ok');
+                    const data = await response.json();
+                    const recipe = data.meals[0];
+                    
+                    const html = `
+                        <a href="${recipe.strSource || '#'}" target="_blank" class="text-decoration-none">
+                            <div class="card card-custom h-100 w-100">
+                                <div class="card-img-wrap" style="height: 300px;">
+                                    <img alt="${recipe.strMeal}" src="${recipe.strMealThumb}" class="w-100 h-100 object-fit-cover" loading="lazy" decoding="async" />
+                                    <div class="position-absolute top-0 start-0 p-3">
+                                        <span class="badge bg-primary text-white px-2 py-1 rounded" style="font-size: 0.75rem;">Daily Inspiration</span>
+                                    </div>
+                                </div>
+                                <div class="card-body p-4 d-flex flex-column">
+                                    <div class="d-flex align-items-center gap-1 text-primary mb-2">
+                                        <i class="bi bi-star-fill fs-6"></i>
+                                        <i class="bi bi-star-fill fs-6"></i>
+                                        <i class="bi bi-star-fill fs-6"></i>
+                                        <i class="bi bi-star-fill fs-6"></i>
+                                        <i class="bi bi-star-half fs-6"></i>
+                                    </div>
+                                    <h3 class="font-headline fs-5 mb-2 card-title text-decoration-none text-dark">${recipe.strMeal}</h3>
+                                    <p class="text-on-surface-variant font-body mb-4" style="font-size: clamp(0.7rem, 2.1875vw, 1.05rem); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                        <strong>Category:</strong> ${recipe.strCategory} | <strong>Origin:</strong> ${recipe.strArea} <br>
+                                        ${recipe.strInstructions}
+                                    </p>
+                                    <div class="mt-auto d-flex align-items-center justify-content-between">
+                                        <span class="font-label fw-bold text-on-surface-variant text-uppercase" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem); letter-spacing: 0.1em;">View Recipe</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    `;
+                    document.getElementById('recipe-of-the-day-content').innerHTML = html;
+                } catch (error) {
+                    console.error('Error fetching recipe:', error);
+                    document.getElementById('recipe-of-the-day-content').innerHTML = `
+                        <div class="card card-custom w-100 p-4 text-center text-danger">
+                            <p>Failed to load the recipe of the day. Please try again later.</p>
+                        </div>
+                    `;
+                }
+            }
+
+            fetchRecipeOfTheDay();
+
+            // Fetch Trending Dishes from Fake API
+            async function fetchTrendingDishes() {
+                const container = document.getElementById('trending-container');
+                try {
+                    const response = await fetch('http://localhost:3000/dishes');
+                    if (!response.ok) throw new Error('Network response was not ok');
+                    const allDishes = await response.json();
+                    
+                    if (!allDishes || allDishes.length === 0) {
+                        container.innerHTML = '<p class="text-on-surface-variant">No trending dishes found.</p>';
+                        return;
+                    }
+
+                    const dishes = allDishes.slice(0, 4);
+
+                    const html = dishes.map(dish => `
+                        <div class="col-md-6">
+                            <a href="dish-detail.html?id=${dish.id}" class="text-decoration-none">
+                                <div class="card card-custom h-100">
+                                    <div class="card-img-wrap">
+                                        <img alt="${dish.title}" src="${dish.image}" class="w-100 h-100 object-fit-cover" loading="lazy" decoding="async" />
+                                        <div class="position-absolute top-0 start-0 p-3">
+                                            <span class="badge bg-primary text-white px-2 py-1 rounded" style="font-size: 0.75rem;">${dish.badge || 'Trending'}</span>
+                                        </div>
+                                        <div class="position-absolute top-0 end-0 p-3">
+                                            <button class="btn-fav">
+                                                <i class="bi ${dish.favorited ? 'bi-heart-fill' : 'bi-heart'} fs-5 text-primary"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-4 d-flex flex-column">
+                                        <div class="d-flex align-items-center gap-1 text-primary mb-2">
+                                            <i class="bi bi-star-fill fs-6"></i>
+                                            <span class="text-on-surface-variant ms-1 fw-medium" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem);">${dish.rating} (${dish.reviewCount})</span>
+                                        </div>
+                                        <h3 class="font-headline fs-5 mb-2 card-title text-decoration-none text-dark">${dish.title}</h3>
+                                        <p class="text-on-surface-variant font-body mb-4" style="font-size: clamp(0.7rem, 2.1875vw, 1.05rem); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                            ${dish.description}
+                                        </p>
+                                        <div class="mt-auto d-flex align-items-center justify-content-between">
+                                            <span class="font-label fw-bold text-on-surface-variant text-uppercase" style="font-size: clamp(0.6rem, 1.875vw, 0.9rem); letter-spacing: 0.1em;">${dish.prepTime}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    `).join('');
+                    
+                    container.innerHTML = html;
+                } catch (error) {
+                    console.error('Error fetching trending dishes:', error);
+                    container.innerHTML = `
+                        <div class="col-12">
+                            <div class="card card-custom w-100 p-4 text-center text-danger">
+                                <p>Failed to load trending dishes from local server. Ensure json-server is running on port 3000.</p>
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+
+            fetchTrendingDishes();
         });
     </script>
 </body>
