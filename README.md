@@ -55,13 +55,13 @@ Para entender as regras de negócio, o escopo e a arquitetura técnica da aplica
 
 RA2 - Realizar tratamento de formulários e aplicar validações customizadas no lado cliente.
 
-- [ ] ID 11 - Implementa validação HTML nativa (campos obrigatórios, tipos, limites de caracteres) com mensagens de erro/sucesso no lado cliente.
+- [X] ID 11 - Implementa validação HTML nativa (campos obrigatórios, tipos, limites de caracteres) com mensagens de erro/sucesso no lado cliente.
 
-- [ ] ID 12 - Aplica expressões regulares (REGEX) para validações customizadas (e-mail, telefone, datas, etc.)
+- [X] ID 12 - Aplica expressões regulares (REGEX) para validações customizadas (e-mail, telefone, datas, etc.)
 
-- [ ] ID 13 - Utiliza elementos de seleção em formulários (checkbox, radio, select) para coleta de dados.
+- [X] ID 13 - Utiliza elementos de seleção em formulários (checkbox, radio, select) para coleta de dados.
 
-- [ ] ID 14 - Implementa leitura e escrita no Web Storage (localStorage/sessionStorage) para persistir dados localmente.
+- [X] ID 14 - Implementa leitura e escrita no Web Storage (localStorage/sessionStorage) para persistir dados localmente.
 
  RA3 - Aplicar ferramentas para otimização do processo de desenvolvimento web.
 
@@ -83,7 +83,7 @@ RA2 - Realizar tratamento de formulários e aplicar validações customizadas no
 
 RA5 - Efetuar requisições assíncronas para uma API fake e APIs públicas, permitindo a obtenção e manipulação de dados dinamicamente.
 
-- [ ] ID 22 - Realiza requisições assíncronas para uma API fake (ex.: JSON Server) para persistir dados de um formulário.
+- [X] ID 22 - Realiza requisições assíncronas para uma API fake (ex.: JSON Server) para persistir dados de um formulário.
 
 - [x] ID 23 - Realiza requisições assíncronas para uma API fake para exibir dados na página.
 
